@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Tolalal&#39;s Blog • Posts by &#34;note&#34; tag</title>
+        <link>http://example.com</link>
+        <description>Tolalal,blog</description>
+        <language>zh-Hans</language>
+        <pubDate>Wed, 07 Sep 2022 23:00:00 +0800</pubDate>
+        <lastBuildDate>Wed, 07 Sep 2022 23:00:00 +0800</lastBuildDate>
+        <category>note</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/09/07/Note%20of%20markdown/</guid>
+            <title>Note Of Markdown</title>
+            <link>http://example.com/2022/09/07/Note%20of%20markdown/</link>
+            <category>note</category>
+            <pubDate>Wed, 07 Sep 2022 23:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;为了搭建自己的 blog，clone 了个模板。现在也是时候该来学写 blog 了。 &lt;s&gt;（什么写 blog 还要学不是有手就行？？）&lt;/s&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;note-of-markdown&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#note-of-markdown&#34;&gt;#&lt;/a&gt; Note Of Markdown&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;1-准备preparation&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-准备preparation&#34;&gt;#&lt;/a&gt; 1. 准备（Preparation）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;应用软件：Video Studio Code&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工作文件：makedown (后缀为 &lt;code&gt;.md&lt;/code&gt; ）&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-开始beginning&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-开始beginning&#34;&gt;#&lt;/a&gt; 2. 开始（Beginning）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;创建一个文本文档更改后缀为 &lt;code&gt;.md&lt;/code&gt;  然后用 Visual Studio Code 打开，或者先打开 Visual Studio Code 然后新建一个后缀为 &lt;code&gt;.md&lt;/code&gt;  的文件。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;打开侧边预览&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;在view中打开 Command Palette 然后输入Open Preview to the Side&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3语法grammar&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3语法grammar&#34;&gt;#&lt;/a&gt; 3. 语法（Grammar）&lt;/h3&gt;
+&lt;h5 id=&#34;标题title&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#标题title&#34;&gt;#&lt;/a&gt; 标题（Title)&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;标题可分为一到六级分别用 #、##、###… 以此类推&lt;br&gt;
+其中 #表示的最大，###### 最小。语法如下：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;# 标题1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;## 标题2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;### 标题3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;...&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;换行直接回车&lt;/li&gt;
+&lt;li&gt;字体
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;*内容*&lt;/code&gt;  为斜体&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;**内容**&lt;/code&gt;  为加粗&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;***内容***&lt;/code&gt;  为粗斜体&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~~内容~~&lt;/code&gt;  为删除线&lt;br&gt;
+表现：&lt;em&gt;内容&lt;/em&gt;、&lt;strong&gt;内容&lt;/strong&gt;、&lt;em&gt;&lt;strong&gt;内容&lt;/strong&gt;&lt;/em&gt;、&lt;s&gt;内容&lt;/s&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;未完待续&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
