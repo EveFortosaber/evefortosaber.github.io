@@ -3,14 +3,14 @@
     <id>http://example.com</id>
     <title>Tolalal&#39;s Blog</title>
     <link href="http://example.com" />
-    <updated>2022-09-07T15:56:55.000Z</updated>
+    <updated>2022-09-08T06:39:37.000Z</updated>
     <category term="note" />
     <entry>
-        <id>http://example.com/2022/09/07/My-markdown-notes/</id>
-        <title>My markdown notes</title>
-        <link rel="alternate" href="http://example.com/2022/09/07/My-markdown-notes/"/>
+        <id>http://example.com/2022/09/08/%E6%9C%AD%E8%AE%B0/</id>
+        <title>札记</title>
+        <link rel="alternate" href="http://example.com/2022/09/08/%E6%9C%AD%E8%AE%B0/"/>
         <content type="html"></content>
-        <updated>2022-09-07T15:56:55.000Z</updated>
+        <updated>2022-09-08T06:39:37.000Z</updated>
     </entry>
     <entry>
         <id>http://example.com/2022/09/07/Note%20of%20markdown/</id>
