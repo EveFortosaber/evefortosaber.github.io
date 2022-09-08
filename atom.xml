@@ -3,14 +3,26 @@
     <id>http://example.com</id>
     <title>Tolalal&#39;s Blog</title>
     <link href="http://example.com" />
-    <updated>2022-09-08T06:39:37.000Z</updated>
+    <updated>2022-09-08T06:40:00.000Z</updated>
     <category term="note" />
+    <category term="随笔" />
     <entry>
         <id>http://example.com/2022/09/08/%E6%9C%AD%E8%AE%B0/</id>
         <title>札记</title>
         <link rel="alternate" href="http://example.com/2022/09/08/%E6%9C%AD%E8%AE%B0/"/>
-        <content type="html"></content>
-        <updated>2022-09-08T06:39:37.000Z</updated>
+        <content type="html">&lt;h1 id=&#34;short-talk&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#short-talk&#34;&gt;#&lt;/a&gt; Short Talk&lt;/h1&gt;
+&lt;p&gt;(In fact, i want to improve my English through writing some articles in English.)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;my-teachers&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#my-teachers&#34;&gt;#&lt;/a&gt; My teachers&lt;/h3&gt;
+&lt;p&gt;One of my teacher is a &lt;em&gt;Chinese&lt;/em&gt;,while the other one is an &lt;em&gt;English&lt;/em&gt;(maybe,i’m not certain,forgive me)&lt;br&gt;
+When i typing the article you see, i’m taking my foreign teacher’s spoken English class.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;my-class&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#my-class&#34;&gt;#&lt;/a&gt; My class&lt;/h3&gt;
+&lt;p&gt;The spoken English class focuses on discussion.&lt;br&gt;
+Yet my classmates are pretty shy so that few discusions happened when we were dvided into the same&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <updated>2022-09-08T06:40:00.000Z</updated>
     </entry>
     <entry>
         <id>http://example.com/2022/09/07/Note%20of%20markdown/</id>

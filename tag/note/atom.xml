@@ -5,6 +5,7 @@
     <link href="http://example.com" />
     <updated>2022-09-07T15:00:00.000Z</updated>
     <category term="note" />
+    <category term="随笔" />
     <entry>
         <id>http://example.com/2022/09/07/Note%20of%20markdown/</id>
         <title>Note Of Markdown</title>
