@@ -11,7 +11,7 @@
     <updated>2022-09-08T06:40:00.000Z</updated>
     <entry>
         <id>http://example.com/2022/09/08/%E6%9C%AD%E8%AE%B0/%E6%9C%AD%E8%AE%B0/</id>
-        <title>札记</title>
+        <title>My fist English Class</title>
         <link rel="alternate" href="http://example.com/2022/09/08/%E6%9C%AD%E8%AE%B0/%E6%9C%AD%E8%AE%B0/"/>
         <content type="html">&lt;h1 id=&#34;short-talk&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#short-talk&#34;&gt;#&lt;/a&gt; Short Talk&lt;/h1&gt;
 &lt;p&gt;(In fact, i want to improve my English through writing some articles in English.)&lt;/p&gt;
@@ -24,12 +24,13 @@ When i typing the article you see, i&#39;m taking my foreign teacher&#39;s spoke
 &lt;p&gt;The spoken English class focuses on discussion.&lt;br /&gt;
 Yet my classmates are pretty shy so that few discusions happened when we were dvided into the same discuss room.&lt;/p&gt;
 </content>
+        <category term="札记" scheme="http://example.com/categories/%E6%9C%AD%E8%AE%B0/" />
         <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/" />
         <updated>2022-09-08T06:40:00.000Z</updated>
     </entry>
     <entry>
         <id>http://example.com/2022/09/07/Note%20of%20markdown/Note%20of%20markdown/</id>
-        <title>Note Of Markdown</title>
+        <title>Notes Of Markdown</title>
         <link rel="alternate" href="http://example.com/2022/09/07/Note%20of%20markdown/Note%20of%20markdown/"/>
         <content type="html">&lt;p&gt;为了搭建自己的 blog，clone 了个模板。现在也是时候该来学写 blog 了。 &lt;s&gt;（什么写 blog 还要学不是有手就行？？）&lt;/s&gt;&lt;/p&gt;
 &lt;hr /&gt;
@@ -74,6 +75,7 @@ Yet my classmates are pretty shy so that few discusions happened when we were dv
 &lt;/ol&gt;
 &lt;p&gt;未完待续&lt;/p&gt;
 </content>
+        <category term="札记" scheme="http://example.com/categories/%E6%9C%AD%E8%AE%B0/" />
         <category term="Notes" scheme="http://example.com/tags/Notes/" />
         <updated>2022-09-07T15:00:00.000Z</updated>
     </entry>
@@ -84,6 +86,7 @@ Yet my classmates are pretty shy so that few discusions happened when we were dv
         <content type="html">&lt;h1 id=&#34;高等数学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高等数学&#34;&gt;#&lt;/a&gt; 高等数学&lt;/h1&gt;
 &lt;hr /&gt;
 &lt;h2 id=&#34;第一章-函数与极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章-函数与极限&#34;&gt;#&lt;/a&gt; 第一章 函数与极限&lt;/h2&gt;
+&lt;hr /&gt;
 &lt;h3 id=&#34;第一节-映射与函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一节-映射与函数&#34;&gt;#&lt;/a&gt; 第一节 映射与函数&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -136,10 +139,11 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;初等函数&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;初等函数是由 &amp;lt;b&amp;gt; 幂函数（power function）、指数函数（exponential function）、对数函数（logarithmic function）、三角函数（trigonometric function）、反三角函数（inverse trigonometric function）&amp;lt;/b &amp;gt; 与常数经过有限次的有理运算（加、减、乘、除、有理数次乘方、有理数次开方）及有限次函数复合所产生，并且能用一个解析式表示的函数。&lt;/p&gt;
+&lt;p&gt;初等函数是由&lt;strong&gt;幂函数（power function）、指数函数（exponential function）、对数函数（logarithmic function）、三角函数（trigonometric function）、反三角函数（inverse trigonometric function&lt;/strong&gt; 与常数经过有限次的有理运算（加、减、乘、除、有理数次乘方、有理数次开方）及有限次函数复合所产生，并且能用一个解析式表示的函数。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr /&gt;
 &lt;h3 id=&#34;第二节-数列的极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第二节-数列的极限&#34;&gt;#&lt;/a&gt; 第二节 数列的极限&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;邻域&lt;/strong&gt;
@@ -169,15 +173,17 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;极限四则运算法则（严格意义上要分别证明数列的与函数的）&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr /&gt;
 &lt;h3 id=&#34;第三节-函数的极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第三节-函数的极限&#34;&gt;#&lt;/a&gt; 第三节 函数的极限&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://baike.baidu.com/item/%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/727083&#34;&gt;&lt;img data-src=&#34;/00_1.png&#34; alt=&#34;函数极限&#34; title=&#34;函数极限定义&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlODclQkQlRTYlOTUlQjAlRTYlOUUlODElRTklOTklOTAvNzI3MDgz&#34;&gt;函数极限&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlQjUlQjclRTYlQjYlODUlRTUlQUUlOUElRTclOTAlODY/ZnJvbU1vZHVsZT1sZW1tYV9zZWFyY2gtYm94&#34;&gt;海涅 (Heine) 定理&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&amp;lt;p align=&#39;right&#39;&amp;gt; &amp;lt;b&amp;gt;To be continued...&amp;lt;/b&amp;gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;To be continued...&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 </content>
         <category term="Mathematics" scheme="http://example.com/categories/Mathematics/" />
-        <category term="[object Object]" scheme="http://example.com/tags/object-Object/" />
+        <category term="Notes" scheme="http://example.com/tags/Notes/" />
         <updated>2022-09-06T15:00:09.999Z</updated>
     </entry>
     <entry>

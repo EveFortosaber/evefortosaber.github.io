@@ -4,12 +4,18 @@
   
     
     <entry>
-      <title>札记</title>
+      <title>My fist English Class</title>
       <link href="/2022/09/08/%E6%9C%AD%E8%AE%B0/%E6%9C%AD%E8%AE%B0/"/>
       <url>/2022/09/08/%E6%9C%AD%E8%AE%B0/%E6%9C%AD%E8%AE%B0/</url>
       
         <content type="html"><![CDATA[<h1 id="short-talk"><a class="anchor" href="#short-talk">#</a> Short Talk</h1><p>(In fact, i want to improve my English through writing some articles in English.)</p><hr /><h3 id="my-teachers"><a class="anchor" href="#my-teachers">#</a> My teachers</h3><p>One of my teacher is a <em>Chinese</em>,while the other one is an <em>English</em>(maybe,i'm not certain,forgive me)<br />When i typing the article you see, i'm taking my foreign teacher's spoken English class.</p><hr /><h3 id="my-class"><a class="anchor" href="#my-class">#</a> My class</h3><p>The spoken English class focuses on discussion.<br />Yet my classmates are pretty shy so that few discusions happened when we were dvided into the same discuss room.</p>]]></content>
       
+      
+      <categories>
+          
+          <category> 札记 </category>
+          
+      </categories>
       
       
         <tags>
@@ -23,12 +29,18 @@
     
     
     <entry>
-      <title>Note Of Markdown</title>
+      <title>Notes Of Markdown</title>
       <link href="/2022/09/07/Note%20of%20markdown/Note%20of%20markdown/"/>
       <url>/2022/09/07/Note%20of%20markdown/Note%20of%20markdown/</url>
       
         <content type="html"><![CDATA[<p>为了搭建自己的 blog，clone 了个模板。现在也是时候该来学写 blog 了。 <s>（什么写 blog 还要学不是有手就行？？）</s></p><hr /><h1 id="note-of-markdown"><a class="anchor" href="#note-of-markdown">#</a> Note Of Markdown</h1><hr /><h3 id="1-准备preparation"><a class="anchor" href="#1-准备preparation">#</a> 1. 准备（Preparation）</h3><ul><li><strong>应用软件：Video Studio Code</strong></li><li><strong>工作文件：makedown (后缀为 <code>.md</code> ）</strong></li></ul><hr /><h3 id="2-开始beginning"><a class="anchor" href="#2-开始beginning">#</a> 2. 开始（Beginning）</h3><ul><li><strong>创建一个文本文档更改后缀为 <code>.md</code>  然后用 Visual Studio Code 打开，或者先打开 Visual Studio Code 然后新建一个后缀为 <code>.md</code>  的文件。</strong></li><li><strong>打开侧边预览</strong></li></ul><pre><code>在view中打开 Command Palette 然后输入Open Preview to the Side</code></pre><hr /><h3 id="3语法grammar"><a class="anchor" href="#3语法grammar">#</a> 3. 语法（Grammar）</h3><h5 id="标题title"><a class="anchor" href="#标题title">#</a> 标题（Title)</h5><ol><li>标题可分为一到六级分别用 #、##、###...... 以此类推<br />其中 #表示的最大，###### 最小。语法如下：</li></ol><pre><code># 标题1## 标题2### 标题3...</code></pre><ol start="2"><li>换行直接回车</li><li>字体<ul><li><code>*内容*</code>  为斜体</li><li><code>**内容**</code>  为加粗</li><li><code>***内容***</code>  为粗斜体</li><li><code>~~内容~~</code>  为删除线<br />表现：<em>内容</em>、<strong>内容</strong>、<em><strong>内容</strong></em>、<s>内容</s></li></ul></li></ol><p>未完待续</p>]]></content>
       
+      
+      <categories>
+          
+          <category> 札记 </category>
+          
+      </categories>
       
       
         <tags>
@@ -46,7 +58,7 @@
       <link href="/2022/09/06/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
       <url>/2022/09/06/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/</url>
       
-        <content type="html"><![CDATA[<h1 id="高等数学"><a class="anchor" href="#高等数学">#</a> 高等数学</h1><hr /><h2 id="第一章-函数与极限"><a class="anchor" href="#第一章-函数与极限">#</a> 第一章 函数与极限</h2><h3 id="第一节-映射与函数"><a class="anchor" href="#第一节-映射与函数">#</a> 第一节 映射与函数</h3><ul><li><p><strong>映射</strong></p><blockquote><p>与 x 所对应的 y 称为 x 在映射 f 下的象。<br />x 称为 y 在 f 下的原象。</p></blockquote><blockquote><p>满射、一一映射、单射、双射</p></blockquote></li><li><p><strong>函数定义与表示方法</strong></p><ul><li>特殊函数<ul><li>狄利克雷函数</li><li>符号函数</li></ul></li><li>函数的有界性</li></ul><blockquote><p>函数 f (x) 在 D 上有界的充要条件是 f (x) 在 D 上既有上界又有下界。</p></blockquote></li><li><p><strong>函数的单调性</strong></p><ul><li>单调增 (减) 函数</li><li>严格单调增 (减) 函数</li></ul></li><li><p><strong>函数的四则运算</strong></p></li><li><p><strong>复合函数</strong></p><blockquote><p>形如： <strong>f(g(u(x)))</strong> 或 <strong>f</strong> o <strong>g</strong> o <strong>u</strong></p></blockquote></li><li><p><strong>反函数</strong></p><blockquote><p>反函数的单调性基本归纳于 <strong>先外后内，同增异减</strong>。</p></blockquote></li><li><p><strong>初等函数</strong></p><blockquote><p>初等函数是由 &lt;b&gt; 幂函数（power function）、指数函数（exponential function）、对数函数（logarithmic function）、三角函数（trigonometric function）、反三角函数（inverse trigonometric function）&lt;/b &gt; 与常数经过有限次的有理运算（加、减、乘、除、有理数次乘方、有理数次开方）及有限次函数复合所产生，并且能用一个解析式表示的函数。</p></blockquote></li></ul><h3 id="第二节-数列的极限"><a class="anchor" href="#第二节-数列的极限">#</a> 第二节 数列的极限</h3><ul><li><strong>邻域</strong><ul><li>邻域</li><li>去心邻域</li><li>左 (右) 邻域</li></ul></li><li><strong>数列基本概念</strong><ul><li>有限 or 无限</li><li>通项公式</li><li>整标函数</li><li>子数列</li><li>单调性</li></ul></li><li><span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOTUlQjAlRTUlODglOTclRTYlOUUlODElRTklOTklOTA/ZnJvbU1vZHVsZT1sZW1tYV9zZWFyY2gtYm94">数列极限</span></li><li><strong>收敛数列与数列的有界性</strong><blockquote><p><strong>tip：数列收敛一定有界，数列有界不一定收敛</strong></p></blockquote><ul><li>极限唯一性 &amp; 有界性 &amp; 保号性</li></ul></li><li>极限四则运算法则（严格意义上要分别证明数列的与函数的）</li></ul><h3 id="第三节-函数的极限"><a class="anchor" href="#第三节-函数的极限">#</a> 第三节 函数的极限</h3><p><a href="https://baike.baidu.com/item/%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/727083"><img data-src="/00_1.png" alt="函数极限" title="函数极限定义" /></a></p><ul><li><span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlQjUlQjclRTYlQjYlODUlRTUlQUUlOUElRTclOTAlODY/ZnJvbU1vZHVsZT1sZW1tYV9zZWFyY2gtYm94">海涅 (Heine) 定理</span></li></ul><p>&lt;p align='right'&gt; &lt;b&gt;To be continued...&lt;/b&gt;</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="高等数学"><a class="anchor" href="#高等数学">#</a> 高等数学</h1><hr /><h2 id="第一章-函数与极限"><a class="anchor" href="#第一章-函数与极限">#</a> 第一章 函数与极限</h2><hr /><h3 id="第一节-映射与函数"><a class="anchor" href="#第一节-映射与函数">#</a> 第一节 映射与函数</h3><ul><li><p><strong>映射</strong></p><blockquote><p>与 x 所对应的 y 称为 x 在映射 f 下的象。<br />x 称为 y 在 f 下的原象。</p></blockquote><blockquote><p>满射、一一映射、单射、双射</p></blockquote></li><li><p><strong>函数定义与表示方法</strong></p><ul><li>特殊函数<ul><li>狄利克雷函数</li><li>符号函数</li></ul></li><li>函数的有界性</li></ul><blockquote><p>函数 f (x) 在 D 上有界的充要条件是 f (x) 在 D 上既有上界又有下界。</p></blockquote></li><li><p><strong>函数的单调性</strong></p><ul><li>单调增 (减) 函数</li><li>严格单调增 (减) 函数</li></ul></li><li><p><strong>函数的四则运算</strong></p></li><li><p><strong>复合函数</strong></p><blockquote><p>形如： <strong>f(g(u(x)))</strong> 或 <strong>f</strong> o <strong>g</strong> o <strong>u</strong></p></blockquote></li><li><p><strong>反函数</strong></p><blockquote><p>反函数的单调性基本归纳于 <strong>先外后内，同增异减</strong>。</p></blockquote></li><li><p><strong>初等函数</strong></p><blockquote><p>初等函数是由<strong>幂函数（power function）、指数函数（exponential function）、对数函数（logarithmic function）、三角函数（trigonometric function）、反三角函数（inverse trigonometric function</strong> 与常数经过有限次的有理运算（加、减、乘、除、有理数次乘方、有理数次开方）及有限次函数复合所产生，并且能用一个解析式表示的函数。</p></blockquote></li></ul><hr /><h3 id="第二节-数列的极限"><a class="anchor" href="#第二节-数列的极限">#</a> 第二节 数列的极限</h3><ul><li><strong>邻域</strong><ul><li>邻域</li><li>去心邻域</li><li>左 (右) 邻域</li></ul></li><li><strong>数列基本概念</strong><ul><li>有限 or 无限</li><li>通项公式</li><li>整标函数</li><li>子数列</li><li>单调性</li></ul></li><li><span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOTUlQjAlRTUlODglOTclRTYlOUUlODElRTklOTklOTA/ZnJvbU1vZHVsZT1sZW1tYV9zZWFyY2gtYm94">数列极限</span></li><li><strong>收敛数列与数列的有界性</strong><blockquote><p><strong>tip：数列收敛一定有界，数列有界不一定收敛</strong></p></blockquote><ul><li>极限唯一性 &amp; 有界性 &amp; 保号性</li></ul></li><li>极限四则运算法则（严格意义上要分别证明数列的与函数的）</li></ul><hr /><h3 id="第三节-函数的极限"><a class="anchor" href="#第三节-函数的极限">#</a> 第三节 函数的极限</h3><ul><li><span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlODclQkQlRTYlOTUlQjAlRTYlOUUlODElRTklOTklOTAvNzI3MDgz">函数极限</span></li><li><span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlQjUlQjclRTYlQjYlODUlRTUlQUUlOUElRTclOTAlODY/ZnJvbU1vZHVsZT1sZW1tYV9zZWFyY2gtYm94">海涅 (Heine) 定理</span></li></ul><hr /><p><em><strong>To be continued...</strong></em></p>]]></content>
       
       
       <categories>
@@ -58,7 +70,7 @@
       
         <tags>
             
-            <tag> [object Object] </tag>
+            <tag> Notes </tag>
             
         </tags>
       
