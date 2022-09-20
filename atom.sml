@@ -56,12 +56,12 @@
         <link rel="alternate" href="http://example.com/2022/09/20/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E9%94%99%E9%A2%98%E6%9C%AC/"/>
         <content type="html">&lt;h1 id=&#34;数学错题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学错题&#34;&gt;#&lt;/a&gt; 数学错题&lt;/h1&gt;
 &lt;h2 id=&#34;高数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高数&#34;&gt;#&lt;/a&gt; 高数&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdeliver.net/gh/evefortosaber/open-pictures/pictures/00_5.png&#34; alt=&#34;5&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdeliver.net/gh/evefortosaber/open-pictures/pictures/00_6.png&#34; alt=&#34;6&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdeliver.net/gh/evefortosaber/open-pictures/pictures/00_7.png&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdeliver.net/gh/evefortosaber/open-pictures/pictures/00_8.png&#34; alt=&#34;8&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdeliver.net/gh/evefortosaber/open-pictures/pictures/01_9.png&#34; alt=&#34;9&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdeliver.net/gh/evefortosaber/open-pictures/pictures/01_10.png&#34; alt=&#34;10&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_5-1663714277821.png&#34; alt=&#34;5&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_6-1663714314009.png&#34; alt=&#34;6&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_7-1663714323364.png&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_8-1663714341842.png&#34; alt=&#34;8&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/01_9-1663714386623.png&#34; alt=&#34;9&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/01_10-1663714362855.png&#34; alt=&#34;10&#34; /&gt;&lt;/p&gt;
 </content>
         <category term="Mathematics" scheme="http://example.com/categories/Mathematics/" />
         <category term="Notes" scheme="http://example.com/tags/Notes/" />
