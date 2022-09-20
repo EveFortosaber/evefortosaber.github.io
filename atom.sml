@@ -8,7 +8,65 @@
     <author>
       <name>Tolalal</name>
     </author>
-    <updated>2022-09-19T14:18:04.921Z</updated>
+    <updated>2022-09-20T13:18:08.031Z</updated>
+    <entry>
+        <id>http://example.com/2022/09/20/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/</id>
+        <title>数学笔记二</title>
+        <link rel="alternate" href="http://example.com/2022/09/20/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/"/>
+        <content type="html">&lt;h1 id=&#34;数学笔记二&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学笔记二&#34;&gt;#&lt;/a&gt; 数学笔记・二&lt;/h1&gt;
+&lt;h3 id=&#34;第四节-函数的连续性承第一章函数与极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四节-函数的连续性承第一章函数与极限&#34;&gt;#&lt;/a&gt; 第四节 函数的连续性（承第一章函数与极限）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;连续性概念&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由极限的性质可知，一个函数在某点连续的充要条件是它在该点左右都连续。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;间断点分类&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一类间断点&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlOEYlQUYlRTUlOEUlQkIlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;可去间断点&lt;/span&gt;：函数在该点左极限、右极限存在且相等，但不等于该点函数值或函数在该点无定义。如函数 y=（x^2-1)/(x-1) 在点 x=1 处。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTglQjclQjMlRTglQjclODMlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;跳跃间断点&lt;/span&gt;：函数在该点左极限、右极限存在，但不相等。如函数 y=|x|/x 在点 x=0 处。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第二类间断点&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOTclQTAlRTclQTklQjclRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjkvMzUzMTYzMD9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;无穷间断点&lt;/span&gt;：函数在该点可以无定义，且左极限、右极限至少有一个不存在，且函数在该点极限为∞。如函数 y=tanx 在点 x=π/2 处。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOEMlQUYlRTglOEQlQTElRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;振荡间断点&lt;/span&gt;：函数在该点可以无定义，当自变量趋于该点时，函数值在两个常数间变动无限多次。如函数 y=sin (1/x) 在 x=0 处。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;由上述对各种间断点的描述可知，&lt;strong&gt;函数 f (x) 在第一类间断点的左右极限都存在，而函数 f (x) 在第二类间断点的左右极限至少有一个不存在&lt;/strong&gt;，这也是第一类间断点和第二类间断点的本质上的区别。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="Mathematics" scheme="http://example.com/categories/Mathematics/" />
+        <category term="Notes" scheme="http://example.com/tags/Notes/" />
+        <updated>2022-09-20T13:18:08.031Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2022/09/20/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E9%94%99%E9%A2%98%E6%9C%AC/</id>
+        <title>错题本</title>
+        <link rel="alternate" href="http://example.com/2022/09/20/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E9%94%99%E9%A2%98%E6%9C%AC/"/>
+        <content type="html">&lt;h1 id=&#34;数学错题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学错题&#34;&gt;#&lt;/a&gt; 数学错题&lt;/h1&gt;
+&lt;h2 id=&#34;高数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高数&#34;&gt;#&lt;/a&gt; 高数&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdeliver.net/gh/evefortosaber/open-pictures/pictures/00_5.png&#34; alt=&#34;5&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdeliver.net/gh/evefortosaber/open-pictures/pictures/00_6.png&#34; alt=&#34;6&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdeliver.net/gh/evefortosaber/open-pictures/pictures/00_7.png&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdeliver.net/gh/evefortosaber/open-pictures/pictures/00_8.png&#34; alt=&#34;8&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdeliver.net/gh/evefortosaber/open-pictures/pictures/01_9.png&#34; alt=&#34;9&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdeliver.net/gh/evefortosaber/open-pictures/pictures/01_10.png&#34; alt=&#34;10&#34; /&gt;&lt;/p&gt;
+</content>
+        <category term="Mathematics" scheme="http://example.com/categories/Mathematics/" />
+        <category term="Notes" scheme="http://example.com/tags/Notes/" />
+        <updated>2022-09-20T13:17:47.044Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2022/09/19/%E5%AD%A6%E4%B9%A0SQL/</id>
         <title>SQL注入</title>
@@ -163,7 +221,7 @@ Yet my classmates are pretty shy so that few discusions happened when we were dv
         <id>http://example.com/2022/09/06/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/</id>
         <title>高等数学笔记一</title>
         <link rel="alternate" href="http://example.com/2022/09/06/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
-        <content type="html">&lt;h1 id=&#34;高等数学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高等数学&#34;&gt;#&lt;/a&gt; 高等数学&lt;/h1&gt;
+        <content type="html">&lt;h1 id=&#34;高等数学一&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高等数学一&#34;&gt;#&lt;/a&gt; 高等数学・一&lt;/h1&gt;
 &lt;hr /&gt;
 &lt;p&gt;学习时做的一些笔记，顺便对内容梳理一遍。^0&lt;/p&gt;
 &lt;hr /&gt;
