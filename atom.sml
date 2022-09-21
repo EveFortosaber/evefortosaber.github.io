@@ -8,7 +8,159 @@
     <author>
       <name>Tolalal</name>
     </author>
-    <updated>2022-09-20T13:18:08.031Z</updated>
+    <updated>2022-09-21T14:52:24.722Z</updated>
+    <entry>
+        <id>http://example.com/2022/09/21/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/</id>
+        <title></title>
+        <link rel="alternate" href="http://example.com/2022/09/21/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/"/>
+        <content type="html">&lt;h1 id=&#34;ctf题目笔记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ctf题目笔记&#34;&gt;#&lt;/a&gt; CTF 题目笔记&lt;/h1&gt;
+&lt;h2 id=&#34;sql注入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sql注入&#34;&gt;#&lt;/a&gt; SQL 注入&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;登录处使用 findadmin 方法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&#39;or 1=1--&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 SQL 语句中 username=’username‘ and password=’password‘&lt;/p&gt;
+&lt;p&gt;变成了 username=’ ’ or 1=1--  ’ and password=’password‘&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;称为 SQL 注释&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/SQL%E6%B3%A8%E5%85%A5%E4%B8%8D%E5%90%8C%E6%95%B0%E6%8D%AE%E5%BA%93.png&#34; alt=&#34;SQL&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Cookie 注入、Post 注入、盲注&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;做了 cookie，直接进 cookie 的 php 页面然后抓 cookie.php 的包，&lt;/p&gt;
+&lt;p&gt;然后在 reapter 里看回显。拿到 flag。&lt;/p&gt;
+&lt;p&gt;还做了一道 baby_web，直接根据提示进 index.php（这里主要是&lt;/p&gt;
+&lt;p&gt;不知道 index 是什么（index.php 是首页））&lt;/p&gt;
+&lt;p&gt;或者先抓个包，把 get 改成 index.php 然后 send，之后直接看 response 得到 flag。&lt;/p&gt;
+&lt;p&gt;（其实都很简单主要是不会操作，基础太差）&lt;/p&gt;
+&lt;p&gt;还有一道弱口令 weak_auth 就是简单的弱口令（最开始想直接注入（练练手，学了好几天 SQL 注入了）结果要盲注，不会！只能查怎么爆破了）&lt;/p&gt;
+&lt;p&gt;最后用 burpsuite 爆破账号:admin&lt;/p&gt;
+&lt;p&gt;密码：123456&lt;/p&gt;
+&lt;p&gt;就真没想到这么 weak！！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;get_post&lt;/p&gt;
+&lt;p&gt;可以通过 url 进行 get 操作，通过 hackbar 的 postpage 进行 post 操作&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;D:%5CPictures%5Cassets%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%5Cget_post.png&#34; alt=&#34;11&#34; /&gt;&lt;/p&gt;
+</content>
+        <updated>2022-09-21T14:52:24.722Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2022/09/21/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%94%E8%AE%B0%E4%B8%80/</id>
+        <title>线性代数笔记一</title>
+        <link rel="alternate" href="http://example.com/2022/09/21/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
+        <content type="html">&lt;h1 id=&#34;线性代数笔记一&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性代数笔记一&#34;&gt;#&lt;/a&gt; 线性代数笔记一&lt;/h1&gt;
+&lt;h2 id=&#34;第一章-线性方程组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章-线性方程组&#34;&gt;#&lt;/a&gt; 第一章 线性方程组&lt;/h2&gt;
+&lt;h3 id=&#34;数域及n元向量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数域及n元向量&#34;&gt;#&lt;/a&gt; 数域及 N 元向量&lt;/h3&gt;
+&lt;h4 id=&#34;数域的一些相关&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数域的一些相关&#34;&gt;#&lt;/a&gt; 数域的一些相关&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;设 P 是由一些数组成的集合，&lt;strong&gt;&amp;lt;u&amp;gt; 其中包括 0 与 1&amp;lt;/u&amp;gt;&lt;/strong&gt;，如果 P 中任意两个数的&lt;em&gt;&lt;strong&gt;和、差、积、商&lt;/strong&gt;&lt;/em&gt;（除数不为 0）仍是 P 中的数，则称 P 为一个数域。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;常见数域&lt;/strong&gt;： 复数域&lt;strong&gt; C&lt;/strong&gt;；实数域&lt;strong&gt; R&lt;/strong&gt;；有理数域&lt;strong&gt; Q&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;（注意：自然数集 N 及整数集 Z 都不是数域。）&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;说明：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;若数集 P 中任意两个数作某一运算的结果仍在 P 中，则说数集 P 对这个运算是封闭的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;数域的等价定义&lt;/strong&gt;：如果一个包含 0，1 在内的数集 P 对于加法，减法，乘法与除法（除数不为 0）是封闭的，则称数集 P 为一个数域。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;逆元、单位元&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;逆元&lt;/strong&gt;：在集合中定义某种运算 f (x)，元素与其逆元进行 f (x) 运算得到该运算单位元。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;加法逆元：即相反数，元素与其加法逆元之和为加法单位元 0。&lt;/li&gt;
+&lt;li&gt;乘法逆元：即倒数，元素与其乘法逆元之积为乘法单位元 1。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;单位元&lt;/strong&gt;：当它和其他元素结合时，并不会改变那些元素。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;加法单位元 0，n+o=n;&lt;/li&gt;
+&lt;li&gt;乘法单位元 1，n*1=n;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;lt;u&amp;gt;&lt;strong&gt; 由数域的定义知数域中一定含有加法逆元乘法逆元，加法单位元乘法单位元。&lt;/strong&gt;&amp;lt;/u&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;集合与向量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#集合与向量&#34;&gt;#&lt;/a&gt; 集合与向量&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;笛卡尔积&lt;/li&gt;
+&lt;li&gt;多元有序数组&lt;/li&gt;
+&lt;li&gt;坐标系
+&lt;ul&gt;
+&lt;li&gt;多元有序数组是 N 维空间与笛卡尔积的集合的映射。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;列向量与横向量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;矩阵初识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#矩阵初识&#34;&gt;#&lt;/a&gt; 矩阵初识&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/02_1.png&#34; alt=&#34;02-1&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;元素是&lt;strong&gt;实数&lt;/strong&gt;的矩阵称为&lt;strong&gt;实矩阵&lt;/strong&gt;，元素是&lt;strong&gt;复数&lt;/strong&gt;的矩阵称为&lt;strong&gt;复矩阵&lt;/strong&gt;。而&lt;strong&gt;行数与列数都等于 n&lt;/strong&gt; 的矩阵称为&lt;strong&gt; n 阶矩阵&lt;/strong&gt;或&lt;strong&gt; n 阶方阵&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;初等变换&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;单位阵（diag）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;矩阵相等必须先是同型矩阵&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;同型矩阵才能做加减&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;行阶梯矩阵，行简化形阶梯矩阵&lt;/p&gt;
+&lt;p&gt;每个矩阵都与唯一一个行简化阶梯矩阵对应（行阶梯矩阵不唯一，行简化阶梯矩阵唯一）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;矩阵的秩&lt;/p&gt;
+&lt;p&gt;设非零矩阵&lt;em&gt;&lt;strong&gt; A&lt;/strong&gt;&lt;/em&gt; 经过初等行变化化为行阶梯形矩阵&lt;em&gt;&lt;strong&gt; R&lt;/strong&gt;&lt;/em&gt;，&lt;em&gt;&lt;strong&gt;R&lt;/strong&gt;&lt;/em&gt; 中非零行的个数称为矩阵&lt;em&gt;&lt;strong&gt; A&lt;/strong&gt;&lt;/em&gt; 的秩，记作 rank&lt;em&gt;&lt;strong&gt;A&lt;/strong&gt;&lt;/em&gt;，或者 r (&lt;em&gt;&lt;strong&gt;A&lt;/strong&gt;&lt;/em&gt;)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;线性方程组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性方程组&#34;&gt;#&lt;/a&gt; 线性方程组&lt;/h3&gt;
+&lt;h4 id=&#34;有解判别定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#有解判别定理&#34;&gt;#&lt;/a&gt; 有解判别定理&lt;/h4&gt;
+&lt;p&gt;线性方程组根据解的判定定理判定为：r（A）=r（A|b）&lt;/p&gt;
+&lt;p&gt;秩要相等。（在做题时要给出判定）&lt;/p&gt;
+&lt;h4 id=&#34;同解方程组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#同解方程组&#34;&gt;#&lt;/a&gt; 同解方程组&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;反身性&lt;/li&gt;
+&lt;li&gt;对称性&lt;/li&gt;
+&lt;li&gt;传递性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;消元步骤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#消元步骤&#34;&gt;#&lt;/a&gt; 消元步骤&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;特解&lt;/p&gt;
+&lt;p&gt;增广矩阵化简到行简化阶梯矩阵&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通解&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="Mathematics" scheme="http://example.com/categories/Mathematics/" />
+        <updated>2022-09-21T10:07:39.589Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2022/09/20/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/</id>
         <title>数学笔记二</title>
@@ -26,17 +178,17 @@
 &lt;p&gt;间断点分类&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;第一类间断点&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第一类间断点&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlOEYlQUYlRTUlOEUlQkIlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;可去间断点&lt;/span&gt;：函数在该点左极限、右极限存在且相等，但不等于该点函数值或函数在该点无定义。如函数 y=（x^2-1)/(x-1) 在点 x=1 处。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTglQjclQjMlRTglQjclODMlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;跳跃间断点&lt;/span&gt;：函数在该点左极限、右极限存在，但不相等。如函数 y=|x|/x 在点 x=0 处。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlOEYlQUYlRTUlOEUlQkIlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;可去间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点左极限、右极限存在且相等，但不等于该点函数值或函数在该点无定义。如函数 y=（x^2-1)/(x-1) 在点 x=1 处。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTglQjclQjMlRTglQjclODMlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;跳跃间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点左极限、右极限存在，但不相等。如函数 y=|x|/x 在点 x=0 处。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;第二类间断点&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第二类间断点&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOTclQTAlRTclQTklQjclRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjkvMzUzMTYzMD9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;无穷间断点&lt;/span&gt;：函数在该点可以无定义，且左极限、右极限至少有一个不存在，且函数在该点极限为∞。如函数 y=tanx 在点 x=π/2 处。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOEMlQUYlRTglOEQlQTElRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;振荡间断点&lt;/span&gt;：函数在该点可以无定义，当自变量趋于该点时，函数值在两个常数间变动无限多次。如函数 y=sin (1/x) 在 x=0 处。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://baike.baidu.com/item/%E6%97%A0%E7%A9%B7%E9%97%B4%E6%96%AD%E7%82%B9/3531630?fromModule=lemma_inlink&#34;&gt;&lt;strong&gt;无穷间断点&lt;/strong&gt;&lt;/a&gt;：函数在该点可以无定义，且左极限、右极限至少有一个不存在，且函数在该点极限为∞。如函数 y=tanx 在点 x=π/2 处。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOEMlQUYlRTglOEQlQTElRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;振荡间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点可以无定义，当自变量趋于该点时，函数值在两个常数间变动无限多次。如函数 y=sin (1/x) 在 x=0 处。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -45,6 +197,50 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;第五节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第五节&#34;&gt;#&lt;/a&gt; 第五节&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;迫敛准则&lt;/p&gt;
+&lt;p&gt;主要是放缩，抓住可合成量（如 N 个 1 求和为 n*(n+1)/2），和高阶量不变原则&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;单调有界准则&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;单调有界数列必有极限。用于证明收敛很有用。&lt;/p&gt;
+&lt;p&gt;求极限时可以&lt;strong&gt;先假设存在&lt;/strong&gt;。方便计算。&lt;s&gt;（避免求数列通项）&lt;/s&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;两个重要极限&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20220921223539147.png&#34; alt=&#34;image-20220921223539147&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第二个很重要，第一个可以直接看成等价无穷小。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;第六节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第六节&#34;&gt;#&lt;/a&gt; 第六节&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;无穷小量&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;确切地说，当自变量 x 无限接近 x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;（或 x 的绝对值无限增大）时，函数值 f (x) 与 0 无限接近，即 f (x)→0 (或 f (x)=0)，则称 f (x) 为当 x→x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;(或 x→∞) 时的无穷小量。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;等阶无穷小量&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;即两个无穷小量坐商得常数时。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;等价无穷小量&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;即两个无穷小量坐商得 1。等价无穷小量可互换。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;常见等价无穷小量&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pica.zhimg.com/v2-f20a929bed77e97c61a9f83de9b4b5a4_r.jpg?source=1940ef5c&#34; alt=&#34;aa&#34; title=&#34;等价无穷小&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;关于我突然变水的原因&lt;/em&gt;：&lt;/p&gt;
+&lt;p&gt;实在是比较忙，各项内容也越来越复杂，所以就择取主要的知识点并舍去证明。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;以上。&lt;/em&gt;&lt;/p&gt;
 </content>
         <category term="Mathematics" scheme="http://example.com/categories/Mathematics/" />
         <category term="Notes" scheme="http://example.com/tags/Notes/" />
@@ -86,44 +282,6 @@
         <category term="网络安全" scheme="http://example.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" />
         <category term="白帽" scheme="http://example.com/tags/%E7%99%BD%E5%B8%BD/" />
         <updated>2022-09-19T14:18:04.921Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/2022/09/17/%E9%9A%8F%E7%AC%94/</id>
-        <title>随笔</title>
-        <link rel="alternate" href="http://example.com/2022/09/17/%E9%9A%8F%E7%AC%94/"/>
-        <content type="html">&lt;h1 id=&#34;随笔&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#随笔&#34;&gt;#&lt;/a&gt; 随笔&lt;/h1&gt;
-&lt;h2 id=&#34;22-9-17-saturday&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#22-9-17-saturday&#34;&gt;#&lt;/a&gt; 22-9-17 Saturday&lt;/h2&gt;
-&lt;h3 id=&#34;今天学习的内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#今天学习的内容&#34;&gt;#&lt;/a&gt; 今天学习的内容&lt;/h3&gt;
-&lt;p&gt;上午在图书馆做题；学了盲注、报错注入&lt;/p&gt;
-&lt;p&gt;漏洞要全面学习；payload 上传 shell 蚁剑链接木马；初步了解代码审计，PHP 语法使用&lt;/p&gt;
-&lt;p&gt;//......../index.php；类似的页面进入&lt;/p&gt;
-&lt;p&gt;?...... 输入&lt;/p&gt;
-&lt;p&gt;count (*)；union 注入&lt;/p&gt;
-&lt;h3 id=&#34;group_concat&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#group_concat&#34;&gt;#&lt;/a&gt; group_concat&lt;/h3&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;extractvaule 报错注入&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;and&lt;/span&gt; extractvalue&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;concat&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0x7e&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;database&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0x7e&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;-- &#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;-- 查数据库&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;and&lt;/span&gt; extractvalue&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;concat&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0x7e&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; group_concat&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;table_name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; information_schema&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;tables&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;where&lt;/span&gt; table_schema&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0x7e&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;-- &#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;-- 查库的表&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;and&lt;/span&gt; extractvalue&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;concat&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0x7e&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; group_concat&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;column_name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; information_schema&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;columns&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;where&lt;/span&gt; table_schema&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;and&lt;/span&gt; table_name&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0x7e&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;-- &#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;-- 查表的字段&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;and&lt;/span&gt; extractvalue&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;concat&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0x7e&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; group_concat&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;,&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; db&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;table&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0x7e&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;-- &#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;database()、order by、&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;sql 注入的基本操作&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;select S&lt;/p&gt;
-&lt;h2 id=&#34;22-9-18-sunday&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#22-9-18-sunday&#34;&gt;#&lt;/a&gt; 22-9-18 Sunday&lt;/h2&gt;
-&lt;p&gt;装了 Android studio；flutter sdk&lt;/p&gt;
-&lt;p&gt;20 来个 g~~（感觉 C 盘被吞了一样）~~&lt;/p&gt;
-&lt;p&gt;很想去旅游啊，&lt;s&gt;不仅是空间的变换，更是心灵的洗礼&lt;/s&gt;。&lt;/p&gt;
-&lt;p&gt;今天晚上，学了点&lt;strong&gt; c++&lt;/strong&gt;，复习了一下 continue&lt;/p&gt;
-&lt;p&gt;学了数组，一维数组，二维数组。&lt;/p&gt;
-&lt;h2 id=&#34;22-9-19-monday&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#22-9-19-monday&#34;&gt;#&lt;/a&gt; 22-9-19 Monday&lt;/h2&gt;
-&lt;p&gt;今天 CTF 第五空间比赛，一题没做出。&lt;/p&gt;
-&lt;p&gt;看 RZ 姐的 WP 做出了 2 题，easy-mysql 一直做不出。&lt;/p&gt;
-&lt;p&gt;涉及到命令行，SQL 方面 -- 尤其盲注，命令行 waf 绕过&lt;/p&gt;
-&lt;p&gt;什么时候用 sql，命令行&lt;/p&gt;
-&lt;p&gt;mid (,) 字符截取，从第几个字符开始截取多少个。&lt;/p&gt;
-&lt;p&gt;晚上了解社工。&lt;/p&gt;
-&lt;p&gt;通过 git 泄露查源码。webpack 可能导致前段源码裸露。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2FwaS5naXRodWIuY29tLy4uLi4vcmVwb3Mv&#34;&gt;api.github.com/..../repos/&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;打标靶网站时在 kali 上跑 dirb。&lt;/p&gt;
-&lt;p&gt;wappalyzer 可以扫描前端使用的语言，针对性查询漏洞。&lt;/p&gt;
-</content>
-        <category term="札记" scheme="http://example.com/categories/%E6%9C%AD%E8%AE%B0/" />
-        <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/" />
-        <updated>2022-09-16T16:00:00.000Z</updated>
     </entry>
     <entry>
         <id>http://example.com/2022/09/08/%E6%9C%AD%E8%AE%B0/%E6%9C%AD%E8%AE%B0/</id>
