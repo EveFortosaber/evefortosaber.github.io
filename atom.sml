@@ -48,7 +48,7 @@
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;get_post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#get_post&#34;&gt;#&lt;/a&gt; get_post&lt;/h3&gt;
 &lt;p&gt;可以通过 url 进行 get 操作，通过 hackbar 的 postpage 进行 post 操作&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;D:%5CPictures%5Cassets%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%5Cget_post.png&#34; alt=&#34;11&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/get_post.png&#34; alt=&#34;11&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;backup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#backup&#34;&gt;#&lt;/a&gt; backup&lt;/h3&gt;
 &lt;p&gt;注意源码泄露问题。&lt;/p&gt;
 &lt;p&gt;可用脚本 dirsearch 进行目录扫描。&lt;/p&gt;
