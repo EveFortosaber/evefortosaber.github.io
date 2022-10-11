@@ -346,12 +346,12 @@
 &lt;h3 id=&#34;矩阵加法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#矩阵加法&#34;&gt;#&lt;/a&gt; 矩阵加法&lt;/h3&gt;
 &lt;p&gt;必须是同型矩阵，对应元素分别相加。&lt;/p&gt;
 &lt;h3 id=&#34;矩阵乘法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#矩阵乘法&#34;&gt;#&lt;/a&gt; 矩阵乘法&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;D:%5CPictures%5Cassets%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%5Cxindai_10_07_juzhengchengfa.jpg&#34; alt=&#34;chengfdingyi&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/xindai_10_07_juzhengchengfa.jpg&#34; alt=&#34;chengfdingyi&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;行列相乘法，左矩阵的列数要等于右矩阵的行数。&lt;/p&gt;
 &lt;p&gt;注意元素对应。矩阵乘法一般不可逆。单位阵相乘可逆，对角阵相乘可逆。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;D:%5CPictures%5Cassets%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%5Cxiandaijuzhen0.jpg&#34; alt=&#34;xiandai&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/xiandaijuzhen0.jpg&#34; alt=&#34;xiandai&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;矩阵的转置与行列式化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#矩阵的转置与行列式化&#34;&gt;#&lt;/a&gt; 矩阵的转置与行列式化&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;D:%5CPictures%5Cassets%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%5Cimage-20221007184533201.png&#34; alt=&#34;image-20221007184533201&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20221007184533201.png&#34; alt=&#34;image-20221007184533201&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;若矩阵&lt;strong&gt; A&lt;/strong&gt; 满足&lt;strong&gt; A=A&lt;sup&gt;T&lt;/sup&gt;&lt;/strong&gt;，则称&lt;strong&gt; A&lt;/strong&gt; 为&lt;strong&gt;对称矩阵&lt;/strong&gt;；若&lt;strong&gt; A&lt;sup&gt;T&lt;/sup&gt;=-A&lt;/strong&gt;，则称 A 为&lt;strong&gt;反对称矩阵&lt;/strong&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;A+A&lt;sup&gt;T&lt;/sup&gt;,AA&lt;sup&gt;T&lt;/sup&gt;&lt;/strong&gt;&lt;/em&gt; 是对称矩阵&lt;/li&gt;
@@ -371,7 +371,7 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;方阵的迹&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;D:%5CPictures%5Cassets%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%5Cca954c14e1a12fb64383e5786d37e4d3.svg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/ca954c14e1a12fb64383e5786d37e4d3.svg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;tr(AB)=tr(BA)&lt;/strong&gt;&lt;/p&gt;
