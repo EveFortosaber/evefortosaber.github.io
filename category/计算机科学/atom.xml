@@ -10,105 +10,6 @@
     <category term="CTF" />
     <category term="DFS" />
     <entry>
-        <id>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/</id>
-        <title>素数环问题</title>
-        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/"/>
-        <content type="html">&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/picgo/1267999.jpg&#34; alt=&#34;1267999&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;素数环问题&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Problem Description&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;A ring is compose of n circles as shown in diagram. Put natural number 1, 2, ..., n into each circle separately, and the sum of numbers in two adjacent circles should be a prime.&lt;/p&gt;
-&lt;p&gt;Note: the number of first circle should always be 1.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;Input&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;n (0 &amp;lt; n &amp;lt; 20).&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The output format is shown as sample below. Each row represents a series of circle numbers in the ring beginning from 1 clockwisely and anticlockwisely. The order of numbers must satisfy the above requirements. Print solutions in lexicographical order.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;You are to write a program that completes above process.&lt;/p&gt;
-&lt;p&gt;&amp;lt;u&amp;gt;&lt;strong&gt;Print a blank line after each case.&lt;/strong&gt;&amp;lt;/u&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;解题思路：&lt;/p&gt;
-&lt;p&gt;代码如下：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
-#include &amp;lt;stack&amp;gt;
-#include&amp;lt;math.h&amp;gt; 
-#include&amp;lt;string.h&amp;gt;
-using namespace std;
-/*
-从2开始到sqrt(num)，逐一判断
-*/
-int n;
-int arry[27]&amp;#123;1&amp;#125;,flag[27]&amp;#123;0&amp;#125;;
-stack&amp;lt;int&amp;gt; s1, s2;
-
-bool isPrime_2(int num)
-&amp;#123;
-    if (num == 1 || num == 4)
-        return 0;
-    if (num == 2 || num == 3)
-        return 1;
-    int temp = sqrt(num);
-    for (int i = 2; i &amp;lt;= temp; i++)
-    &amp;#123;
-        if (num % i == 0)
-            return 0;
-    &amp;#125;
-    return 1;
-&amp;#125;
-
-
-void dfs(int k)
-&amp;#123;
-    if(k==n&amp;amp;&amp;amp;isPrime_2(arry[0]+arry[n-1])) //如果递归到下标n并且满足条件就找到一组正确的数据了
-    &amp;#123;
-        for(int i=0;i&amp;lt;n-1;i++)
-        cout&amp;lt;&amp;lt;arry[i]&amp;lt;&amp;lt;&amp;quot; &amp;quot;;
-        cout&amp;lt;&amp;lt;arry[n-1]&amp;lt;&amp;lt;endl;
-    &amp;#125;
-    else
-    &amp;#123;
-        for(int i=2;i&amp;lt;=n;i++)
-        if(flag[i]==0&amp;amp;&amp;amp;isPrime_2(arry[k-1]+i)) //如果i没有使用过，并且a[k-1]和i相加为素数
-        &amp;#123;
-            arry[k]=i;     //记录下标的值
-            flag[i]=1; //标记为使用过的
-            dfs(k+1);  //开始下一个下标的计算
-            flag[i]=0;//清除标记
-        &amp;#125;
-    &amp;#125;
-&amp;#125;
-
-int main()
-&amp;#123;
-    int i=0;
-    while (cin &amp;gt;&amp;gt; n)
-    &amp;#123;
-        i++;
-        memset(flag,0,sizeof(flag));
-        for (int k = 0; k &amp;lt; n; k++)
-            arry[k] = 1;
-        cout&amp;lt;&amp;lt;&amp;quot;Case &amp;quot;&amp;lt;&amp;lt;i&amp;lt;&amp;lt;&#39;:&#39;&amp;lt;&amp;lt;endl;
-        flag[0]=1;
-        dfs(1);
-        cout&amp;lt;&amp;lt;endl;
-        
-
-    &amp;#125;
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;结语：&lt;/p&gt;
-&lt;p&gt;参考资料：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[源码借鉴 From 简书]( &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC85MThiZWM3MzJiN2Q=&#34;&gt;DFS (素数环) - 简书 (jianshu.com)&lt;/span&gt;)，&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-        <category term="Notes" />
-        <category term="C++" />
-        <updated>2023-03-19T11:29:17.362Z</updated>
-    </entry>
-    <entry>
         <id>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/</id>
         <title>多多果子问题二叉堆与优先序列</title>
         <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/"/>
@@ -366,6 +267,105 @@ void dfs(int step)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;参考资料&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3QuY3Nkbi5jbi9FZjhNUQ==&#34;&gt;http://t.csdn.cn/Ef8MQ&lt;/span&gt; DFS 算法解释及例题&lt;/p&gt;
+</content>
+        <category term="Notes" />
+        <category term="C++" />
+        <updated>2023-03-19T11:29:17.362Z</updated>
+    </entry>
+    <entry>
+        <id>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/</id>
+        <title>素数环问题</title>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/"/>
+        <content type="html">&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/picgo/1267999.jpg&#34; alt=&#34;1267999&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;素数环问题&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Problem Description&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A ring is compose of n circles as shown in diagram. Put natural number 1, 2, ..., n into each circle separately, and the sum of numbers in two adjacent circles should be a prime.&lt;/p&gt;
+&lt;p&gt;Note: the number of first circle should always be 1.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Input&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;n (0 &amp;lt; n &amp;lt; 20).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The output format is shown as sample below. Each row represents a series of circle numbers in the ring beginning from 1 clockwisely and anticlockwisely. The order of numbers must satisfy the above requirements. Print solutions in lexicographical order.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;You are to write a program that completes above process.&lt;/p&gt;
+&lt;p&gt;&amp;lt;u&amp;gt;&lt;strong&gt;Print a blank line after each case.&lt;/strong&gt;&amp;lt;/u&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;解题思路：&lt;/p&gt;
+&lt;p&gt;代码如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;stack&amp;gt;
+#include&amp;lt;math.h&amp;gt; 
+#include&amp;lt;string.h&amp;gt;
+using namespace std;
+/*
+从2开始到sqrt(num)，逐一判断
+*/
+int n;
+int arry[27]&amp;#123;1&amp;#125;,flag[27]&amp;#123;0&amp;#125;;
+stack&amp;lt;int&amp;gt; s1, s2;
+
+bool isPrime_2(int num)
+&amp;#123;
+    if (num == 1 || num == 4)
+        return 0;
+    if (num == 2 || num == 3)
+        return 1;
+    int temp = sqrt(num);
+    for (int i = 2; i &amp;lt;= temp; i++)
+    &amp;#123;
+        if (num % i == 0)
+            return 0;
+    &amp;#125;
+    return 1;
+&amp;#125;
+
+
+void dfs(int k)
+&amp;#123;
+    if(k==n&amp;amp;&amp;amp;isPrime_2(arry[0]+arry[n-1])) //如果递归到下标n并且满足条件就找到一组正确的数据了
+    &amp;#123;
+        for(int i=0;i&amp;lt;n-1;i++)
+        cout&amp;lt;&amp;lt;arry[i]&amp;lt;&amp;lt;&amp;quot; &amp;quot;;
+        cout&amp;lt;&amp;lt;arry[n-1]&amp;lt;&amp;lt;endl;
+    &amp;#125;
+    else
+    &amp;#123;
+        for(int i=2;i&amp;lt;=n;i++)
+        if(flag[i]==0&amp;amp;&amp;amp;isPrime_2(arry[k-1]+i)) //如果i没有使用过，并且a[k-1]和i相加为素数
+        &amp;#123;
+            arry[k]=i;     //记录下标的值
+            flag[i]=1; //标记为使用过的
+            dfs(k+1);  //开始下一个下标的计算
+            flag[i]=0;//清除标记
+        &amp;#125;
+    &amp;#125;
+&amp;#125;
+
+int main()
+&amp;#123;
+    int i=0;
+    while (cin &amp;gt;&amp;gt; n)
+    &amp;#123;
+        i++;
+        memset(flag,0,sizeof(flag));
+        for (int k = 0; k &amp;lt; n; k++)
+            arry[k] = 1;
+        cout&amp;lt;&amp;lt;&amp;quot;Case &amp;quot;&amp;lt;&amp;lt;i&amp;lt;&amp;lt;&#39;:&#39;&amp;lt;&amp;lt;endl;
+        flag[0]=1;
+        dfs(1);
+        cout&amp;lt;&amp;lt;endl;
+        
+
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;结语：&lt;/p&gt;
+&lt;p&gt;参考资料：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[源码借鉴 From 简书]( &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC85MThiZWM3MzJiN2Q=&#34;&gt;DFS (素数环) - 简书 (jianshu.com)&lt;/span&gt;)，&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
         <category term="Notes" />
         <category term="C++" />
