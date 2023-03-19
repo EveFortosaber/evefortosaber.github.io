@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="Shoka" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Shoka" type="application/atom+xml"><link rel="alternate" type="application/json" title="Shoka" href="http://example.com/feed.json"/><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com"/><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"/><link rel="dns-prefetch" href="https://unpkg.com"/><link rel="stylesheet" href="//fonts.geekzu.org/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.2.0"><script src="https://cdn.staticfile.org/vue/3.2.45/vue.global.prod.js"></script><meta name="keywords" content="Notes,"/><link rel="canonical" href="http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/"><title>多多果子问题二叉堆与优先序列 - </title><meta name="generator" content="Hexo 6.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">多多果子问题二叉堆与优先序列</h1><div class="meta"><span class="item" title="Created: 2023-03-19 19:29:17"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">Posted on</span><time itemprop="dateCreated datePublished" datetime="2023-03-19T19:29:17+08:00">2023-03-19</time></span><span class="item" title="Symbols count in article"><span class="icon"><i class="ic i-pen"></i></span><span class="text">Symbols count in article</span><span>3.6k</span><span class="text">words</span></span><span class="item" title="Reading time"><span class="icon"><i class="ic i-clock"></i></span><span class="text">Reading time</span><span>3 mins.</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="Toggle navigation bar"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">流云阁</a></li></ul><ul class="right" id="rightNav"><li class="item theme" @click="changeThemeByBtn"><i class="ic" :class="{'i-sun': !themeStatus,'i-moon': themeStatus}"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><ul><li class="item" data-background-image="https://images2.alphacoders.com/130/1301855.jpg"></li><li class="item" data-background-image="https://cdn.cdnjson.com/tvax3.sinaimg.cn//large/0072Vf1pgy1foxk7lqroij31kw0w0nkz.jpg"></li><li class="item" data-background-image="https://images5.alphacoders.com/612/612548.jpg"></li><li class="item" data-background-image="https://images8.alphacoders.com/130/1305319.jpeg"></li><li class="item" data-background-image="https://images5.alphacoders.com/113/1133597.jpg"></li><li class="item" data-background-image="https://images5.alphacoders.com/122/1222504.png"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">Home</a></span><i class="ic i-angle-right"></i><span itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="/categories/ComputerScience/" itemprop="item" rel="index" title="In计算机科学"><span itemprop="name">计算机科学<meta itemprop="position" content="0"/></span></a></span><i class="ic i-angle-right"></i><span itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="/categories/ComputerScience/ProgramDesignNotes/" itemprop="item" rel="index" title="In程序设计笔记"><span itemprop="name">程序设计笔记<meta itemprop="position" content="1"/></span></a></span><i class="ic i-angle-right"></i></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="en"><link itemprop="mainEntityOfPage" href="http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="Tolalal"/><meta itemprop="description" content=", "/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Shoka"/></span><div class="body md" itemprop="articleBody"><p><img data-src="https://s2.loli.net/2023/03/16/No51BErYemDLZpQ.jpg" alt="37" /></p>
+<h4 id="问题描述"><a class="anchor" href="#问题描述">#</a> 问题描述：</h4>
+<blockquote>
+<p>在一个果园里，多多已经将所有的果子打了下来，而且按果子的不同种类分成了不同的堆。多多决定把所有的果子合成一堆。每一次合并，多多可以把两堆果子合并到一起，消耗的体力等于两堆果子的重量之和。可以看出，所有的果子经过 n-1 次合并之后，就只剩下一堆了。多多在合并果子时总共消耗的体力等于每次合并所耗体力之和。</p>
+<p>因为还要花大力气把这些果子搬回家，所以多多在合并果子时要尽可能地节省体力。假定每个果子重量都为 1，并且已知果子的种类数和每种果子的数目，你的任务是设计出合并的次序方案，使多多耗费的体力最少，并输出这个最小的体力耗费值。<br />
+　　例如有 3 种果子，数目依次为 1，2，9。可以先将 1、2 堆合并，新堆数目为 3，耗费体力为 3。接着，将新堆与原先的第三堆合并，又得到新的堆，数目为 12，耗费体力为 12。<br />
+所以多多总共耗费体力 = 3+12=15。可以证明 15 为最小的体力耗费值。<br />
+输入<br />
+　　输入包括两行，第一行是一个整数 n (1&lt;＝n&lt;=10000)，表示果子的种类数。<br />
+　　第二行包含 n 个整数，用空格分隔，第 i 个整数 ai (1&lt;＝ai&lt;=20000) 是第 i 种果子的数目。<br />
+输出<br />
+　　输出包括一行，这一行只包含一个整数，也就是最小的体力耗费值。输入数据保证这个值小于 2^31。</p>
+</blockquote>
+<p><strong>解决问题思路</strong>：取出最小相加成一堆，并计算体力消耗</p>
+<h4 id="方法一小顶堆"><a class="anchor" href="#方法一小顶堆">#</a> 方法一：小顶堆</h4>
+<p>代码及思路如下</p>
+<pre><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+
+using namespace std;
+const int maxn=10086;
+void updateheap(int heap[],int idx,int high)// 在本身是小顶堆的情况下维护
+&#123;
+    int i=idx,j=2*i;//
+    while(j&lt;=high)
+    &#123;
+        if(j+1&lt;=high &amp;&amp; heap[j]&gt;heap[j+1]) j=j+1;
+        if(heap[j]&lt;heap[i]) swap(heap[j],heap[i]);// 当需要进行维护操作时，就说明idx节点不满足小顶堆，要考虑swap后对子节点的影响
+        else break;//  在它本身是小顶堆的情况下，确保了维护的这个节点满足条件即可结束
+        i=j; // 考虑到子节点的影响，继续对子节点判断维护
+        j=2*i;
+    &#125;
+&#125;
+
+void heapinit(int heap[],int len) // 创建一个小顶堆，len是小顶堆大小
+&#123;
+    for(int i=1;i&lt;=len;i++) cin&gt;&gt;heap[i]; // 空间足够，以1为根结点 事实上，一般都以1为节点
+    for(int i=len/2;i&gt;0;i--) updateheap(heap,i,len); // 从叶子向根节点维护，确保有序性
+&#125;
+
+void deletetop(int heap[],int &amp;n) // n即size将要移除的数放到末尾，并回收末尾节点 = size-- 
+&#123;
+    
+    swap(heap[1],heap[n]);// change happans ,we have to maintain it
+    n--; // after swap we recycle the last node
+    updateheap(heap,1,n);
+    
+&#125;
+void insertheap(int heap[],int &amp;n,int value)
+&#123;
+    n++;
+    heap[n]=value;
+    int i=n,j=i/2;// i is the childnode, and j is the fathernode
+    while(i&gt;1)
+    &#123;
+        if(heap[i]&lt;heap[j]) swap(heap[i],heap[j]);
+        else return; // heap[i]&gt;=heap[j]说明插入的值并不比父节点大，有序性得以保证
+        i=j;
+        j=i/2;
+    &#125;
+    return;
+&#125;
+int main()
+&#123;
+    int n,Heap[maxn],stamina,size;
+    cin&gt;&gt;n;
+    size=n;
+    stamina=0;
+    heapinit(Heap,n);
+    if(n==1)
+    &#123;
+        cout&lt;&lt;Heap[1];
+        return 1;
+    &#125;
+    // stamina 的消耗可以堆顶的访问删除来实现
+    // 通过将堆顶与堆底互换并回收堆底，保持访问堆的结构不变，通过维护保持堆的有序
+    // 回收（size--通过大小的减小停止对堆底的维护，即回收）未删除数据但不影响
+    while(size&gt;1)
+    &#123;
+        int a = Heap[1];
+        deletetop(Heap,size);
+        int b=Heap[1];
+        deletetop(Heap,size);
+       
+        insertheap(Heap,size,a+b);// value isn't equal to stamina cost totally
+        stamina+=(a+b);
+
+    &#125;
+    cout&lt;&lt;stamina;
+&#125;
+</code></pre>
+<p>结语：涉及二叉堆的生成与维护，要注意对堆顶 pop 时 (也就是上文中的 deletetop 函数，topnode 的值并没有被删除，而是放在了堆底回收区，堆的大小并不是真正意义上所占全部空间的大小，而是有效空间的大小)</p>
+<h4 id="方法二优先队列"><a class="anchor" href="#方法二优先队列">#</a> 方法二：优先队列</h4>
+<p>代码及思路如下</p>
+<pre><code class="language-c++">#include &lt;queue&gt;
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+&#123;
+    priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt; &gt; que;
+    // greater 增序，使最小的位于top
+    int n, i, stamina = 0;
+    cin &gt;&gt; n;
+    i = n;
+    while (i--)
+    &#123;
+        int x;
+        cin &gt;&gt; x;
+        que.push(x);
+    &#125;// 输入que，自动排序
+    if (n == 1)
+    &#123;
+        int x = que.top();
+        cout &lt;&lt; x;
+        que.pop();
+    &#125;
+    while (que.size() &gt; 1)
+    &#123;
+        int a = que.top();
+        que.pop();
+        int b = que.top();
+        que.pop();
+        stamina += (a + b);
+        que.push(a + b);
+    &#125;
+    //que.top()=sum 所有之和，不用计算到体力消耗
+
+
+    cout &lt;&lt; stamina;
+&#125;
+
+</code></pre>
+<p>结语：相比于使用小顶堆，使用优先队列的代码无疑简介易懂。</p>
+<p>然而事实上优先队列本质上使用的也是堆的思想。二者在时间效率上，是前者更优。<s>(specific 优于 general)</s> 😃</p>
+<p>参考资料：</p>
+<blockquote>
+<p><span class="exturl" data-url="aHR0cDovL3QuY3Nkbi5jbi82dXBFSw==">Possible_Answer</span>,</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xODc2MTg0NTA="> 二叉堆 -- 知乎</span>，</p>
+<p><span class="exturl" data-url="aHR0cDovL3QuY3Nkbi5jbi8yQ1o0YQ==">优先队列</span>，<span class="exturl" data-url="aHR0cDovL3QuY3Nkbi5jbi9DNlA0aA==">优先队列 (实例)</span>,</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80MTU0NjcwMDA=">数据结构 —— 哈夫曼树 (Huffman Tree)</span>,(知识扩展)</p>
+</blockquote>
+<hr />
+<blockquote>
+<p>写在最后，这里出于课程要求，并没有考虑快排的方法，事实上快排无疑也是一种解决方案</p>
+</blockquote>
+<div class="tags"><a href="/tags/Notes/" rel="tag"><i class="ic i-tag"></i>Notes</a><a href="/tags/C/" rel="tag"><i class="ic i-tag"></i>C++</a></div></div><footer><div class="meta"><span class="icon"><i class="ic i-eye"></i></span><span>此文章已被阅读次数:</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="2023/03/19/ComputerScience/ProgramDesignNotes/多多果子问题/">正在加载...</span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">Edited on</span><time title="Modified: 2023-03-19 16:32:19" itemprop="dateModified" datetime="2023-03-19T16:32:19+08:00">2023-03-19</time></span><script type="module" data-pjax="data-pjax">import { pageviewCount } from 'https://unpkg.com/@waline/client/dist/pageview.mjs';
+
+const path = document.getElementById("twikoo_visitors").getAttribute("data-path");
+pageviewCount({
+    serverURL: '',
+    path: path,
+});
+</script></div><div id="copyright"><ul><li class="author"><strong>Post author: </strong>Tolalal<i class="ic i-at"><em>@</em></i>Shoka</li><li class="link"><strong>Post link: </strong><a href="http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/" title="多多果子问题二叉堆与优先序列">http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/多多果子问题/</a></li><li class="license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> unless stating additionally.</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;images7.alphacoders.com&#x2F;129&#x2F;1293921.png" title="素数环问题"><span class="type">Previous Post</span><span class="category"><i class="ic i-flag"></i>程序设计笔记</span><h3>素数环问题</h3></a></div><div class="item right"><a href="/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;images8.alphacoders.com&#x2F;130&#x2F;1301995.jpg" title="数学笔记二"><span class="type">Next Post</span><span class="category"><i class="ic i-flag"></i>Mathematics</span><h3>数学笔记二</h3></a></div></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="Contents"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text"> 问题描述：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%E5%B0%8F%E9%A1%B6%E5%A0%86"><span class="toc-number">2.</span> <span class="toc-text"> 方法一：小顶堆</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97"><span class="toc-number">3.</span> <span class="toc-text"> 方法二：优先队列</span></a></li></ol></div><div class="related panel pjax" data-title="Related"><ul><li  class="active"><a href="/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/" rel="bookmark" title="多多果子问题二叉堆与优先序列">多多果子问题二叉堆与优先序列</a></li><li ><a href="/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/" rel="bookmark" title="素数环问题">素数环问题</a></li><li ><a href="/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%B0%8F%E6%9C%A8%E6%A3%8D%E7%BB%84%E6%AD%A3%E6%96%B9%E5%BD%A2/" rel="bookmark" title="小木棍组正方形">小木棍组正方形</a></li><li ><a href="/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/" rel="bookmark" title="棋盘问题">棋盘问题</a></li><li ><a href="/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/" rel="bookmark" title="迷宫问题">迷宫问题</a></li></ul></div><div class="overview panel" data-title="Overview"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="Tolalal" data-src="/assets/avatar.jpg"/><p class="name" itemprop="name">Tolalal</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">15</span><span class="name">posts</span></a></div><div class="item categories"><a href="/categories/"><span class="count">7</span><span class="name">categories</span></a></div><div class="item tags"><a href="/tags/"><span class="count">5</span><span class="name">tags</span></a></div></nav><div class="social"><a href="https://github.com/name" title="https:&#x2F;&#x2F;github.com&#x2F;name" class="item github" rel="noopener" target="_blank"><i class="ic i-github"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>Home</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-user"></i>About</a><ul class="submenu"><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>About the Website</a></li><li class="item"><a href="/admiration/" rel="section"><i class="ic i-coffee"></i>Appreciation to author</a></li></ul></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>Friends</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>Random Posts</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/Mathematics/" title="InMathematics">Mathematics</a></div><span><a href="/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/">错题本</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/WebSecurity/" title="In网络安全">网络安全</a><i class="ic i-angle-right"></i><a href="/categories/WebSecurity/CTF/" title="InCTF">CTF</a><i class="ic i-angle-right"></i></div><span><a href="/2023/03/19/WebSecurity/CTF/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/">CTFNote</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Mathematics/" title="InMathematics">Mathematics</a></div><span><a href="/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/">高等数学笔记一</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/ComputerScience/" title="In计算机科学">计算机科学</a><i class="ic i-angle-right"></i><a href="/categories/ComputerScience/ProgramDesignNotes/" title="In程序设计笔记">程序设计笔记</a><i class="ic i-angle-right"></i></div><span><a href="/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/">素数环问题</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/ComputerScience/" title="In计算机科学">计算机科学</a><i class="ic i-angle-right"></i><a href="/categories/ComputerScience/ProgramDesignNotes/" title="In程序设计笔记">程序设计笔记</a><i class="ic i-angle-right"></i></div><span><a href="/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%B0%8F%E6%9C%A8%E6%A3%8D%E7%BB%84%E6%AD%A3%E6%96%B9%E5%BD%A2/">小木棍组正方形</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/WebSecurity/" title="In网络安全">网络安全</a><i class="ic i-angle-right"></i><a href="/categories/WebSecurity/CTF/" title="InCTF">CTF</a><i class="ic i-angle-right"></i></div><span><a href="/2023/03/19/WebSecurity/CTF/%E5%AD%A6%E4%B9%A0SQL/">SQL注入</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/zhaji/" title="In札记">札记</a></div><span><a href="/2022/09/07/zhaji/Note%20of%20markdown/">Notes Of Markdown</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Mathematics/" title="InMathematics">Mathematics</a></div><span><a href="/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/">数学笔记二</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Mathematics/" title="InMathematics">Mathematics</a></div><span><a href="/2023/03/19/Mathematics/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%94%E8%AE%B0%E4%B8%80/">线性代数笔记一</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Mathematics/" title="InMathematics">Mathematics</a></div><span><a href="/2023/03/19/Mathematics/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6(%E4%B8%8B)/">高等数学(下)</a></span></li></ul></div><div class="rpost pjax"><h2>最新评论</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2022 -<span itemprop="copyrightYear">2023</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">Tolalal @ 流云阁</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="Symbols count total">36k words</span><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="Reading time total">33 mins.</span></div><div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & Theme.<a href="https://github.com/zkz098/hexo-theme-shokaX/" rel="noopener" target="_blank">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript" >var LOCAL = {path: "2023/03/19/ComputerScience/ProgramDesignNotes/多多果子问题/",  favicon: {show: '（●´3｀●）Goooood',hide: '(´Д｀)Booooom'   },
+   search: {placeholder: "Search for Posts",empty: "We didn't find any results for the search: ${query}",stats: "${hits} results found in ${time} ms"   },valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',outime: true,template: `<div class="note warning"><p><span class="label warning">Article Timeliness Alert</span><br>This is an article published {{publish}} days ago and last updated {{updated}} days ago. Some information may have changed, so please be careful to screen it.</p></div>`,ignores : [
+  function(uri) {
+      return uri.includes('#');
+  },
+  function(uri) {
+      return new RegExp(LOCAL.path+"$").test(uri);
+  }]
+};</script><script src="https://polyfill.alicdn.com/polyfill.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/pace/1.0.2/pace.min.js"></script><script src="https://lib.baomitu.com/pjax/0.2.8/pjax.min.js"></script><script src="https://unpkg.com/whatwg-fetch@3.4.0/dist/fetch.umd.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/animejs/3.2.0/anime.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/algoliasearch/4.12.1/algoliasearch-lite.umd.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/instantsearch.js/4.39.0/instantsearch.production.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/lozad.js/1.16.0/lozad.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/quicklink/2.2.0/quicklink.umd.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/??jquery/3.5.1/jquery.min.js,fancybox/3.5.7/jquery.fancybox.min.js,justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" async></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/KaTeX/0.12.0/contrib/copy-tex.min.js" async></script><script src="https://unpkg.com/frappe-charts@1.5.0/dist/frappe-charts.min.iife.js"></script><script src="/js/app.js?v=0.2.0"></script></body></html>

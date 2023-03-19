@@ -1,0 +1,32 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Shoka • All posts by \"dfs\" category",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/",
+            "url": "http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/",
+            "title": "棋盘问题",
+            "date_published": "2023-03-19T11:29:17.362Z",
+            "content_html": "<h4 id=\"问题描述\"><a class=\"anchor\" href=\"#问题描述\">#</a> 问题描述</h4>\n<blockquote>\n<p>在一个给定形状的棋盘（形状可能是不规则的）上面摆放棋子，棋子没有区别。要求摆放时任意的两个棋子不能放在棋盘中的同一行或者同一列，请编程求解对于给定形状和大小的棋盘，摆放 k 个棋子的所有可行的摆放方案 C。</p>\n</blockquote>\n<h5 id=\"输入\"><a class=\"anchor\" href=\"#输入\">#</a> 输入</h5>\n<blockquote>\n<p>输入含有多组测试数据。<br />\n每组数据的第一行是两个正整数 *，n k*，用一个空格隔开，表示了将在一个 n*n 的矩阵内描述棋盘，以及摆放棋子的数目。</p>\n<p>n &lt;= 8 , k &lt;= n</p>\n<p>当为 **-1 -1** 时表示输入结束。<br />\n随后的 n 行描述了棋盘的形状：每行有 n 个字符，其中  <code>#</code>  表示棋盘区域， <code>.</code>  表示空白区域（数据保证不出现多余的空白行或者空白列）。</p>\n</blockquote>\n<h5 id=\"输出\"><a class=\"anchor\" href=\"#输出\">#</a> 输出</h5>\n<blockquote>\n<p>对于每一组数据，给出一行输出，输出摆放的方案数目 C （<em>数据保证 C&lt;2^31</em>）。</p>\n</blockquote>\n<h5 id=\"样例输入\"><a class=\"anchor\" href=\"#样例输入\">#</a> 样例输入</h5>\n<figure class=\"highlight plain\"><figcaption data-lang=\"plain\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>2 1</pre></td></tr><tr><td data-num=\"2\"></td><td><pre>#.</pre></td></tr><tr><td data-num=\"3\"></td><td><pre>.#</pre></td></tr><tr><td data-num=\"4\"></td><td><pre>4 4</pre></td></tr><tr><td data-num=\"5\"></td><td><pre>...#</pre></td></tr><tr><td data-num=\"6\"></td><td><pre>..#.</pre></td></tr><tr><td data-num=\"7\"></td><td><pre>.#..</pre></td></tr><tr><td data-num=\"8\"></td><td><pre>#...</pre></td></tr><tr><td data-num=\"9\"></td><td><pre>-1 -1</pre></td></tr></table></figure><h5 id=\"样例输出\"><a class=\"anchor\" href=\"#样例输出\">#</a> 样例输出</h5>\n<figure class=\"highlight plain\"><figcaption data-lang=\"plain\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>2</pre></td></tr><tr><td data-num=\"2\"></td><td><pre>1</pre></td></tr></table></figure><h4 id=\"解题思路\"><a class=\"anchor\" href=\"#解题思路\">#</a> 解题思路</h4>\n<p><strong>代码如下</strong>:</p>\n<pre><code class=\"language-c++\">#include &lt;iostream&gt;\n#include &lt;string.h&gt;\nusing namespace std;\n\nint n, k, ans, a[64], j; // n 方阵长度，k棋子个数,ans is answer\n\nint visit[8][8]&#123;0&#125;; // shows which cloumn and row is not placeable\n\nstruct Node\n&#123;\n    int *flag;\n    int p = 0;// in fact, the param is redundant\n&#125;;\n// 如果为0则空，1则有棋盘’#‘\nNode qiju[100];\n// 进行遍历// 考虑使用下标 从1开始\n\nvoid dfs(int idx, int num)\n&#123;\n    if (num == k)\n        ans++; // plan + 1\n    else\n    &#123;\n        for (int i = idx; i &lt; j; i++) // each qipan has possiblity\n        &#123;\n            if (*qiju[a[i]].flag == 1)\n                continue;\n            *qiju[a[i]].flag = 1; //\n            dfs(0, num + 1);\n        &#125;\n    &#125;\n&#125;\n\nint main()\n&#123;\n    char ch;\n    while (cin &gt;&gt; n &gt;&gt; k)\n    &#123;\n        if (n == -1 &amp;&amp; k == -1)\n            break;\n        j = 0;\n        ans = 0;\n        memset(qiju, 0, sizeof(qiju));\n        memset(visit, 0, sizeof(visit));\n\n        for (int i = 0; i &lt; n * n; i++)\n        &#123;\n\n            cin &gt;&gt; ch;\n            switch (ch)\n            &#123;\n            case '.':\n                break;\n            case '#':\n\n                qiju[i].p = 1;// when I have created array a, \n                    \t\t//I can visit qiju by a, \n                    \t\t//in this situation param p is redundant.\n                qiju[i].flag = &amp;visit[i / n][i % n]; // point to position\n                a[j] = i;                            // restore qipan position with arry a\n                j++;\n                break;\n            &#125;\n        &#125;\n        dfs(0, 0);\n        cout &lt;&lt; ans &lt;&lt; endl;\n    &#125;\n    return 0;\n&#125;\n</code></pre>\n<h4 id=\"结语\"><a class=\"anchor\" href=\"#结语\">#</a> 结语</h4>\n<p>通过 visit 标记状态，通过 node 取地址，使每个棋盘的状态得以被标示，同时通过 node 数组，a 数组实现快速访问，规避无效数据。</p>\n<h4 id=\"参考资料\"><a class=\"anchor\" href=\"#参考资料\">#</a> 参考资料</h4>\n<blockquote>\n<p>DFS 深度优先搜索算法</p>\n</blockquote>\n",
+            "tags": [
+                "Notes",
+                "C++",
+                "DFS"
+            ]
+        },
+        {
+            "id": "http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/",
+            "url": "http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/",
+            "title": "迷宫问题",
+            "date_published": "2023-03-19T11:29:17.362Z",
+            "content_html": "<p>问题描述</p>\n<p>解决思路</p>\n<p>代码如下</p>\n<p>结语：</p>\n<p>迷宫问题很重要的就是路径，方向，路径使用栈，方向通过 2X4 的数组描述，关键在于，在平面上点的坐标可以用 (x,y) 描述，给它加上</p>\n<p>(1,0)((-1,0),(0,1),(0,-1)) 就实现了向右 (左，上，下) 移动。</p>\n<p>参考资料</p>\n",
+            "tags": [
+                "Notes",
+                "C++",
+                "DFS"
+            ]
+        }
+    ]
+}

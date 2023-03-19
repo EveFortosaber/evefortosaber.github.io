@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Shoka • Posts by &#34;札记&#34; category</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Thu, 08 Sep 2022 14:40:00 +0800</pubDate>
+        <lastBuildDate>Thu, 08 Sep 2022 14:40:00 +0800</lastBuildDate>
+        <category>Notes</category>
+        <category>随笔</category>
+        <category>C++</category>
+        <category>CTF</category>
+        <category>DFS</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/09/08/zhaji/EnglishClass/</guid>
+            <title>My fist English Class</title>
+            <link>http://example.com/2022/09/08/zhaji/EnglishClass/</link>
+            <category>随笔</category>
+            <pubDate>Thu, 08 Sep 2022 14:40:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;short-talk&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#short-talk&#34;&gt;#&lt;/a&gt; Short Talk&lt;/h1&gt;
+&lt;p&gt;(In fact, i want to improve my English through writing some articles in English.)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;my-teachers&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#my-teachers&#34;&gt;#&lt;/a&gt; My teachers&lt;/h3&gt;
+&lt;p&gt;One of my teacher is a &lt;em&gt;Chinese&lt;/em&gt;,while the other one is an &lt;em&gt;English&lt;/em&gt;(maybe,i&#39;m not certain,forgive me)&lt;br /&gt;
+When i typing the article you see, i&#39;m taking my foreign teacher&#39;s spoken English class.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;my-class&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#my-class&#34;&gt;#&lt;/a&gt; My class&lt;/h3&gt;
+&lt;p&gt;The spoken English class focuses on discussion.&lt;br /&gt;
+Yet my classmates are pretty shy so that few discusions happened when we were dvided into the same discuss room.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/09/07/zhaji/Note%20of%20markdown/</guid>
+            <title>Notes Of Markdown</title>
+            <link>http://example.com/2022/09/07/zhaji/Note%20of%20markdown/</link>
+            <category>Notes</category>
+            <pubDate>Wed, 07 Sep 2022 23:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;为了搭建自己的 blog，clone 了个模板。现在也是时候该来学写 blog 了。 &lt;s&gt;（什么写 blog 还要学不是有手就行？？）&lt;/s&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id=&#34;note-of-markdown&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#note-of-markdown&#34;&gt;#&lt;/a&gt; Note Of Markdown&lt;/h1&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;1-准备preparation&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-准备preparation&#34;&gt;#&lt;/a&gt; 1. 准备（Preparation）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;应用软件：Video Studio Code&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工作文件：makedown (后缀为 &lt;code&gt;.md&lt;/code&gt; ）&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;2-开始beginning&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-开始beginning&#34;&gt;#&lt;/a&gt; 2. 开始（Beginning）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;创建一个文本文档更改后缀为 &lt;code&gt;.md&lt;/code&gt;  然后用 Visual Studio Code 打开，或者先打开 Visual Studio Code 然后新建一个后缀为 &lt;code&gt;.md&lt;/code&gt;  的文件。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;打开侧边预览&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;在view中打开 Command Palette 然后输入Open Preview to the Side
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;3语法grammar&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3语法grammar&#34;&gt;#&lt;/a&gt; 3. 语法（Grammar）&lt;/h3&gt;
+&lt;h5 id=&#34;标题title&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标题title&#34;&gt;#&lt;/a&gt; 标题（Title)&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;标题可分为一到六级分别用 #、##、###...... 以此类推&lt;br /&gt;
+其中 #表示的最大，###### 最小。语法如下：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;# 标题1
+## 标题2
+### 标题3
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;换行直接回车&lt;/li&gt;
+&lt;li&gt;字体
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;*内容*&lt;/code&gt;  为斜体&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;**内容**&lt;/code&gt;  为加粗&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;***内容***&lt;/code&gt;  为粗斜体&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~~内容~~&lt;/code&gt;  为删除线&lt;br /&gt;
+表现：&lt;em&gt;内容&lt;/em&gt;、&lt;strong&gt;内容&lt;/strong&gt;、&lt;em&gt;&lt;strong&gt;内容&lt;/strong&gt;&lt;/em&gt;、&lt;s&gt;内容&lt;/s&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4插入insert&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4插入insert&#34;&gt;#&lt;/a&gt; 4. 插入 (Insert)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;插入图片&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;![图片名称](图片链接 &#39;Alt&#39;)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;插入链接&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token url&#34;&gt;[&lt;span class=&#34;token content&#34;&gt;内容&lt;/span&gt;](&lt;span class=&#34;token url&#34;&gt;链接&lt;/span&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;混合使用&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;[![图片名称](图片链接 &#39;Alt&#39;)](链接)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;这样就对图片添加了超链接。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;5其他&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5其他&#34;&gt;#&lt;/a&gt; 5. 其他&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;工具&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90eXBvcmFpby5jbi8=&#34;&gt;Typro&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;更多语法参照&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS9odG1sL2h0bWwtdHV0b3JpYWwuaHRtbA==&#34;&gt; HTML&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

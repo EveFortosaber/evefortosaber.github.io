@@ -1,0 +1,500 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Shoka • Posts by &#34;程序设计笔记&#34; category</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
+        <lastBuildDate>Sun, 19 Mar 2023 19:29:17 +0800</lastBuildDate>
+        <category>Notes</category>
+        <category>随笔</category>
+        <category>C++</category>
+        <category>CTF</category>
+        <category>DFS</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/</guid>
+            <title>多多果子问题二叉堆与优先序列</title>
+            <link>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/</link>
+            <category>Notes</category>
+            <category>C++</category>
+            <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/03/16/No51BErYemDLZpQ.jpg&#34; alt=&#34;37&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;问题描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问题描述&#34;&gt;#&lt;/a&gt; 问题描述：&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在一个果园里，多多已经将所有的果子打了下来，而且按果子的不同种类分成了不同的堆。多多决定把所有的果子合成一堆。每一次合并，多多可以把两堆果子合并到一起，消耗的体力等于两堆果子的重量之和。可以看出，所有的果子经过 n-1 次合并之后，就只剩下一堆了。多多在合并果子时总共消耗的体力等于每次合并所耗体力之和。&lt;/p&gt;
+&lt;p&gt;因为还要花大力气把这些果子搬回家，所以多多在合并果子时要尽可能地节省体力。假定每个果子重量都为 1，并且已知果子的种类数和每种果子的数目，你的任务是设计出合并的次序方案，使多多耗费的体力最少，并输出这个最小的体力耗费值。&lt;br /&gt;
+　　例如有 3 种果子，数目依次为 1，2，9。可以先将 1、2 堆合并，新堆数目为 3，耗费体力为 3。接着，将新堆与原先的第三堆合并，又得到新的堆，数目为 12，耗费体力为 12。&lt;br /&gt;
+所以多多总共耗费体力 = 3+12=15。可以证明 15 为最小的体力耗费值。&lt;br /&gt;
+输入&lt;br /&gt;
+　　输入包括两行，第一行是一个整数 n (1&amp;lt;＝n&amp;lt;=10000)，表示果子的种类数。&lt;br /&gt;
+　　第二行包含 n 个整数，用空格分隔，第 i 个整数 ai (1&amp;lt;＝ai&amp;lt;=20000) 是第 i 种果子的数目。&lt;br /&gt;
+输出&lt;br /&gt;
+　　输出包括一行，这一行只包含一个整数，也就是最小的体力耗费值。输入数据保证这个值小于 2^31。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;解决问题思路&lt;/strong&gt;：取出最小相加成一堆，并计算体力消耗&lt;/p&gt;
+&lt;h4 id=&#34;方法一小顶堆&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#方法一小顶堆&#34;&gt;#&lt;/a&gt; 方法一：小顶堆&lt;/h4&gt;
+&lt;p&gt;代码及思路如下&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+
+using namespace std;
+const int maxn=10086;
+void updateheap(int heap[],int idx,int high)// 在本身是小顶堆的情况下维护
+&amp;#123;
+    int i=idx,j=2*i;//
+    while(j&amp;lt;=high)
+    &amp;#123;
+        if(j+1&amp;lt;=high &amp;amp;&amp;amp; heap[j]&amp;gt;heap[j+1]) j=j+1;
+        if(heap[j]&amp;lt;heap[i]) swap(heap[j],heap[i]);// 当需要进行维护操作时，就说明idx节点不满足小顶堆，要考虑swap后对子节点的影响
+        else break;//  在它本身是小顶堆的情况下，确保了维护的这个节点满足条件即可结束
+        i=j; // 考虑到子节点的影响，继续对子节点判断维护
+        j=2*i;
+    &amp;#125;
+&amp;#125;
+
+void heapinit(int heap[],int len) // 创建一个小顶堆，len是小顶堆大小
+&amp;#123;
+    for(int i=1;i&amp;lt;=len;i++) cin&amp;gt;&amp;gt;heap[i]; // 空间足够，以1为根结点 事实上，一般都以1为节点
+    for(int i=len/2;i&amp;gt;0;i--) updateheap(heap,i,len); // 从叶子向根节点维护，确保有序性
+&amp;#125;
+
+void deletetop(int heap[],int &amp;amp;n) // n即size将要移除的数放到末尾，并回收末尾节点 = size-- 
+&amp;#123;
+    
+    swap(heap[1],heap[n]);// change happans ,we have to maintain it
+    n--; // after swap we recycle the last node
+    updateheap(heap,1,n);
+    
+&amp;#125;
+void insertheap(int heap[],int &amp;amp;n,int value)
+&amp;#123;
+    n++;
+    heap[n]=value;
+    int i=n,j=i/2;// i is the childnode, and j is the fathernode
+    while(i&amp;gt;1)
+    &amp;#123;
+        if(heap[i]&amp;lt;heap[j]) swap(heap[i],heap[j]);
+        else return; // heap[i]&amp;gt;=heap[j]说明插入的值并不比父节点大，有序性得以保证
+        i=j;
+        j=i/2;
+    &amp;#125;
+    return;
+&amp;#125;
+int main()
+&amp;#123;
+    int n,Heap[maxn],stamina,size;
+    cin&amp;gt;&amp;gt;n;
+    size=n;
+    stamina=0;
+    heapinit(Heap,n);
+    if(n==1)
+    &amp;#123;
+        cout&amp;lt;&amp;lt;Heap[1];
+        return 1;
+    &amp;#125;
+    // stamina 的消耗可以堆顶的访问删除来实现
+    // 通过将堆顶与堆底互换并回收堆底，保持访问堆的结构不变，通过维护保持堆的有序
+    // 回收（size--通过大小的减小停止对堆底的维护，即回收）未删除数据但不影响
+    while(size&amp;gt;1)
+    &amp;#123;
+        int a = Heap[1];
+        deletetop(Heap,size);
+        int b=Heap[1];
+        deletetop(Heap,size);
+       
+        insertheap(Heap,size,a+b);// value isn&#39;t equal to stamina cost totally
+        stamina+=(a+b);
+
+    &amp;#125;
+    cout&amp;lt;&amp;lt;stamina;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;结语：涉及二叉堆的生成与维护，要注意对堆顶 pop 时 (也就是上文中的 deletetop 函数，topnode 的值并没有被删除，而是放在了堆底回收区，堆的大小并不是真正意义上所占全部空间的大小，而是有效空间的大小)&lt;/p&gt;
+&lt;h4 id=&#34;方法二优先队列&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#方法二优先队列&#34;&gt;#&lt;/a&gt; 方法二：优先队列&lt;/h4&gt;
+&lt;p&gt;代码及思路如下&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;queue&amp;gt;
+#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main()
+&amp;#123;
+    priority_queue&amp;lt;int, vector&amp;lt;int&amp;gt;, greater&amp;lt;int&amp;gt; &amp;gt; que;
+    // greater 增序，使最小的位于top
+    int n, i, stamina = 0;
+    cin &amp;gt;&amp;gt; n;
+    i = n;
+    while (i--)
+    &amp;#123;
+        int x;
+        cin &amp;gt;&amp;gt; x;
+        que.push(x);
+    &amp;#125;// 输入que，自动排序
+    if (n == 1)
+    &amp;#123;
+        int x = que.top();
+        cout &amp;lt;&amp;lt; x;
+        que.pop();
+    &amp;#125;
+    while (que.size() &amp;gt; 1)
+    &amp;#123;
+        int a = que.top();
+        que.pop();
+        int b = que.top();
+        que.pop();
+        stamina += (a + b);
+        que.push(a + b);
+    &amp;#125;
+    //que.top()=sum 所有之和，不用计算到体力消耗
+
+
+    cout &amp;lt;&amp;lt; stamina;
+&amp;#125;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;结语：相比于使用小顶堆，使用优先队列的代码无疑简介易懂。&lt;/p&gt;
+&lt;p&gt;然而事实上优先队列本质上使用的也是堆的思想。二者在时间效率上，是前者更优。&lt;s&gt;(specific 优于 general)&lt;/s&gt; 😃&lt;/p&gt;
+&lt;p&gt;参考资料：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3QuY3Nkbi5jbi82dXBFSw==&#34;&gt;Possible_Answer&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xODc2MTg0NTA=&#34;&gt; 二叉堆 -- 知乎&lt;/span&gt;，&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3QuY3Nkbi5jbi8yQ1o0YQ==&#34;&gt;优先队列&lt;/span&gt;，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3QuY3Nkbi5jbi9DNlA0aA==&#34;&gt;优先队列 (实例)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80MTU0NjcwMDA=&#34;&gt;数据结构 —— 哈夫曼树 (Huffman Tree)&lt;/span&gt;,(知识扩展)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;写在最后，这里出于课程要求，并没有考虑快排的方法，事实上快排无疑也是一种解决方案&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/</guid>
+            <title>素数环问题</title>
+            <link>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/</link>
+            <category>Notes</category>
+            <category>C++</category>
+            <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;素数环问题&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Problem Description&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A ring is compose of n circles as shown in diagram. Put natural number 1, 2, ..., n into each circle separately, and the sum of numbers in two adjacent circles should be a prime.&lt;/p&gt;
+&lt;p&gt;Note: the number of first circle should always be 1.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Input&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;n (0 &amp;lt; n &amp;lt; 20).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The output format is shown as sample below. Each row represents a series of circle numbers in the ring beginning from 1 clockwisely and anticlockwisely. The order of numbers must satisfy the above requirements. Print solutions in lexicographical order.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;You are to write a program that completes above process.&lt;/p&gt;
+&lt;p&gt;&amp;lt;u&amp;gt;&lt;strong&gt;Print a blank line after each case.&lt;/strong&gt;&amp;lt;/u&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;解题思路：&lt;/p&gt;
+&lt;p&gt;代码如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;stack&amp;gt;
+#include&amp;lt;math.h&amp;gt; 
+#include&amp;lt;string.h&amp;gt;
+using namespace std;
+/*
+从2开始到sqrt(num)，逐一判断
+*/
+int n;
+int arry[27]&amp;#123;1&amp;#125;,flag[27]&amp;#123;0&amp;#125;;
+stack&amp;lt;int&amp;gt; s1, s2;
+
+bool isPrime_2(int num)
+&amp;#123;
+    if (num == 1 || num == 4)
+        return 0;
+    if (num == 2 || num == 3)
+        return 1;
+    int temp = sqrt(num);
+    for (int i = 2; i &amp;lt;= temp; i++)
+    &amp;#123;
+        if (num % i == 0)
+            return 0;
+    &amp;#125;
+    return 1;
+&amp;#125;
+
+
+void dfs(int k)
+&amp;#123;
+    if(k==n&amp;amp;&amp;amp;isPrime_2(arry[0]+arry[n-1])) //如果递归到下标n并且满足条件就找到一组正确的数据了
+    &amp;#123;
+        for(int i=0;i&amp;lt;n-1;i++)
+        cout&amp;lt;&amp;lt;arry[i]&amp;lt;&amp;lt;&amp;quot; &amp;quot;;
+        cout&amp;lt;&amp;lt;arry[n-1]&amp;lt;&amp;lt;endl;
+    &amp;#125;
+    else
+    &amp;#123;
+        for(int i=2;i&amp;lt;=n;i++)
+        if(flag[i]==0&amp;amp;&amp;amp;isPrime_2(arry[k-1]+i)) //如果i没有使用过，并且a[k-1]和i相加为素数
+        &amp;#123;
+            arry[k]=i;     //记录下标的值
+            flag[i]=1; //标记为使用过的
+            dfs(k+1);  //开始下一个下标的计算
+            flag[i]=0;//清除标记
+        &amp;#125;
+    &amp;#125;
+&amp;#125;
+
+int main()
+&amp;#123;
+    int i=0;
+    while (cin &amp;gt;&amp;gt; n)
+    &amp;#123;
+        i++;
+        memset(flag,0,sizeof(flag));
+        for (int k = 0; k &amp;lt; n; k++)
+            arry[k] = 1;
+        cout&amp;lt;&amp;lt;&amp;quot;Case &amp;quot;&amp;lt;&amp;lt;i&amp;lt;&amp;lt;&#39;:&#39;&amp;lt;&amp;lt;endl;
+        flag[0]=1;
+        dfs(1);
+        cout&amp;lt;&amp;lt;endl;
+        
+
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;结语：&lt;/p&gt;
+&lt;p&gt;参考资料：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[源码借鉴 From 简书]( &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC85MThiZWM3MzJiN2Q=&#34;&gt;DFS (素数环) - 简书 (jianshu.com)&lt;/span&gt;)，&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%B0%8F%E6%9C%A8%E6%A3%8D%E7%BB%84%E6%AD%A3%E6%96%B9%E5%BD%A2/</guid>
+            <title>小木棍组正方形</title>
+            <link>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%B0%8F%E6%9C%A8%E6%A3%8D%E7%BB%84%E6%AD%A3%E6%96%B9%E5%BD%A2/</link>
+            <category>Notes</category>
+            <category>C++</category>
+            <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;小木棍组正方形：&lt;/p&gt;
+&lt;p&gt;解题思路：&lt;/p&gt;
+&lt;p&gt;使用 DFS 算法，并减去一些枝干&lt;/p&gt;
+&lt;p&gt;代码如下&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;algorithm&amp;gt;
+
+using namespace std;
+int sticks[38]&amp;#123;0&amp;#125;;//存放木棍长度
+
+int side, groupnum, n;
+bool DFS(int sum, int number, int pos,int * flag)
+&amp;#123;
+    if (number == 3)
+        return true;
+
+    for(int i=pos;i&amp;lt;n;i++)
+    &amp;#123;
+        if(sum+sticks[pos]&amp;gt;side)&amp;#123;
+            continue;
+        &amp;#125;
+        if(flag[i]==1)
+        &amp;#123;
+            continue;
+        &amp;#125;
+        if(sum+sticks[i]==side)// 深度搜索
+        &amp;#123;
+            if(DFS(0,number+1,0,flag)) return true;
+        &amp;#125;
+        else
+        &amp;#123;
+            if(DFS(sum+sticks[i],number,0,flag)) return true;
+        &amp;#125;//深度搜索不能返回true，则返回上一节点，寻找其他子节点，通过for实现
+        flag[i]=0;
+    &amp;#125;
+    return false;
+&amp;#125;
+
+int main()
+&amp;#123;
+
+    cin &amp;gt;&amp;gt; groupnum;
+    while (groupnum--)
+    &amp;#123;
+        int flag[38]&amp;#123;0&amp;#125;;
+        cin &amp;gt;&amp;gt; n;
+        int s = 0;
+        for (int i = 0; i &amp;lt; n; i++)
+        &amp;#123;
+            cin &amp;gt;&amp;gt; sticks[i];
+            s += sticks[i];
+        &amp;#125;
+        if (s % 4 != 0)
+        &amp;#123;
+            cout &amp;lt;&amp;lt; &amp;quot;no&amp;quot; &amp;lt;&amp;lt; endl;
+            continue;
+        &amp;#125;
+        side = s / 4;
+
+        sort(sticks, sticks + n, greater&amp;lt;int&amp;gt;());
+        if (sticks[0] &amp;gt; side)
+        &amp;#123;
+            cout &amp;lt;&amp;lt; &amp;quot;no&amp;quot; &amp;lt;&amp;lt; endl;
+            continue;
+        &amp;#125;
+        if (DFS(0, 0, 0,flag))
+            cout &amp;lt;&amp;lt; &amp;quot;yes&amp;quot; &amp;lt;&amp;lt; endl;
+        else 
+            cout&amp;lt;&amp;lt;&amp;quot;no&amp;quot;&amp;lt;&amp;lt;endl;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;结语：&lt;/p&gt;
+&lt;p&gt;DFS 模板&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;int check(参数)
+&amp;#123;
+    if(满足条件)
+        return 1;
+    return 0;
+&amp;#125;
+ 
+void dfs(int step)
+&amp;#123;
+        判断边界
+        &amp;#123;
+            相应操作
+        &amp;#125;
+        尝试每一种可能
+        &amp;#123;
+               满足check条件
+               标记
+               继续下一步dfs(step+1)
+               恢复初始状态（回溯的时候要用到）
+        &amp;#125;
+&amp;#125;   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参考资料&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3QuY3Nkbi5jbi9FZjhNUQ==&#34;&gt;http://t.csdn.cn/Ef8MQ&lt;/span&gt; DFS 算法解释及例题&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</guid>
+            <title>棋盘问题</title>
+            <link>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</link>
+            <category>Notes</category>
+            <category>C++</category>
+            <category>DFS</category>
+            <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
+            <description><![CDATA[ &lt;h4 id=&#34;问题描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问题描述&#34;&gt;#&lt;/a&gt; 问题描述&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在一个给定形状的棋盘（形状可能是不规则的）上面摆放棋子，棋子没有区别。要求摆放时任意的两个棋子不能放在棋盘中的同一行或者同一列，请编程求解对于给定形状和大小的棋盘，摆放 k 个棋子的所有可行的摆放方案 C。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输入&#34;&gt;#&lt;/a&gt; 输入&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;输入含有多组测试数据。&lt;br /&gt;
+每组数据的第一行是两个正整数 *，n k*，用一个空格隔开，表示了将在一个 n*n 的矩阵内描述棋盘，以及摆放棋子的数目。&lt;/p&gt;
+&lt;p&gt;n &amp;lt;= 8 , k &amp;lt;= n&lt;/p&gt;
+&lt;p&gt;当为 **-1 -1** 时表示输入结束。&lt;br /&gt;
+随后的 n 行描述了棋盘的形状：每行有 n 个字符，其中  &lt;code&gt;#&lt;/code&gt;  表示棋盘区域， &lt;code&gt;.&lt;/code&gt;  表示空白区域（数据保证不出现多余的空白行或者空白列）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;输出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输出&#34;&gt;#&lt;/a&gt; 输出&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于每一组数据，给出一行输出，输出摆放的方案数目 C （&lt;em&gt;数据保证 C&amp;lt;2^31&lt;/em&gt;）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;样例输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#样例输入&#34;&gt;#&lt;/a&gt; 样例输入&lt;/h5&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;figcaption data-lang=&#34;plain&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;2 1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;#.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.#&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;4 4&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;...#&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;..#.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.#..&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;#...&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;-1 -1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h5 id=&#34;样例输出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#样例输出&#34;&gt;#&lt;/a&gt; 样例输出&lt;/h5&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;figcaption data-lang=&#34;plain&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;解题思路&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解题思路&#34;&gt;#&lt;/a&gt; 解题思路&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;代码如下&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string.h&amp;gt;
+using namespace std;
+
+int n, k, ans, a[64], j; // n 方阵长度，k棋子个数,ans is answer
+
+int visit[8][8]&amp;#123;0&amp;#125;; // shows which cloumn and row is not placeable
+
+struct Node
+&amp;#123;
+    int *flag;
+    int p = 0;// in fact, the param is redundant
+&amp;#125;;
+// 如果为0则空，1则有棋盘’#‘
+Node qiju[100];
+// 进行遍历// 考虑使用下标 从1开始
+
+void dfs(int idx, int num)
+&amp;#123;
+    if (num == k)
+        ans++; // plan + 1
+    else
+    &amp;#123;
+        for (int i = idx; i &amp;lt; j; i++) // each qipan has possiblity
+        &amp;#123;
+            if (*qiju[a[i]].flag == 1)
+                continue;
+            *qiju[a[i]].flag = 1; //
+            dfs(0, num + 1);
+        &amp;#125;
+    &amp;#125;
+&amp;#125;
+
+int main()
+&amp;#123;
+    char ch;
+    while (cin &amp;gt;&amp;gt; n &amp;gt;&amp;gt; k)
+    &amp;#123;
+        if (n == -1 &amp;amp;&amp;amp; k == -1)
+            break;
+        j = 0;
+        ans = 0;
+        memset(qiju, 0, sizeof(qiju));
+        memset(visit, 0, sizeof(visit));
+
+        for (int i = 0; i &amp;lt; n * n; i++)
+        &amp;#123;
+
+            cin &amp;gt;&amp;gt; ch;
+            switch (ch)
+            &amp;#123;
+            case &#39;.&#39;:
+                break;
+            case &#39;#&#39;:
+
+                qiju[i].p = 1;// when I have created array a, 
+                    		//I can visit qiju by a, 
+                    		//in this situation param p is redundant.
+                qiju[i].flag = &amp;amp;visit[i / n][i % n]; // point to position
+                a[j] = i;                            // restore qipan position with arry a
+                j++;
+                break;
+            &amp;#125;
+        &amp;#125;
+        dfs(0, 0);
+        cout &amp;lt;&amp;lt; ans &amp;lt;&amp;lt; endl;
+    &amp;#125;
+    return 0;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;结语&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结语&#34;&gt;#&lt;/a&gt; 结语&lt;/h4&gt;
+&lt;p&gt;通过 visit 标记状态，通过 node 取地址，使每个棋盘的状态得以被标示，同时通过 node 数组，a 数组实现快速访问，规避无效数据。&lt;/p&gt;
+&lt;h4 id=&#34;参考资料&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考资料&#34;&gt;#&lt;/a&gt; 参考资料&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DFS 深度优先搜索算法&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</guid>
+            <title>迷宫问题</title>
+            <link>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</link>
+            <category>Notes</category>
+            <category>C++</category>
+            <category>DFS</category>
+            <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;问题描述&lt;/p&gt;
+&lt;p&gt;解决思路&lt;/p&gt;
+&lt;p&gt;代码如下&lt;/p&gt;
+&lt;p&gt;结语：&lt;/p&gt;
+&lt;p&gt;迷宫问题很重要的就是路径，方向，路径使用栈，方向通过 2X4 的数组描述，关键在于，在平面上点的坐标可以用 (x,y) 描述，给它加上&lt;/p&gt;
+&lt;p&gt;(1,0)((-1,0),(0,1),(0,-1)) 就实现了向右 (左，上，下) 移动。&lt;/p&gt;
+&lt;p&gt;参考资料&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
