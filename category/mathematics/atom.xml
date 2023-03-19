@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
-    <title>Shoka • Posts by &#34;mathematics&#34; category</title>
-    <link href="http://example.com" />
+    <id>https://evefortosaber.github.io</id>
+    <title>流云阁 • Posts by &#34;mathematics&#34; category</title>
+    <link href="https://evefortosaber.github.io" />
     <updated>2023-03-19T11:29:17.421Z</updated>
     <category term="Notes" />
     <category term="随笔" />
@@ -10,25 +10,25 @@
     <category term="CTF" />
     <category term="DFS" />
     <entry>
-        <id>http://example.com/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/</id>
         <title>错题本</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/"/>
         <content type="html">&lt;h1 id=&#34;数学错题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学错题&#34;&gt;#&lt;/a&gt; 数学错题&lt;/h1&gt;
 &lt;h2 id=&#34;高数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高数&#34;&gt;#&lt;/a&gt; 高数&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_5-1663714277821.png&#34; alt=&#34;5&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_6-1663714314009.png&#34; alt=&#34;6&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_7-1663714323364.png&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_8-1663714341842.png&#34; alt=&#34;8&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/01_9-1663714386623.png&#34; alt=&#34;9&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/01_10-1663714362855.png&#34; alt=&#34;10&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_5-1663714277821.png&#34; alt=&#34;5&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_6-1663714314009.png&#34; alt=&#34;6&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_7-1663714323364.png&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_8-1663714341842.png&#34; alt=&#34;8&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/01_9-1663714386623.png&#34; alt=&#34;9&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/01_10-1663714362855.png&#34; alt=&#34;10&#34; /&gt;&lt;/p&gt;
 </content>
         <category term="Notes" />
         <updated>2023-03-19T11:29:17.421Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/03/19/Mathematics/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6(%E4%B8%8B)/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6(%E4%B8%8B)/</id>
         <title>高等数学(下)</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/Mathematics/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6(%E4%B8%8B)/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6(%E4%B8%8B)/"/>
         <content type="html">&lt;p&gt;关于高等数学下册的一些笔记&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h4 id=&#34;向量的方向角和方向余弦&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#向量的方向角和方向余弦&#34;&gt;#&lt;/a&gt; 向量的方向角和方向余弦&lt;/h4&gt;
@@ -78,9 +78,9 @@
         <updated>2023-03-19T11:29:17.421Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/</id>
         <title>高等数学笔记一</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
         <content type="html">&lt;h1 id=&#34;高等数学一&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高等数学一&#34;&gt;#&lt;/a&gt; 高等数学・一&lt;/h1&gt;
 &lt;hr /&gt;
 &lt;p&gt;学习时做的一些笔记，顺便对内容梳理一遍。^0&lt;/p&gt;
@@ -111,20 +111,20 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;狄利克雷函数&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_2.png&#34; alt=&#34;00_2&#34; title=&#34;狄利克雷函数&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_2.png&#34; alt=&#34;00_2&#34; title=&#34;狄利克雷函数&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;狄利克雷函数是一个定义在实数范围上、值域不连续的函数。狄利克雷函数的图像以 Y 轴为对称轴，是一个偶函数，它处处不连续，处处极限不存在，不可黎曼积分。这是一个处处不连续的可测函数。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;符号函数&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_3-1663132097343.png&#34; alt=&#34;00_3&#34; title=&#34;符号函数&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_3-1663132097343.png&#34; alt=&#34;00_3&#34; title=&#34;符号函数&#34; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;取整函数&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20220914131129520.png&#34; alt=&#34;image-20220914131129520&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20220914131129520.png&#34; alt=&#34;image-20220914131129520&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;函数 y=[x] 称为取整函数，也称&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTklQUIlOTglRTYlOTYlQUYlRTUlODclQkQlRTYlOTUlQjAvMjY3MDk1MT9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;高斯函数&lt;/span&gt;。其中不超过实数 x 的最大整数称为 x 的整数部分，记作 [x]。该函数被广泛应用于&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOTUlQjAlRTglQUUlQkEvMzcwMD9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;数论&lt;/span&gt;，函数绘图和计算机领域。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
@@ -221,7 +221,7 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;h3 id=&#34;第三节-函数的极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第三节-函数的极限&#34;&gt;#&lt;/a&gt; 第三节 函数的极限&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlODclQkQlRTYlOTUlQjAlRTYlOUUlODElRTklOTklOTAvNzI3MDgz&#34;&gt;函数极限&lt;/span&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_1.png&#34; alt=&#34;00_1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlODclQkQlRTYlOTUlQjAlRTYlOUUlODElRTklOTklOTAvNzI3MDgz&#34;&gt;函数极限&lt;/span&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_1.png&#34; alt=&#34;00_1&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;函数某点极限存在的充要条件是左右极限都存在且相等。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -262,9 +262,234 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
         <updated>2023-03-19T11:29:17.406Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/03/19/Mathematics/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%94%E8%AE%B0%E4%B8%80/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/</id>
+        <title>数学笔记二</title>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/"/>
+        <content type="html">&lt;h1 id=&#34;数学笔记二&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学笔记二&#34;&gt;#&lt;/a&gt; 数学笔记・二&lt;/h1&gt;
+&lt;h3 id=&#34;第四节-函数的连续性承第一章函数与极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四节-函数的连续性承第一章函数与极限&#34;&gt;#&lt;/a&gt; 第四节 函数的连续性（承第一章函数与极限）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;连续性概念&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由极限的性质可知，一个函数在某点连续的充要条件是它在该点左右都连续。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;间断点分类&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;第一类间断点&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlOEYlQUYlRTUlOEUlQkIlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;可去间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点左极限、右极限存在且相等，但不等于该点函数值或函数在该点无定义。如函数 y=（x^2-1)/(x-1) 在点 x=1 处。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTglQjclQjMlRTglQjclODMlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;跳跃间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点左极限、右极限存在，但不相等。如函数 y=|x|/x 在点 x=0 处。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;第二类间断点&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://baike.baidu.com/item/%E6%97%A0%E7%A9%B7%E9%97%B4%E6%96%AD%E7%82%B9/3531630?fromModule=lemma_inlink&#34;&gt;&lt;strong&gt;无穷间断点&lt;/strong&gt;&lt;/a&gt;：函数在该点可以无定义，且左极限、右极限至少有一个不存在，且函数在该点极限为∞。如函数 y=tanx 在点 x=π/2 处。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOEMlQUYlRTglOEQlQTElRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;振荡间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点可以无定义，当自变量趋于该点时，函数值在两个常数间变动无限多次。如函数 y=sin (1/x) 在 x=0 处。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;由上述对各种间断点的描述可知，&lt;strong&gt;函数 f (x) 在第一类间断点的左右极限都存在，而函数 f (x) 在第二类间断点的左右极限至少有一个不存在&lt;/strong&gt;，这也是第一类间断点和第二类间断点的本质上的区别。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;第五节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第五节&#34;&gt;#&lt;/a&gt; 第五节&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;迫敛准则&lt;/p&gt;
+&lt;p&gt;主要是放缩，抓住可合成量（如 N 个 1 求和为 n*(n+1)/2），和高阶量不变原则&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;单调有界准则&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;单调有界数列必有极限。用于证明收敛很有用。&lt;/p&gt;
+&lt;p&gt;求极限时可以&lt;strong&gt;先假设存在&lt;/strong&gt;。方便计算。&lt;s&gt;（避免求数列通项）&lt;/s&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;两个重要极限&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20220921223539147.png&#34; alt=&#34;image-20220921223539147&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第二个很重要，第一个可以直接看成等价无穷小。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;第六节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第六节&#34;&gt;#&lt;/a&gt; 第六节&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;无穷小量&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;确切地说，当自变量 x 无限接近 x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;（或 x 的绝对值无限增大）时，函数值 f (x) 与 0 无限接近，即 f (x)→0 (或 f (x)=0)，则称 f (x) 为当 x→x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;(或 x→∞) 时的无穷小量。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;等阶无穷小量&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;即两个无穷小量坐商得常数时。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;等价无穷小量&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;即两个无穷小量坐商得 1。等价无穷小量可互换。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;常见等价无穷小量&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pica.zhimg.com/v2-f20a929bed77e97c61a9f83de9b4b5a4_r.jpg?source=1940ef5c&#34; alt=&#34;aa&#34; title=&#34;等价无穷小&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;关于我突然变水的原因&lt;/em&gt;：&lt;/p&gt;
+&lt;p&gt;实在是比较忙，各项内容也越来越复杂，所以就择取主要的知识点并舍去证明。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;以上。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;第二章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第二章&#34;&gt;#&lt;/a&gt; 第二章&lt;/h2&gt;
+&lt;h3 id=&#34;导数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#导数&#34;&gt;#&lt;/a&gt; 导数&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;导数定义&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;函数可导一定连续，函数连续不一定可导。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;求导法则&lt;/p&gt;
+&lt;p&gt;注意除法，反函数，隐函数求导法则。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;掌握反代的思想，掌握对数求导法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;含参求导&lt;/p&gt;
+&lt;p&gt;一阶导可直接求二阶导可能需要反代。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意导数与微分的关系，如何二阶导隐函数。以及推导方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;断点处的导数求解，在有定义时使用求导法。&lt;/p&gt;
+&lt;p&gt;在无定义时，使用定义法。(求极限)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;高阶函数求导注意规律，和复合函数的导&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;微分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微分&#34;&gt;#&lt;/a&gt; 微分&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;一元函数，可导则可微&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;微分常数 A，与极限有关&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;微分运算类似求导法则&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;微分近似运算&lt;/p&gt;
+&lt;p&gt;f(x)=f(x0)+f&#39;(x0)(x-x0)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为了计算 f (x)，可找一个邻近于 x 的 x0，只要 f (x) 和 f&#39;(x) 容易计算，就可以利用这个公式计算 f (x) 的近似值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E5%BE%AE%E5%88%86%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97.jpg&#34; alt=&#34;微分&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;第三章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第三章&#34;&gt;#&lt;/a&gt; 第三章&lt;/h2&gt;
+&lt;h3 id=&#34;微分中值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微分中值定理&#34;&gt;#&lt;/a&gt; 微分中值定理&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;费马引理&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.jpg&#34; alt=&#34;费马引理&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;罗尔中值定理&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E7%BD%97%E5%B0%94%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;罗尔中值定理&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;拉格朗日中值定理&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;拉格朗日中值定理&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;柯西中值定理&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E6%9F%AF%E8%A5%BF%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;柯西中值定理&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;洛必达法则&lt;/p&gt;
+&lt;p&gt;泰勒公式&lt;/p&gt;
+&lt;p&gt;麦克劳林公式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;佩亚诺余项&lt;/p&gt;
+&lt;p&gt;高阶无穷小&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;拉格朗日余项&lt;/p&gt;
+&lt;p&gt;中值 -- 定量分析&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;函数的凹凸性&lt;/p&gt;
+&lt;h2 id=&#34;第四章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四章&#34;&gt;#&lt;/a&gt; 第四章&lt;/h2&gt;
+&lt;h4 id=&#34;不定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#不定积分&#34;&gt;#&lt;/a&gt; 不定积分&lt;/h4&gt;
+&lt;h5 id=&#34;换元积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#换元积分&#34;&gt;#&lt;/a&gt; 换元积分&lt;/h5&gt;
+&lt;h5 id=&#34;分部积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分部积分&#34;&gt;#&lt;/a&gt; 分部积分&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;凑微分，低次换元，三角换元，二次换元，重复型&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;积分表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#积分表&#34;&gt;#&lt;/a&gt; 积分表&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E7%A7%AF%E5%88%86%E8%A1%A8.jpg&#34; alt=&#34;积分表&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;有理函数的不定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#有理函数的不定积分&#34;&gt;#&lt;/a&gt; 有理函数的不定积分&lt;/h5&gt;
+&lt;p&gt;待定系数法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;万能公式&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E4%B8%87%E8%83%BD%E5%85%AC%E5%BC%8F.jpg&#34; alt=&#34;万能公式&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分&#34;&gt;#&lt;/a&gt; 定积分&lt;/h4&gt;
+&lt;h5 id=&#34;定积分概念求无穷项和的极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分概念求无穷项和的极限&#34;&gt;#&lt;/a&gt; 定积分概念求无穷项和的极限&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E5%AE%9A%E7%A7%AF%E5%88%86%E6%A6%82%E5%BF%B5.jpg&#34; alt=&#34;定积分概念&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;估值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#估值定理&#34;&gt;#&lt;/a&gt; 估值定理&lt;/h5&gt;
+&lt;p&gt;区间内的 Max 与 Min 乘以区间长度得到限定区间。&lt;/p&gt;
+&lt;h5 id=&#34;积分中值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#积分中值定理&#34;&gt;#&lt;/a&gt; 积分中值定理&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E7%A7%AF%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;积分中值定理&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;求积分函数极限时用到，由介值定理推得&lt;/p&gt;
+&lt;h5 id=&#34;几何意义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#几何意义&#34;&gt;#&lt;/a&gt; 几何意义&lt;/h5&gt;
+&lt;h5 id=&#34;牛顿莱布尼茨公式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#牛顿莱布尼茨公式&#34;&gt;#&lt;/a&gt; 牛顿莱布尼茨公式&lt;/h5&gt;
+&lt;h5 id=&#34;微积分学基本定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微积分学基本定理&#34;&gt;#&lt;/a&gt; 微积分学基本定理&lt;/h5&gt;
+&lt;p&gt;连续函数必存在原函数&lt;/p&gt;
+&lt;h5 id=&#34;平面曲线的弧长与曲率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平面曲线的弧长与曲率&#34;&gt;#&lt;/a&gt; 平面曲线的弧长与曲率&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/1%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;1弧长公式&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/2%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;2&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/3%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;3&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;极坐标系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#极坐标系&#34;&gt;#&lt;/a&gt; 极坐标系&lt;/h5&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;x=pcosa,y=psina;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h5 id=&#34;平面曲线的曲率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平面曲线的曲率&#34;&gt;#&lt;/a&gt; 平面曲线的曲率&lt;/h5&gt;
+&lt;h5 id=&#34;曲率圆&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#曲率圆&#34;&gt;#&lt;/a&gt; 曲率圆&lt;/h5&gt;
+&lt;h5 id=&#34;定积分的几何应用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分的几何应用&#34;&gt;#&lt;/a&gt; 定积分的几何应用&lt;/h5&gt;
+&lt;h5 id=&#34;连续函数的平均值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#连续函数的平均值&#34;&gt;#&lt;/a&gt; 连续函数的平均值&lt;/h5&gt;
+&lt;h5 id=&#34;定积分在物理学与经济学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分在物理学与经济学&#34;&gt;#&lt;/a&gt; 定积分在物理学与经济学&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;变力做功&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;引力问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;液体侧面压力&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;反常积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#反常积分&#34;&gt;#&lt;/a&gt; 反常积分&lt;/h5&gt;
+</content>
+        <category term="Notes" />
+        <updated>2023-03-19T11:29:17.406Z</updated>
+    </entry>
+    <entry>
+        <id>https://evefortosaber.github.io/2023/03/19/Mathematics/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%94%E8%AE%B0%E4%B8%80/</id>
         <title>线性代数笔记一</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/Mathematics/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/Mathematics/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
         <content type="html">&lt;h1 id=&#34;线性代数笔记一&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性代数笔记一&#34;&gt;#&lt;/a&gt; 线性代数笔记一&lt;/h1&gt;
 &lt;h2 id=&#34;第一章-线性方程组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章-线性方程组&#34;&gt;#&lt;/a&gt; 第一章 线性方程组&lt;/h2&gt;
 &lt;h3 id=&#34;数域及n元向量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数域及n元向量&#34;&gt;#&lt;/a&gt; 数域及 N 元向量&lt;/h3&gt;
@@ -392,8 +617,8 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;范德蒙德展开&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/fandemengdehanglieshi.jpg&#34; alt=&#34;fandingyi&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/fan_2.jpg&#34; alt=&#34;fan_2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/fandemengdehanglieshi.jpg&#34; alt=&#34;fandingyi&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/fan_2.jpg&#34; alt=&#34;fan_2&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;含 0 阵的行列式展开 ***(按块展开)***&lt;/p&gt;
@@ -404,12 +629,12 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;h3 id=&#34;矩阵加法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#矩阵加法&#34;&gt;#&lt;/a&gt; 矩阵加法&lt;/h3&gt;
 &lt;p&gt;必须是同型矩阵，对应元素分别相加。&lt;/p&gt;
 &lt;h3 id=&#34;矩阵乘法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#矩阵乘法&#34;&gt;#&lt;/a&gt; 矩阵乘法&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/xindai_10_07_juzhengchengfa.jpg&#34; alt=&#34;chengfdingyi&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/xindai_10_07_juzhengchengfa.jpg&#34; alt=&#34;chengfdingyi&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;行列相乘法，左矩阵的列数要等于右矩阵的行数。&lt;/p&gt;
 &lt;p&gt;注意元素对应。矩阵乘法一般不可逆。单位阵相乘可逆，对角阵相乘可逆。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/xiandaijuzhen0.jpg&#34; alt=&#34;xiandai&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/xiandaijuzhen0.jpg&#34; alt=&#34;xiandai&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;矩阵的转置与行列式化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#矩阵的转置与行列式化&#34;&gt;#&lt;/a&gt; 矩阵的转置与行列式化&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20221007184533201.png&#34; alt=&#34;image-20221007184533201&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20221007184533201.png&#34; alt=&#34;image-20221007184533201&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;若矩阵&lt;strong&gt; A&lt;/strong&gt; 满足&lt;strong&gt; A=A&lt;sup&gt;T&lt;/sup&gt;&lt;/strong&gt;，则称&lt;strong&gt; A&lt;/strong&gt; 为&lt;strong&gt;对称矩阵&lt;/strong&gt;；若&lt;strong&gt; A&lt;sup&gt;T&lt;/sup&gt;=-A&lt;/strong&gt;，则称 A 为&lt;strong&gt;反对称矩阵&lt;/strong&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;A+A&lt;sup&gt;T&lt;/sup&gt;,AA&lt;sup&gt;T&lt;/sup&gt;&lt;/strong&gt;&lt;/em&gt; 是对称矩阵&lt;/li&gt;
@@ -429,7 +654,7 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;方阵的迹&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/ca954c14e1a12fb64383e5786d37e4d3.svg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/ca954c14e1a12fb64383e5786d37e4d3.svg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;tr(AB)=tr(BA)&lt;/strong&gt;&lt;/p&gt;
@@ -441,231 +666,6 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;h3 id=&#34;伴随矩阵&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#伴随矩阵&#34;&gt;#&lt;/a&gt; 伴随矩阵&lt;/h3&gt;
 &lt;h3 id=&#34;矩阵逆元&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#矩阵逆元&#34;&gt;#&lt;/a&gt; 矩阵逆元&lt;/h3&gt;
 </content>
-        <updated>2023-03-19T11:29:17.406Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/</id>
-        <title>数学笔记二</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/"/>
-        <content type="html">&lt;h1 id=&#34;数学笔记二&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学笔记二&#34;&gt;#&lt;/a&gt; 数学笔记・二&lt;/h1&gt;
-&lt;h3 id=&#34;第四节-函数的连续性承第一章函数与极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四节-函数的连续性承第一章函数与极限&#34;&gt;#&lt;/a&gt; 第四节 函数的连续性（承第一章函数与极限）&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;连续性概念&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;由极限的性质可知，一个函数在某点连续的充要条件是它在该点左右都连续。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;间断点分类&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;第一类间断点&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlOEYlQUYlRTUlOEUlQkIlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;可去间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点左极限、右极限存在且相等，但不等于该点函数值或函数在该点无定义。如函数 y=（x^2-1)/(x-1) 在点 x=1 处。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTglQjclQjMlRTglQjclODMlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;跳跃间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点左极限、右极限存在，但不相等。如函数 y=|x|/x 在点 x=0 处。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;第二类间断点&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://baike.baidu.com/item/%E6%97%A0%E7%A9%B7%E9%97%B4%E6%96%AD%E7%82%B9/3531630?fromModule=lemma_inlink&#34;&gt;&lt;strong&gt;无穷间断点&lt;/strong&gt;&lt;/a&gt;：函数在该点可以无定义，且左极限、右极限至少有一个不存在，且函数在该点极限为∞。如函数 y=tanx 在点 x=π/2 处。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOEMlQUYlRTglOEQlQTElRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;振荡间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点可以无定义，当自变量趋于该点时，函数值在两个常数间变动无限多次。如函数 y=sin (1/x) 在 x=0 处。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;由上述对各种间断点的描述可知，&lt;strong&gt;函数 f (x) 在第一类间断点的左右极限都存在，而函数 f (x) 在第二类间断点的左右极限至少有一个不存在&lt;/strong&gt;，这也是第一类间断点和第二类间断点的本质上的区别。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;第五节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第五节&#34;&gt;#&lt;/a&gt; 第五节&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;迫敛准则&lt;/p&gt;
-&lt;p&gt;主要是放缩，抓住可合成量（如 N 个 1 求和为 n*(n+1)/2），和高阶量不变原则&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;单调有界准则&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;单调有界数列必有极限。用于证明收敛很有用。&lt;/p&gt;
-&lt;p&gt;求极限时可以&lt;strong&gt;先假设存在&lt;/strong&gt;。方便计算。&lt;s&gt;（避免求数列通项）&lt;/s&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;两个重要极限&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20220921223539147.png&#34; alt=&#34;image-20220921223539147&#34; /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;第二个很重要，第一个可以直接看成等价无穷小。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;第六节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第六节&#34;&gt;#&lt;/a&gt; 第六节&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;无穷小量&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;确切地说，当自变量 x 无限接近 x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;（或 x 的绝对值无限增大）时，函数值 f (x) 与 0 无限接近，即 f (x)→0 (或 f (x)=0)，则称 f (x) 为当 x→x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;(或 x→∞) 时的无穷小量。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;等阶无穷小量&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;即两个无穷小量坐商得常数时。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;等价无穷小量&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;即两个无穷小量坐商得 1。等价无穷小量可互换。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;常见等价无穷小量&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pica.zhimg.com/v2-f20a929bed77e97c61a9f83de9b4b5a4_r.jpg?source=1940ef5c&#34; alt=&#34;aa&#34; title=&#34;等价无穷小&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;关于我突然变水的原因&lt;/em&gt;：&lt;/p&gt;
-&lt;p&gt;实在是比较忙，各项内容也越来越复杂，所以就择取主要的知识点并舍去证明。&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;以上。&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;第二章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第二章&#34;&gt;#&lt;/a&gt; 第二章&lt;/h2&gt;
-&lt;h3 id=&#34;导数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#导数&#34;&gt;#&lt;/a&gt; 导数&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;导数定义&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;函数可导一定连续，函数连续不一定可导。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;求导法则&lt;/p&gt;
-&lt;p&gt;注意除法，反函数，隐函数求导法则。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;掌握反代的思想，掌握对数求导法。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;含参求导&lt;/p&gt;
-&lt;p&gt;一阶导可直接求二阶导可能需要反代。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;注意导数与微分的关系，如何二阶导隐函数。以及推导方法。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;断点处的导数求解，在有定义时使用求导法。&lt;/p&gt;
-&lt;p&gt;在无定义时，使用定义法。(求极限)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;高阶函数求导注意规律，和复合函数的导&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;微分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微分&#34;&gt;#&lt;/a&gt; 微分&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;一元函数，可导则可微&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;微分常数 A，与极限有关&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;微分运算类似求导法则&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;微分近似运算&lt;/p&gt;
-&lt;p&gt;f(x)=f(x0)+f&#39;(x0)(x-x0)&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;为了计算 f (x)，可找一个邻近于 x 的 x0，只要 f (x) 和 f&#39;(x) 容易计算，就可以利用这个公式计算 f (x) 的近似值。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E5%BE%AE%E5%88%86%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97.jpg&#34; alt=&#34;微分&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;第三章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第三章&#34;&gt;#&lt;/a&gt; 第三章&lt;/h2&gt;
-&lt;h3 id=&#34;微分中值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微分中值定理&#34;&gt;#&lt;/a&gt; 微分中值定理&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;费马引理&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.jpg&#34; alt=&#34;费马引理&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;罗尔中值定理&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E7%BD%97%E5%B0%94%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;罗尔中值定理&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;拉格朗日中值定理&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;拉格朗日中值定理&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;柯西中值定理&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E6%9F%AF%E8%A5%BF%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;柯西中值定理&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;洛必达法则&lt;/p&gt;
-&lt;p&gt;泰勒公式&lt;/p&gt;
-&lt;p&gt;麦克劳林公式&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;佩亚诺余项&lt;/p&gt;
-&lt;p&gt;高阶无穷小&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;拉格朗日余项&lt;/p&gt;
-&lt;p&gt;中值 -- 定量分析&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;函数的凹凸性&lt;/p&gt;
-&lt;h2 id=&#34;第四章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四章&#34;&gt;#&lt;/a&gt; 第四章&lt;/h2&gt;
-&lt;h4 id=&#34;不定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#不定积分&#34;&gt;#&lt;/a&gt; 不定积分&lt;/h4&gt;
-&lt;h5 id=&#34;换元积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#换元积分&#34;&gt;#&lt;/a&gt; 换元积分&lt;/h5&gt;
-&lt;h5 id=&#34;分部积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分部积分&#34;&gt;#&lt;/a&gt; 分部积分&lt;/h5&gt;
-&lt;blockquote&gt;
-&lt;p&gt;凑微分，低次换元，三角换元，二次换元，重复型&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h5 id=&#34;积分表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#积分表&#34;&gt;#&lt;/a&gt; 积分表&lt;/h5&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E7%A7%AF%E5%88%86%E8%A1%A8.jpg&#34; alt=&#34;积分表&#34; /&gt;&lt;/p&gt;
-&lt;h5 id=&#34;有理函数的不定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#有理函数的不定积分&#34;&gt;#&lt;/a&gt; 有理函数的不定积分&lt;/h5&gt;
-&lt;p&gt;待定系数法&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;万能公式&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E4%B8%87%E8%83%BD%E5%85%AC%E5%BC%8F.jpg&#34; alt=&#34;万能公式&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分&#34;&gt;#&lt;/a&gt; 定积分&lt;/h4&gt;
-&lt;h5 id=&#34;定积分概念求无穷项和的极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分概念求无穷项和的极限&#34;&gt;#&lt;/a&gt; 定积分概念求无穷项和的极限&lt;/h5&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E5%AE%9A%E7%A7%AF%E5%88%86%E6%A6%82%E5%BF%B5.jpg&#34; alt=&#34;定积分概念&#34; /&gt;&lt;/p&gt;
-&lt;h5 id=&#34;估值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#估值定理&#34;&gt;#&lt;/a&gt; 估值定理&lt;/h5&gt;
-&lt;p&gt;区间内的 Max 与 Min 乘以区间长度得到限定区间。&lt;/p&gt;
-&lt;h5 id=&#34;积分中值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#积分中值定理&#34;&gt;#&lt;/a&gt; 积分中值定理&lt;/h5&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E7%A7%AF%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;积分中值定理&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;求积分函数极限时用到，由介值定理推得&lt;/p&gt;
-&lt;h5 id=&#34;几何意义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#几何意义&#34;&gt;#&lt;/a&gt; 几何意义&lt;/h5&gt;
-&lt;h5 id=&#34;牛顿莱布尼茨公式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#牛顿莱布尼茨公式&#34;&gt;#&lt;/a&gt; 牛顿莱布尼茨公式&lt;/h5&gt;
-&lt;h5 id=&#34;微积分学基本定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微积分学基本定理&#34;&gt;#&lt;/a&gt; 微积分学基本定理&lt;/h5&gt;
-&lt;p&gt;连续函数必存在原函数&lt;/p&gt;
-&lt;h5 id=&#34;平面曲线的弧长与曲率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平面曲线的弧长与曲率&#34;&gt;#&lt;/a&gt; 平面曲线的弧长与曲率&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/1%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;1弧长公式&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/2%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;2&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/3%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;3&#34; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;极坐标系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#极坐标系&#34;&gt;#&lt;/a&gt; 极坐标系&lt;/h5&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;x=pcosa,y=psina;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h5 id=&#34;平面曲线的曲率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平面曲线的曲率&#34;&gt;#&lt;/a&gt; 平面曲线的曲率&lt;/h5&gt;
-&lt;h5 id=&#34;曲率圆&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#曲率圆&#34;&gt;#&lt;/a&gt; 曲率圆&lt;/h5&gt;
-&lt;h5 id=&#34;定积分的几何应用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分的几何应用&#34;&gt;#&lt;/a&gt; 定积分的几何应用&lt;/h5&gt;
-&lt;h5 id=&#34;连续函数的平均值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#连续函数的平均值&#34;&gt;#&lt;/a&gt; 连续函数的平均值&lt;/h5&gt;
-&lt;h5 id=&#34;定积分在物理学与经济学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分在物理学与经济学&#34;&gt;#&lt;/a&gt; 定积分在物理学与经济学&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;变力做功&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;引力问题&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;液体侧面压力&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;反常积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#反常积分&#34;&gt;#&lt;/a&gt; 反常积分&lt;/h5&gt;
-</content>
-        <category term="Notes" />
         <updated>2023-03-19T11:29:17.406Z</updated>
     </entry>
 </feed>

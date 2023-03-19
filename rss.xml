@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>Shoka</title>
-        <link>http://example.com</link>
+        <title>流云阁</title>
+        <link>https://evefortosaber.github.io</link>
         <description></description>
-        <language>en</language>
+        <language>zh-CN</language>
         <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
         <lastBuildDate>Sun, 19 Mar 2023 19:29:17 +0800</lastBuildDate>
         <category>Notes</category>
@@ -13,25 +13,25 @@
         <category>CTF</category>
         <category>DFS</category>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/</guid>
             <title>错题本</title>
-            <link>http://example.com/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/</link>
+            <link>https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/</link>
             <category>Notes</category>
             <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;数学错题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学错题&#34;&gt;#&lt;/a&gt; 数学错题&lt;/h1&gt;
 &lt;h2 id=&#34;高数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高数&#34;&gt;#&lt;/a&gt; 高数&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_5-1663714277821.png&#34; alt=&#34;5&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_6-1663714314009.png&#34; alt=&#34;6&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_7-1663714323364.png&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_8-1663714341842.png&#34; alt=&#34;8&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/01_9-1663714386623.png&#34; alt=&#34;9&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/01_10-1663714362855.png&#34; alt=&#34;10&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_5-1663714277821.png&#34; alt=&#34;5&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_6-1663714314009.png&#34; alt=&#34;6&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_7-1663714323364.png&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_8-1663714341842.png&#34; alt=&#34;8&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/01_9-1663714386623.png&#34; alt=&#34;9&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/01_10-1663714362855.png&#34; alt=&#34;10&#34; /&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/Mathematics/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6(%E4%B8%8B)/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6(%E4%B8%8B)/</guid>
             <title>高等数学(下)</title>
-            <link>http://example.com/2023/03/19/Mathematics/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6(%E4%B8%8B)/</link>
+            <link>https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6(%E4%B8%8B)/</link>
             <category>Notes</category>
             <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;关于高等数学下册的一些笔记&lt;/p&gt;
@@ -81,9 +81,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/WebSecurity/CTF/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/WebSecurity/CTF/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/</guid>
             <title>CTFNote</title>
-            <link>http://example.com/2023/03/19/WebSecurity/CTF/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/</link>
+            <link>https://evefortosaber.github.io/2023/03/19/WebSecurity/CTF/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/</link>
             <category>CTF</category>
             <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;ctf题目笔记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ctf题目笔记&#34;&gt;#&lt;/a&gt; CTF 题目笔记&lt;/h1&gt;
@@ -105,7 +105,7 @@
 &lt;p&gt;称为 SQL 注释&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/SQL%E6%B3%A8%E5%85%A5%E4%B8%8D%E5%90%8C%E6%95%B0%E6%8D%AE%E5%BA%93.png&#34; alt=&#34;SQL&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/SQL%E6%B3%A8%E5%85%A5%E4%B8%8D%E5%90%8C%E6%95%B0%E6%8D%AE%E5%BA%93.png&#34; alt=&#34;SQL&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Cookie 注入、Post 注入、盲注&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -123,7 +123,7 @@
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;2get_post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2get_post&#34;&gt;#&lt;/a&gt; 2.get_post&lt;/h3&gt;
 &lt;p&gt;可以通过 url 进行 get 操作，通过 hackbar 的 postpage 进行 post 操作&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;D:%5CPictures%5Cassets%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%5Cget_post.png&#34; alt=&#34;11&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://article.biliimg.com/bfs/article/5403e84f6dabc1299f173b26367b97be0f29ae9b.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;3backup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3backup&#34;&gt;#&lt;/a&gt; 3.backup&lt;/h3&gt;
 &lt;p&gt;注意源码泄露问题。&lt;/p&gt;
 &lt;p&gt;可用脚本 dirsearch 进行目录扫描。&lt;/p&gt;
@@ -135,8 +135,8 @@
 &lt;p&gt;&lt;strong&gt;&amp;lt;?php system($_REQUEST[&#39;ab12&#39;]);?&amp;gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&amp;lt;?php eval($_POST[123]);?&amp;gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;webshell 分别为：key，ab12,123&lt;/p&gt;
-&lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption data-lang=&#34;PHP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;? a=fetch&amp;amp;templateFile=public/index&amp;amp;prefix=&#39;&#39;&amp;amp;content&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;php&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;file_put_contents(&#39;test.php&#39;,&#39;&lt;span class=&#34;token php language-php&#34;&gt;&lt;span class=&#34;token delimiter important&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;phpinfo&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token delimiter important&#34;&gt;?&gt;&lt;/span&gt;&lt;/span&gt;&#39;)&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;php&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/yijian.png&#34; alt=&#34;yijian&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/yijjian1.png&#34; alt=&#34;yijian1&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption data-lang=&#34;PHP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;? a=fetch&amp;amp;templateFile=public/index&amp;amp;prefix=&#39;&#39;&amp;amp;content&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;php&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;file_put_contents(&#39;test.php&#39;,&#39;&lt;span class=&#34;token php language-php&#34;&gt;&lt;span class=&#34;token delimiter important&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;phpinfo&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token delimiter important&#34;&gt;?&gt;&lt;/span&gt;&lt;/span&gt;&#39;)&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;php&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/yijian.png&#34; alt=&#34;yijian&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main//yijjian1.png&#34; alt=&#34;yijian1&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;6php伪协议&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6php伪协议&#34;&gt;#&lt;/a&gt; 6.PHP 伪协议&lt;/h3&gt;
 &lt;p&gt;需要开启 allow_url_fopen 的: php://stdin、php://memory、php://temp&lt;/p&gt;
 &lt;p&gt;不需要开启 allow_wrl_fopen 的：php://filter&lt;/p&gt;
@@ -151,11 +151,11 @@
 &lt;hr /&gt;
 &lt;h4 id=&#34;直接注&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#直接注&#34;&gt;#&lt;/a&gt; 直接注&lt;/h4&gt;
 &lt;p&gt;首先吗看题&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/easysql1.jpg&#34; alt=&#34;easysql1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/easysql1.jpg&#34; alt=&#34;easysql1&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;然后寻找注入点，先试试 &lt;code&gt;&#39;,&amp;quot;,&#39;),&amp;quot;)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;然后回显不是 “无” 就是 Nonono.&lt;/p&gt;
 &lt;p&gt;在用字符，和整数试试。发现字符时无回显，整数时有！！&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/easysql2.jpg&#34; alt=&#34;easysql2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/easysql2.jpg&#34; alt=&#34;easysql2&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这是一个表结构！！&lt;/p&gt;
 &lt;p&gt;再审题，发现他说” 查询 “？怀疑这是个内嵌的后端查询，就是说它的&lt;strong&gt;源码&lt;/strong&gt;可能是&lt;/p&gt;
 &lt;p&gt;&lt;code&gt; select $_POST[&#39;query&#39;] from xxx&lt;/code&gt;&lt;/p&gt;
@@ -243,9 +243,9 @@
 &lt;p&gt;试试，直接注，找到提示表，查询到 flag。&lt;/p&gt;
 &lt;h3 id=&#34;13http&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#13http&#34;&gt;#&lt;/a&gt; 13.HTTP&lt;/h3&gt;
 &lt;p&gt;打开靶场，查看源码。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/aaahtp.jpg&#34; alt=&#34;http_1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/aaahtp.jpg&#34; alt=&#34;http_1&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;进入 secret.php 发现如下&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/ahttp_1.jpg&#34; alt=&#34;ahttp_1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/ahttp_1.jpg&#34; alt=&#34;ahttp_1&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;此处是一个对报文来源的要求，用 burp 抓包，&lt;strong&gt;修改来源，发现没有 Referer，手动添加到 upgrade 上，或 cookie 上，内容 &lt;code&gt;Referer: https://Sycsecret.buuoj.cn&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;再发送。得到 Response，要求用 &amp;quot;Syclover&amp;quot; 浏览器，&lt;strong&gt;在 User-Agent 中修改，Firefox 为 Syclover。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;再发送。得到 Response，&lt;strong&gt;&amp;quot;Read this locally!&amp;quot;&lt;/strong&gt;，在 upgrade 上加一行 ** &lt;code&gt;X-Forwarded-For: 127.0.0.1&lt;/code&gt; .**&lt;/p&gt;
@@ -287,10 +287,10 @@
 &lt;/blockquote&gt;
 &lt;p&gt;对网站备份扫描 *&amp;quot;&amp;quot;E:\burpsuite\ 备份扫描.py&amp;quot;&amp;quot;* 使用 Python 脚本.&lt;/p&gt;
 &lt;p&gt;得到 www.zip&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/1_16_01.png&#34; alt=&#34;01&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/1_16_01.png&#34; alt=&#34;01&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;查看三个 PHP 文件.&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/1_16_02.jpg&#34; alt=&#34;02&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/1_16_03.jpg&#34; alt=&#34;03&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/1_16_02.jpg&#34; alt=&#34;02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main//1_16_03.jpg&#34; alt=&#34;03&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;跟据代码，思路大致为&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;利用 get 方法传参 select，select 要序列化。&lt;/p&gt;
@@ -320,7 +320,7 @@
 &lt;p&gt;3.md5&lt;/p&gt;
 &lt;p&gt;4.ROT13 旋转加密&lt;/p&gt;
 &lt;h3 id=&#34;1password&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1password&#34;&gt;#&lt;/a&gt; 1.PASSWORD&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20220930164451487.png&#34; alt=&#34;image-20220930164451487&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20220930164451487.png&#34; alt=&#34;image-20220930164451487&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;就是猜。。。&lt;/p&gt;
 &lt;p zs19900315=&#34;&#34;&gt;flag&lt;/p&gt;
 &lt;blockquote&gt;
@@ -332,7 +332,7 @@
 &lt;p Caesar_variation=&#34;&#34;&gt;flag&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;凯撒加密，即将原私钥通过 ASCII 移位的方式加密。&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;得到密文。可能每处移位的不一样。&lt;/p&gt;
-&lt;p&gt;这里是&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20220930170155624.png&#34; alt=&#34;image-20220930170155624&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;这里是&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20220930170155624.png&#34; alt=&#34;image-20220930170155624&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;afZ_r9VYfScOeO_UL^RWUc&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;根据格式，对前 5 位，按照 ASCII 表解密为&lt;strong&gt; flag {&lt;/strong&gt;，从而推出加密规律。&lt;/p&gt;
 &lt;p&gt;udf 提权，mof 提权&lt;/p&gt;
@@ -343,9 +343,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/WebSecurity/CTF/%E5%AD%A6%E4%B9%A0SQL/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/WebSecurity/CTF/%E5%AD%A6%E4%B9%A0SQL/</guid>
             <title>SQL注入</title>
-            <link>http://example.com/2023/03/19/WebSecurity/CTF/%E5%AD%A6%E4%B9%A0SQL/</link>
+            <link>https://evefortosaber.github.io/2023/03/19/WebSecurity/CTF/%E5%AD%A6%E4%B9%A0SQL/</link>
             <category>CTF</category>
             <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;作为刚入门时，初步接触 SQL 所作的笔记&lt;/p&gt;
@@ -381,9 +381,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/</guid>
             <title>高等数学笔记一</title>
-            <link>http://example.com/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/</link>
+            <link>https://evefortosaber.github.io/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/</link>
             <category>Notes</category>
             <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;高等数学一&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高等数学一&#34;&gt;#&lt;/a&gt; 高等数学・一&lt;/h1&gt;
@@ -416,20 +416,20 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;狄利克雷函数&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_2.png&#34; alt=&#34;00_2&#34; title=&#34;狄利克雷函数&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_2.png&#34; alt=&#34;00_2&#34; title=&#34;狄利克雷函数&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;狄利克雷函数是一个定义在实数范围上、值域不连续的函数。狄利克雷函数的图像以 Y 轴为对称轴，是一个偶函数，它处处不连续，处处极限不存在，不可黎曼积分。这是一个处处不连续的可测函数。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;符号函数&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_3-1663132097343.png&#34; alt=&#34;00_3&#34; title=&#34;符号函数&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_3-1663132097343.png&#34; alt=&#34;00_3&#34; title=&#34;符号函数&#34; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;取整函数&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20220914131129520.png&#34; alt=&#34;image-20220914131129520&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20220914131129520.png&#34; alt=&#34;image-20220914131129520&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;函数 y=[x] 称为取整函数，也称&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTklQUIlOTglRTYlOTYlQUYlRTUlODclQkQlRTYlOTUlQjAvMjY3MDk1MT9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;高斯函数&lt;/span&gt;。其中不超过实数 x 的最大整数称为 x 的整数部分，记作 [x]。该函数被广泛应用于&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOTUlQjAlRTglQUUlQkEvMzcwMD9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;数论&lt;/span&gt;，函数绘图和计算机领域。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
@@ -526,7 +526,7 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;h3 id=&#34;第三节-函数的极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第三节-函数的极限&#34;&gt;#&lt;/a&gt; 第三节 函数的极限&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlODclQkQlRTYlOTUlQjAlRTYlOUUlODElRTklOTklOTAvNzI3MDgz&#34;&gt;函数极限&lt;/span&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_1.png&#34; alt=&#34;00_1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlODclQkQlRTYlOTUlQjAlRTYlOUUlODElRTklOTklOTAvNzI3MDgz&#34;&gt;函数极限&lt;/span&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_1.png&#34; alt=&#34;00_1&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;函数某点极限存在的充要条件是左右极限都存在且相等。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -565,9 +565,234 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/Mathematics/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%94%E8%AE%B0%E4%B8%80/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/</guid>
+            <title>数学笔记二</title>
+            <link>https://evefortosaber.github.io/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/</link>
+            <category>Notes</category>
+            <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;数学笔记二&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学笔记二&#34;&gt;#&lt;/a&gt; 数学笔记・二&lt;/h1&gt;
+&lt;h3 id=&#34;第四节-函数的连续性承第一章函数与极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四节-函数的连续性承第一章函数与极限&#34;&gt;#&lt;/a&gt; 第四节 函数的连续性（承第一章函数与极限）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;连续性概念&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由极限的性质可知，一个函数在某点连续的充要条件是它在该点左右都连续。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;间断点分类&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;第一类间断点&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlOEYlQUYlRTUlOEUlQkIlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;可去间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点左极限、右极限存在且相等，但不等于该点函数值或函数在该点无定义。如函数 y=（x^2-1)/(x-1) 在点 x=1 处。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTglQjclQjMlRTglQjclODMlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;跳跃间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点左极限、右极限存在，但不相等。如函数 y=|x|/x 在点 x=0 处。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;第二类间断点&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://baike.baidu.com/item/%E6%97%A0%E7%A9%B7%E9%97%B4%E6%96%AD%E7%82%B9/3531630?fromModule=lemma_inlink&#34;&gt;&lt;strong&gt;无穷间断点&lt;/strong&gt;&lt;/a&gt;：函数在该点可以无定义，且左极限、右极限至少有一个不存在，且函数在该点极限为∞。如函数 y=tanx 在点 x=π/2 处。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOEMlQUYlRTglOEQlQTElRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;振荡间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点可以无定义，当自变量趋于该点时，函数值在两个常数间变动无限多次。如函数 y=sin (1/x) 在 x=0 处。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;由上述对各种间断点的描述可知，&lt;strong&gt;函数 f (x) 在第一类间断点的左右极限都存在，而函数 f (x) 在第二类间断点的左右极限至少有一个不存在&lt;/strong&gt;，这也是第一类间断点和第二类间断点的本质上的区别。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;第五节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第五节&#34;&gt;#&lt;/a&gt; 第五节&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;迫敛准则&lt;/p&gt;
+&lt;p&gt;主要是放缩，抓住可合成量（如 N 个 1 求和为 n*(n+1)/2），和高阶量不变原则&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;单调有界准则&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;单调有界数列必有极限。用于证明收敛很有用。&lt;/p&gt;
+&lt;p&gt;求极限时可以&lt;strong&gt;先假设存在&lt;/strong&gt;。方便计算。&lt;s&gt;（避免求数列通项）&lt;/s&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;两个重要极限&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20220921223539147.png&#34; alt=&#34;image-20220921223539147&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第二个很重要，第一个可以直接看成等价无穷小。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;第六节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第六节&#34;&gt;#&lt;/a&gt; 第六节&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;无穷小量&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;确切地说，当自变量 x 无限接近 x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;（或 x 的绝对值无限增大）时，函数值 f (x) 与 0 无限接近，即 f (x)→0 (或 f (x)=0)，则称 f (x) 为当 x→x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;(或 x→∞) 时的无穷小量。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;等阶无穷小量&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;即两个无穷小量坐商得常数时。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;等价无穷小量&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;即两个无穷小量坐商得 1。等价无穷小量可互换。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;常见等价无穷小量&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pica.zhimg.com/v2-f20a929bed77e97c61a9f83de9b4b5a4_r.jpg?source=1940ef5c&#34; alt=&#34;aa&#34; title=&#34;等价无穷小&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;关于我突然变水的原因&lt;/em&gt;：&lt;/p&gt;
+&lt;p&gt;实在是比较忙，各项内容也越来越复杂，所以就择取主要的知识点并舍去证明。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;以上。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;第二章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第二章&#34;&gt;#&lt;/a&gt; 第二章&lt;/h2&gt;
+&lt;h3 id=&#34;导数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#导数&#34;&gt;#&lt;/a&gt; 导数&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;导数定义&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;函数可导一定连续，函数连续不一定可导。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;求导法则&lt;/p&gt;
+&lt;p&gt;注意除法，反函数，隐函数求导法则。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;掌握反代的思想，掌握对数求导法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;含参求导&lt;/p&gt;
+&lt;p&gt;一阶导可直接求二阶导可能需要反代。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意导数与微分的关系，如何二阶导隐函数。以及推导方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;断点处的导数求解，在有定义时使用求导法。&lt;/p&gt;
+&lt;p&gt;在无定义时，使用定义法。(求极限)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;高阶函数求导注意规律，和复合函数的导&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;微分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微分&#34;&gt;#&lt;/a&gt; 微分&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;一元函数，可导则可微&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;微分常数 A，与极限有关&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;微分运算类似求导法则&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;微分近似运算&lt;/p&gt;
+&lt;p&gt;f(x)=f(x0)+f&#39;(x0)(x-x0)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为了计算 f (x)，可找一个邻近于 x 的 x0，只要 f (x) 和 f&#39;(x) 容易计算，就可以利用这个公式计算 f (x) 的近似值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E5%BE%AE%E5%88%86%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97.jpg&#34; alt=&#34;微分&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;第三章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第三章&#34;&gt;#&lt;/a&gt; 第三章&lt;/h2&gt;
+&lt;h3 id=&#34;微分中值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微分中值定理&#34;&gt;#&lt;/a&gt; 微分中值定理&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;费马引理&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.jpg&#34; alt=&#34;费马引理&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;罗尔中值定理&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E7%BD%97%E5%B0%94%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;罗尔中值定理&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;拉格朗日中值定理&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;拉格朗日中值定理&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;柯西中值定理&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E6%9F%AF%E8%A5%BF%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;柯西中值定理&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;洛必达法则&lt;/p&gt;
+&lt;p&gt;泰勒公式&lt;/p&gt;
+&lt;p&gt;麦克劳林公式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;佩亚诺余项&lt;/p&gt;
+&lt;p&gt;高阶无穷小&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;拉格朗日余项&lt;/p&gt;
+&lt;p&gt;中值 -- 定量分析&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;函数的凹凸性&lt;/p&gt;
+&lt;h2 id=&#34;第四章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四章&#34;&gt;#&lt;/a&gt; 第四章&lt;/h2&gt;
+&lt;h4 id=&#34;不定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#不定积分&#34;&gt;#&lt;/a&gt; 不定积分&lt;/h4&gt;
+&lt;h5 id=&#34;换元积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#换元积分&#34;&gt;#&lt;/a&gt; 换元积分&lt;/h5&gt;
+&lt;h5 id=&#34;分部积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分部积分&#34;&gt;#&lt;/a&gt; 分部积分&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;凑微分，低次换元，三角换元，二次换元，重复型&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;积分表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#积分表&#34;&gt;#&lt;/a&gt; 积分表&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E7%A7%AF%E5%88%86%E8%A1%A8.jpg&#34; alt=&#34;积分表&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;有理函数的不定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#有理函数的不定积分&#34;&gt;#&lt;/a&gt; 有理函数的不定积分&lt;/h5&gt;
+&lt;p&gt;待定系数法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;万能公式&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E4%B8%87%E8%83%BD%E5%85%AC%E5%BC%8F.jpg&#34; alt=&#34;万能公式&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分&#34;&gt;#&lt;/a&gt; 定积分&lt;/h4&gt;
+&lt;h5 id=&#34;定积分概念求无穷项和的极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分概念求无穷项和的极限&#34;&gt;#&lt;/a&gt; 定积分概念求无穷项和的极限&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E5%AE%9A%E7%A7%AF%E5%88%86%E6%A6%82%E5%BF%B5.jpg&#34; alt=&#34;定积分概念&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;估值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#估值定理&#34;&gt;#&lt;/a&gt; 估值定理&lt;/h5&gt;
+&lt;p&gt;区间内的 Max 与 Min 乘以区间长度得到限定区间。&lt;/p&gt;
+&lt;h5 id=&#34;积分中值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#积分中值定理&#34;&gt;#&lt;/a&gt; 积分中值定理&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E7%A7%AF%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;积分中值定理&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;求积分函数极限时用到，由介值定理推得&lt;/p&gt;
+&lt;h5 id=&#34;几何意义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#几何意义&#34;&gt;#&lt;/a&gt; 几何意义&lt;/h5&gt;
+&lt;h5 id=&#34;牛顿莱布尼茨公式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#牛顿莱布尼茨公式&#34;&gt;#&lt;/a&gt; 牛顿莱布尼茨公式&lt;/h5&gt;
+&lt;h5 id=&#34;微积分学基本定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微积分学基本定理&#34;&gt;#&lt;/a&gt; 微积分学基本定理&lt;/h5&gt;
+&lt;p&gt;连续函数必存在原函数&lt;/p&gt;
+&lt;h5 id=&#34;平面曲线的弧长与曲率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平面曲线的弧长与曲率&#34;&gt;#&lt;/a&gt; 平面曲线的弧长与曲率&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/1%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;1弧长公式&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/2%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;2&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/3%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;3&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;极坐标系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#极坐标系&#34;&gt;#&lt;/a&gt; 极坐标系&lt;/h5&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;x=pcosa,y=psina;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h5 id=&#34;平面曲线的曲率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平面曲线的曲率&#34;&gt;#&lt;/a&gt; 平面曲线的曲率&lt;/h5&gt;
+&lt;h5 id=&#34;曲率圆&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#曲率圆&#34;&gt;#&lt;/a&gt; 曲率圆&lt;/h5&gt;
+&lt;h5 id=&#34;定积分的几何应用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分的几何应用&#34;&gt;#&lt;/a&gt; 定积分的几何应用&lt;/h5&gt;
+&lt;h5 id=&#34;连续函数的平均值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#连续函数的平均值&#34;&gt;#&lt;/a&gt; 连续函数的平均值&lt;/h5&gt;
+&lt;h5 id=&#34;定积分在物理学与经济学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分在物理学与经济学&#34;&gt;#&lt;/a&gt; 定积分在物理学与经济学&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;变力做功&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;引力问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;液体侧面压力&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;反常积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#反常积分&#34;&gt;#&lt;/a&gt; 反常积分&lt;/h5&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/Mathematics/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%94%E8%AE%B0%E4%B8%80/</guid>
             <title>线性代数笔记一</title>
-            <link>http://example.com/2023/03/19/Mathematics/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%94%E8%AE%B0%E4%B8%80/</link>
+            <link>https://evefortosaber.github.io/2023/03/19/Mathematics/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%94%E8%AE%B0%E4%B8%80/</link>
             <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;线性代数笔记一&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性代数笔记一&#34;&gt;#&lt;/a&gt; 线性代数笔记一&lt;/h1&gt;
 &lt;h2 id=&#34;第一章-线性方程组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章-线性方程组&#34;&gt;#&lt;/a&gt; 第一章 线性方程组&lt;/h2&gt;
@@ -696,8 +921,8 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;范德蒙德展开&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/fandemengdehanglieshi.jpg&#34; alt=&#34;fandingyi&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/fan_2.jpg&#34; alt=&#34;fan_2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/fandemengdehanglieshi.jpg&#34; alt=&#34;fandingyi&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/fan_2.jpg&#34; alt=&#34;fan_2&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;含 0 阵的行列式展开 ***(按块展开)***&lt;/p&gt;
@@ -708,12 +933,12 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;h3 id=&#34;矩阵加法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#矩阵加法&#34;&gt;#&lt;/a&gt; 矩阵加法&lt;/h3&gt;
 &lt;p&gt;必须是同型矩阵，对应元素分别相加。&lt;/p&gt;
 &lt;h3 id=&#34;矩阵乘法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#矩阵乘法&#34;&gt;#&lt;/a&gt; 矩阵乘法&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/xindai_10_07_juzhengchengfa.jpg&#34; alt=&#34;chengfdingyi&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/xindai_10_07_juzhengchengfa.jpg&#34; alt=&#34;chengfdingyi&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;行列相乘法，左矩阵的列数要等于右矩阵的行数。&lt;/p&gt;
 &lt;p&gt;注意元素对应。矩阵乘法一般不可逆。单位阵相乘可逆，对角阵相乘可逆。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/xiandaijuzhen0.jpg&#34; alt=&#34;xiandai&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/xiandaijuzhen0.jpg&#34; alt=&#34;xiandai&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;矩阵的转置与行列式化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#矩阵的转置与行列式化&#34;&gt;#&lt;/a&gt; 矩阵的转置与行列式化&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20221007184533201.png&#34; alt=&#34;image-20221007184533201&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20221007184533201.png&#34; alt=&#34;image-20221007184533201&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;若矩阵&lt;strong&gt; A&lt;/strong&gt; 满足&lt;strong&gt; A=A&lt;sup&gt;T&lt;/sup&gt;&lt;/strong&gt;，则称&lt;strong&gt; A&lt;/strong&gt; 为&lt;strong&gt;对称矩阵&lt;/strong&gt;；若&lt;strong&gt; A&lt;sup&gt;T&lt;/sup&gt;=-A&lt;/strong&gt;，则称 A 为&lt;strong&gt;反对称矩阵&lt;/strong&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;A+A&lt;sup&gt;T&lt;/sup&gt;,AA&lt;sup&gt;T&lt;/sup&gt;&lt;/strong&gt;&lt;/em&gt; 是对称矩阵&lt;/li&gt;
@@ -733,7 +958,7 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;方阵的迹&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/ca954c14e1a12fb64383e5786d37e4d3.svg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/ca954c14e1a12fb64383e5786d37e4d3.svg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;tr(AB)=tr(BA)&lt;/strong&gt;&lt;/p&gt;
@@ -747,234 +972,108 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/</guid>
-            <title>数学笔记二</title>
-            <link>http://example.com/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/</link>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/</guid>
+            <title>素数环问题</title>
+            <link>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/</link>
             <category>Notes</category>
+            <category>C++</category>
             <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;数学笔记二&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学笔记二&#34;&gt;#&lt;/a&gt; 数学笔记・二&lt;/h1&gt;
-&lt;h3 id=&#34;第四节-函数的连续性承第一章函数与极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四节-函数的连续性承第一章函数与极限&#34;&gt;#&lt;/a&gt; 第四节 函数的连续性（承第一章函数与极限）&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;连续性概念&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/picgo/1267999.jpg&#34; alt=&#34;1267999&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;素数环问题&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;由极限的性质可知，一个函数在某点连续的充要条件是它在该点左右都连续。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;间断点分类&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;第一类间断点&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlOEYlQUYlRTUlOEUlQkIlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;可去间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点左极限、右极限存在且相等，但不等于该点函数值或函数在该点无定义。如函数 y=（x^2-1)/(x-1) 在点 x=1 处。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTglQjclQjMlRTglQjclODMlRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;跳跃间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点左极限、右极限存在，但不相等。如函数 y=|x|/x 在点 x=0 处。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;第二类间断点&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://baike.baidu.com/item/%E6%97%A0%E7%A9%B7%E9%97%B4%E6%96%AD%E7%82%B9/3531630?fromModule=lemma_inlink&#34;&gt;&lt;strong&gt;无穷间断点&lt;/strong&gt;&lt;/a&gt;：函数在该点可以无定义，且左极限、右极限至少有一个不存在，且函数在该点极限为∞。如函数 y=tanx 在点 x=π/2 处。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOEMlQUYlRTglOEQlQTElRTklOTclQjQlRTYlOTYlQUQlRTclODIlQjk/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;振荡间断点&lt;/span&gt;&lt;/strong&gt;：函数在该点可以无定义，当自变量趋于该点时，函数值在两个常数间变动无限多次。如函数 y=sin (1/x) 在 x=0 处。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;由上述对各种间断点的描述可知，&lt;strong&gt;函数 f (x) 在第一类间断点的左右极限都存在，而函数 f (x) 在第二类间断点的左右极限至少有一个不存在&lt;/strong&gt;，这也是第一类间断点和第二类间断点的本质上的区别。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;第五节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第五节&#34;&gt;#&lt;/a&gt; 第五节&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;迫敛准则&lt;/p&gt;
-&lt;p&gt;主要是放缩，抓住可合成量（如 N 个 1 求和为 n*(n+1)/2），和高阶量不变原则&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;单调有界准则&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;单调有界数列必有极限。用于证明收敛很有用。&lt;/p&gt;
-&lt;p&gt;求极限时可以&lt;strong&gt;先假设存在&lt;/strong&gt;。方便计算。&lt;s&gt;（避免求数列通项）&lt;/s&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;两个重要极限&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20220921223539147.png&#34; alt=&#34;image-20220921223539147&#34; /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;第二个很重要，第一个可以直接看成等价无穷小。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;第六节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第六节&#34;&gt;#&lt;/a&gt; 第六节&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;无穷小量&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;确切地说，当自变量 x 无限接近 x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;（或 x 的绝对值无限增大）时，函数值 f (x) 与 0 无限接近，即 f (x)→0 (或 f (x)=0)，则称 f (x) 为当 x→x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;(或 x→∞) 时的无穷小量。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;等阶无穷小量&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;即两个无穷小量坐商得常数时。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;等价无穷小量&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;即两个无穷小量坐商得 1。等价无穷小量可互换。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;常见等价无穷小量&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pica.zhimg.com/v2-f20a929bed77e97c61a9f83de9b4b5a4_r.jpg?source=1940ef5c&#34; alt=&#34;aa&#34; title=&#34;等价无穷小&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Problem Description&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A ring is compose of n circles as shown in diagram. Put natural number 1, 2, ..., n into each circle separately, and the sum of numbers in two adjacent circles should be a prime.&lt;/p&gt;
+&lt;p&gt;Note: the number of first circle should always be 1.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;关于我突然变水的原因&lt;/em&gt;：&lt;/p&gt;
-&lt;p&gt;实在是比较忙，各项内容也越来越复杂，所以就择取主要的知识点并舍去证明。&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;以上。&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;第二章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第二章&#34;&gt;#&lt;/a&gt; 第二章&lt;/h2&gt;
-&lt;h3 id=&#34;导数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#导数&#34;&gt;#&lt;/a&gt; 导数&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;导数定义&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;函数可导一定连续，函数连续不一定可导。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;n (0 &amp;lt; n &amp;lt; 20).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The output format is shown as sample below. Each row represents a series of circle numbers in the ring beginning from 1 clockwisely and anticlockwisely. The order of numbers must satisfy the above requirements. Print solutions in lexicographical order.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;You are to write a program that completes above process.&lt;/p&gt;
+&lt;p&gt;&amp;lt;u&amp;gt;&lt;strong&gt;Print a blank line after each case.&lt;/strong&gt;&amp;lt;/u&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;求导法则&lt;/p&gt;
-&lt;p&gt;注意除法，反函数，隐函数求导法则。&lt;/p&gt;
+&lt;p&gt;解题思路：&lt;/p&gt;
+&lt;p&gt;代码如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;stack&amp;gt;
+#include&amp;lt;math.h&amp;gt; 
+#include&amp;lt;string.h&amp;gt;
+using namespace std;
+/*
+从2开始到sqrt(num)，逐一判断
+*/
+int n;
+int arry[27]&amp;#123;1&amp;#125;,flag[27]&amp;#123;0&amp;#125;;
+stack&amp;lt;int&amp;gt; s1, s2;
+
+bool isPrime_2(int num)
+&amp;#123;
+    if (num == 1 || num == 4)
+        return 0;
+    if (num == 2 || num == 3)
+        return 1;
+    int temp = sqrt(num);
+    for (int i = 2; i &amp;lt;= temp; i++)
+    &amp;#123;
+        if (num % i == 0)
+            return 0;
+    &amp;#125;
+    return 1;
+&amp;#125;
+
+
+void dfs(int k)
+&amp;#123;
+    if(k==n&amp;amp;&amp;amp;isPrime_2(arry[0]+arry[n-1])) //如果递归到下标n并且满足条件就找到一组正确的数据了
+    &amp;#123;
+        for(int i=0;i&amp;lt;n-1;i++)
+        cout&amp;lt;&amp;lt;arry[i]&amp;lt;&amp;lt;&amp;quot; &amp;quot;;
+        cout&amp;lt;&amp;lt;arry[n-1]&amp;lt;&amp;lt;endl;
+    &amp;#125;
+    else
+    &amp;#123;
+        for(int i=2;i&amp;lt;=n;i++)
+        if(flag[i]==0&amp;amp;&amp;amp;isPrime_2(arry[k-1]+i)) //如果i没有使用过，并且a[k-1]和i相加为素数
+        &amp;#123;
+            arry[k]=i;     //记录下标的值
+            flag[i]=1; //标记为使用过的
+            dfs(k+1);  //开始下一个下标的计算
+            flag[i]=0;//清除标记
+        &amp;#125;
+    &amp;#125;
+&amp;#125;
+
+int main()
+&amp;#123;
+    int i=0;
+    while (cin &amp;gt;&amp;gt; n)
+    &amp;#123;
+        i++;
+        memset(flag,0,sizeof(flag));
+        for (int k = 0; k &amp;lt; n; k++)
+            arry[k] = 1;
+        cout&amp;lt;&amp;lt;&amp;quot;Case &amp;quot;&amp;lt;&amp;lt;i&amp;lt;&amp;lt;&#39;:&#39;&amp;lt;&amp;lt;endl;
+        flag[0]=1;
+        dfs(1);
+        cout&amp;lt;&amp;lt;endl;
+        
+
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;结语：&lt;/p&gt;
+&lt;p&gt;参考资料：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;掌握反代的思想，掌握对数求导法。&lt;/p&gt;
+&lt;p&gt;[源码借鉴 From 简书]( &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC85MThiZWM3MzJiN2Q=&#34;&gt;DFS (素数环) - 简书 (jianshu.com)&lt;/span&gt;)，&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;含参求导&lt;/p&gt;
-&lt;p&gt;一阶导可直接求二阶导可能需要反代。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;注意导数与微分的关系，如何二阶导隐函数。以及推导方法。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;断点处的导数求解，在有定义时使用求导法。&lt;/p&gt;
-&lt;p&gt;在无定义时，使用定义法。(求极限)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;高阶函数求导注意规律，和复合函数的导&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;微分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微分&#34;&gt;#&lt;/a&gt; 微分&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;一元函数，可导则可微&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;微分常数 A，与极限有关&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;微分运算类似求导法则&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;微分近似运算&lt;/p&gt;
-&lt;p&gt;f(x)=f(x0)+f&#39;(x0)(x-x0)&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;为了计算 f (x)，可找一个邻近于 x 的 x0，只要 f (x) 和 f&#39;(x) 容易计算，就可以利用这个公式计算 f (x) 的近似值。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E5%BE%AE%E5%88%86%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97.jpg&#34; alt=&#34;微分&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;第三章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第三章&#34;&gt;#&lt;/a&gt; 第三章&lt;/h2&gt;
-&lt;h3 id=&#34;微分中值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微分中值定理&#34;&gt;#&lt;/a&gt; 微分中值定理&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;费马引理&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.jpg&#34; alt=&#34;费马引理&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;罗尔中值定理&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E7%BD%97%E5%B0%94%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;罗尔中值定理&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;拉格朗日中值定理&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;拉格朗日中值定理&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;柯西中值定理&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E6%9F%AF%E8%A5%BF%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;柯西中值定理&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;洛必达法则&lt;/p&gt;
-&lt;p&gt;泰勒公式&lt;/p&gt;
-&lt;p&gt;麦克劳林公式&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;佩亚诺余项&lt;/p&gt;
-&lt;p&gt;高阶无穷小&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;拉格朗日余项&lt;/p&gt;
-&lt;p&gt;中值 -- 定量分析&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;函数的凹凸性&lt;/p&gt;
-&lt;h2 id=&#34;第四章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四章&#34;&gt;#&lt;/a&gt; 第四章&lt;/h2&gt;
-&lt;h4 id=&#34;不定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#不定积分&#34;&gt;#&lt;/a&gt; 不定积分&lt;/h4&gt;
-&lt;h5 id=&#34;换元积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#换元积分&#34;&gt;#&lt;/a&gt; 换元积分&lt;/h5&gt;
-&lt;h5 id=&#34;分部积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分部积分&#34;&gt;#&lt;/a&gt; 分部积分&lt;/h5&gt;
-&lt;blockquote&gt;
-&lt;p&gt;凑微分，低次换元，三角换元，二次换元，重复型&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h5 id=&#34;积分表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#积分表&#34;&gt;#&lt;/a&gt; 积分表&lt;/h5&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E7%A7%AF%E5%88%86%E8%A1%A8.jpg&#34; alt=&#34;积分表&#34; /&gt;&lt;/p&gt;
-&lt;h5 id=&#34;有理函数的不定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#有理函数的不定积分&#34;&gt;#&lt;/a&gt; 有理函数的不定积分&lt;/h5&gt;
-&lt;p&gt;待定系数法&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;万能公式&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E4%B8%87%E8%83%BD%E5%85%AC%E5%BC%8F.jpg&#34; alt=&#34;万能公式&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分&#34;&gt;#&lt;/a&gt; 定积分&lt;/h4&gt;
-&lt;h5 id=&#34;定积分概念求无穷项和的极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分概念求无穷项和的极限&#34;&gt;#&lt;/a&gt; 定积分概念求无穷项和的极限&lt;/h5&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E5%AE%9A%E7%A7%AF%E5%88%86%E6%A6%82%E5%BF%B5.jpg&#34; alt=&#34;定积分概念&#34; /&gt;&lt;/p&gt;
-&lt;h5 id=&#34;估值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#估值定理&#34;&gt;#&lt;/a&gt; 估值定理&lt;/h5&gt;
-&lt;p&gt;区间内的 Max 与 Min 乘以区间长度得到限定区间。&lt;/p&gt;
-&lt;h5 id=&#34;积分中值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#积分中值定理&#34;&gt;#&lt;/a&gt; 积分中值定理&lt;/h5&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E7%A7%AF%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;积分中值定理&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;求积分函数极限时用到，由介值定理推得&lt;/p&gt;
-&lt;h5 id=&#34;几何意义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#几何意义&#34;&gt;#&lt;/a&gt; 几何意义&lt;/h5&gt;
-&lt;h5 id=&#34;牛顿莱布尼茨公式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#牛顿莱布尼茨公式&#34;&gt;#&lt;/a&gt; 牛顿莱布尼茨公式&lt;/h5&gt;
-&lt;h5 id=&#34;微积分学基本定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微积分学基本定理&#34;&gt;#&lt;/a&gt; 微积分学基本定理&lt;/h5&gt;
-&lt;p&gt;连续函数必存在原函数&lt;/p&gt;
-&lt;h5 id=&#34;平面曲线的弧长与曲率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平面曲线的弧长与曲率&#34;&gt;#&lt;/a&gt; 平面曲线的弧长与曲率&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/1%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;1弧长公式&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/2%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;2&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/3%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;3&#34; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;极坐标系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#极坐标系&#34;&gt;#&lt;/a&gt; 极坐标系&lt;/h5&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;x=pcosa,y=psina;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h5 id=&#34;平面曲线的曲率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平面曲线的曲率&#34;&gt;#&lt;/a&gt; 平面曲线的曲率&lt;/h5&gt;
-&lt;h5 id=&#34;曲率圆&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#曲率圆&#34;&gt;#&lt;/a&gt; 曲率圆&lt;/h5&gt;
-&lt;h5 id=&#34;定积分的几何应用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分的几何应用&#34;&gt;#&lt;/a&gt; 定积分的几何应用&lt;/h5&gt;
-&lt;h5 id=&#34;连续函数的平均值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#连续函数的平均值&#34;&gt;#&lt;/a&gt; 连续函数的平均值&lt;/h5&gt;
-&lt;h5 id=&#34;定积分在物理学与经济学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分在物理学与经济学&#34;&gt;#&lt;/a&gt; 定积分在物理学与经济学&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;变力做功&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;引力问题&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;液体侧面压力&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;反常积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#反常积分&#34;&gt;#&lt;/a&gt; 反常积分&lt;/h5&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/</guid>
             <title>多多果子问题二叉堆与优先序列</title>
-            <link>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/</link>
+            <link>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/</link>
             <category>Notes</category>
             <category>C++</category>
             <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
@@ -1128,107 +1227,9 @@ int main()
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/</guid>
-            <title>素数环问题</title>
-            <link>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/</link>
-            <category>Notes</category>
-            <category>C++</category>
-            <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;素数环问题&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Problem Description&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;A ring is compose of n circles as shown in diagram. Put natural number 1, 2, ..., n into each circle separately, and the sum of numbers in two adjacent circles should be a prime.&lt;/p&gt;
-&lt;p&gt;Note: the number of first circle should always be 1.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;Input&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;n (0 &amp;lt; n &amp;lt; 20).&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The output format is shown as sample below. Each row represents a series of circle numbers in the ring beginning from 1 clockwisely and anticlockwisely. The order of numbers must satisfy the above requirements. Print solutions in lexicographical order.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;You are to write a program that completes above process.&lt;/p&gt;
-&lt;p&gt;&amp;lt;u&amp;gt;&lt;strong&gt;Print a blank line after each case.&lt;/strong&gt;&amp;lt;/u&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;解题思路：&lt;/p&gt;
-&lt;p&gt;代码如下：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
-#include &amp;lt;stack&amp;gt;
-#include&amp;lt;math.h&amp;gt; 
-#include&amp;lt;string.h&amp;gt;
-using namespace std;
-/*
-从2开始到sqrt(num)，逐一判断
-*/
-int n;
-int arry[27]&amp;#123;1&amp;#125;,flag[27]&amp;#123;0&amp;#125;;
-stack&amp;lt;int&amp;gt; s1, s2;
-
-bool isPrime_2(int num)
-&amp;#123;
-    if (num == 1 || num == 4)
-        return 0;
-    if (num == 2 || num == 3)
-        return 1;
-    int temp = sqrt(num);
-    for (int i = 2; i &amp;lt;= temp; i++)
-    &amp;#123;
-        if (num % i == 0)
-            return 0;
-    &amp;#125;
-    return 1;
-&amp;#125;
-
-
-void dfs(int k)
-&amp;#123;
-    if(k==n&amp;amp;&amp;amp;isPrime_2(arry[0]+arry[n-1])) //如果递归到下标n并且满足条件就找到一组正确的数据了
-    &amp;#123;
-        for(int i=0;i&amp;lt;n-1;i++)
-        cout&amp;lt;&amp;lt;arry[i]&amp;lt;&amp;lt;&amp;quot; &amp;quot;;
-        cout&amp;lt;&amp;lt;arry[n-1]&amp;lt;&amp;lt;endl;
-    &amp;#125;
-    else
-    &amp;#123;
-        for(int i=2;i&amp;lt;=n;i++)
-        if(flag[i]==0&amp;amp;&amp;amp;isPrime_2(arry[k-1]+i)) //如果i没有使用过，并且a[k-1]和i相加为素数
-        &amp;#123;
-            arry[k]=i;     //记录下标的值
-            flag[i]=1; //标记为使用过的
-            dfs(k+1);  //开始下一个下标的计算
-            flag[i]=0;//清除标记
-        &amp;#125;
-    &amp;#125;
-&amp;#125;
-
-int main()
-&amp;#123;
-    int i=0;
-    while (cin &amp;gt;&amp;gt; n)
-    &amp;#123;
-        i++;
-        memset(flag,0,sizeof(flag));
-        for (int k = 0; k &amp;lt; n; k++)
-            arry[k] = 1;
-        cout&amp;lt;&amp;lt;&amp;quot;Case &amp;quot;&amp;lt;&amp;lt;i&amp;lt;&amp;lt;&#39;:&#39;&amp;lt;&amp;lt;endl;
-        flag[0]=1;
-        dfs(1);
-        cout&amp;lt;&amp;lt;endl;
-        
-
-    &amp;#125;
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;结语：&lt;/p&gt;
-&lt;p&gt;参考资料：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[源码借鉴 From 简书]( &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC85MThiZWM3MzJiN2Q=&#34;&gt;DFS (素数环) - 简书 (jianshu.com)&lt;/span&gt;)，&lt;/p&gt;
-&lt;/blockquote&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%B0%8F%E6%9C%A8%E6%A3%8D%E7%BB%84%E6%AD%A3%E6%96%B9%E5%BD%A2/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%B0%8F%E6%9C%A8%E6%A3%8D%E7%BB%84%E6%AD%A3%E6%96%B9%E5%BD%A2/</guid>
             <title>小木棍组正方形</title>
-            <link>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%B0%8F%E6%9C%A8%E6%A3%8D%E7%BB%84%E6%AD%A3%E6%96%B9%E5%BD%A2/</link>
+            <link>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%B0%8F%E6%9C%A8%E6%A3%8D%E7%BB%84%E6%AD%A3%E6%96%B9%E5%BD%A2/</link>
             <category>Notes</category>
             <category>C++</category>
             <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
@@ -1333,9 +1334,9 @@ void dfs(int step)
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</guid>
             <title>棋盘问题</title>
-            <link>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</link>
+            <link>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</link>
             <category>Notes</category>
             <category>C++</category>
             <category>DFS</category>
@@ -1439,9 +1440,9 @@ int main()
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</guid>
             <title>迷宫问题</title>
-            <link>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</link>
+            <link>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</link>
             <category>Notes</category>
             <category>C++</category>
             <category>DFS</category>
@@ -1456,26 +1457,26 @@ int main()
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/18/hello-world/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/18/hello-world/</guid>
             <title>Hello World</title>
-            <link>http://example.com/2023/03/18/hello-world/</link>
+            <link>https://evefortosaber.github.io/2023/03/18/hello-world/</link>
             <pubDate>Sat, 18 Mar 2023 19:57:26 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
+&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2022/09/08/zhaji/EnglishClass/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2022/09/08/zhaji/EnglishClass/</guid>
             <title>My fist English Class</title>
-            <link>http://example.com/2022/09/08/zhaji/EnglishClass/</link>
+            <link>https://evefortosaber.github.io/2022/09/08/zhaji/EnglishClass/</link>
             <category>随笔</category>
             <pubDate>Thu, 08 Sep 2022 14:40:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;short-talk&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#short-talk&#34;&gt;#&lt;/a&gt; Short Talk&lt;/h1&gt;
@@ -1491,9 +1492,9 @@ Yet my classmates are pretty shy so that few discusions happened when we were dv
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2022/09/07/zhaji/Note%20of%20markdown/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2022/09/07/zhaji/Note%20of%20markdown/</guid>
             <title>Notes Of Markdown</title>
-            <link>http://example.com/2022/09/07/zhaji/Note%20of%20markdown/</link>
+            <link>https://evefortosaber.github.io/2022/09/07/zhaji/Note%20of%20markdown/</link>
             <category>Notes</category>
             <pubDate>Wed, 07 Sep 2022 23:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;为了搭建自己的 blog，clone 了个模板。现在也是时候该来学写 blog 了。 &lt;s&gt;（什么写 blog 还要学不是有手就行？？）&lt;/s&gt;&lt;/p&gt;

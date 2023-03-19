@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
-    <title>Shoka • Posts by &#34;notes&#34; tag</title>
-    <link href="http://example.com" />
+    <id>https://evefortosaber.github.io</id>
+    <title>流云阁 • Posts by &#34;notes&#34; tag</title>
+    <link href="https://evefortosaber.github.io" />
     <updated>2023-03-19T11:29:17.421Z</updated>
     <category term="Notes" />
     <category term="随笔" />
@@ -10,25 +10,25 @@
     <category term="CTF" />
     <category term="DFS" />
     <entry>
-        <id>http://example.com/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/</id>
         <title>错题本</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/"/>
         <content type="html">&lt;h1 id=&#34;数学错题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学错题&#34;&gt;#&lt;/a&gt; 数学错题&lt;/h1&gt;
 &lt;h2 id=&#34;高数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高数&#34;&gt;#&lt;/a&gt; 高数&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_5-1663714277821.png&#34; alt=&#34;5&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_6-1663714314009.png&#34; alt=&#34;6&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_7-1663714323364.png&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_8-1663714341842.png&#34; alt=&#34;8&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/01_9-1663714386623.png&#34; alt=&#34;9&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/01_10-1663714362855.png&#34; alt=&#34;10&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_5-1663714277821.png&#34; alt=&#34;5&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_6-1663714314009.png&#34; alt=&#34;6&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_7-1663714323364.png&#34; alt=&#34;7&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_8-1663714341842.png&#34; alt=&#34;8&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/01_9-1663714386623.png&#34; alt=&#34;9&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/01_10-1663714362855.png&#34; alt=&#34;10&#34; /&gt;&lt;/p&gt;
 </content>
         <category term="Notes" />
         <updated>2023-03-19T11:29:17.421Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/03/19/Mathematics/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6(%E4%B8%8B)/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6(%E4%B8%8B)/</id>
         <title>高等数学(下)</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/Mathematics/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6(%E4%B8%8B)/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6(%E4%B8%8B)/"/>
         <content type="html">&lt;p&gt;关于高等数学下册的一些笔记&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h4 id=&#34;向量的方向角和方向余弦&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#向量的方向角和方向余弦&#34;&gt;#&lt;/a&gt; 向量的方向角和方向余弦&lt;/h4&gt;
@@ -78,9 +78,9 @@
         <updated>2023-03-19T11:29:17.421Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/</id>
         <title>高等数学笔记一</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
         <content type="html">&lt;h1 id=&#34;高等数学一&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高等数学一&#34;&gt;#&lt;/a&gt; 高等数学・一&lt;/h1&gt;
 &lt;hr /&gt;
 &lt;p&gt;学习时做的一些笔记，顺便对内容梳理一遍。^0&lt;/p&gt;
@@ -111,20 +111,20 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;狄利克雷函数&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_2.png&#34; alt=&#34;00_2&#34; title=&#34;狄利克雷函数&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_2.png&#34; alt=&#34;00_2&#34; title=&#34;狄利克雷函数&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;狄利克雷函数是一个定义在实数范围上、值域不连续的函数。狄利克雷函数的图像以 Y 轴为对称轴，是一个偶函数，它处处不连续，处处极限不存在，不可黎曼积分。这是一个处处不连续的可测函数。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;符号函数&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_3-1663132097343.png&#34; alt=&#34;00_3&#34; title=&#34;符号函数&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_3-1663132097343.png&#34; alt=&#34;00_3&#34; title=&#34;符号函数&#34; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;取整函数&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20220914131129520.png&#34; alt=&#34;image-20220914131129520&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20220914131129520.png&#34; alt=&#34;image-20220914131129520&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;函数 y=[x] 称为取整函数，也称&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTklQUIlOTglRTYlOTYlQUYlRTUlODclQkQlRTYlOTUlQjAvMjY3MDk1MT9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;高斯函数&lt;/span&gt;。其中不超过实数 x 的最大整数称为 x 的整数部分，记作 [x]。该函数被广泛应用于&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOTUlQjAlRTglQUUlQkEvMzcwMD9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;数论&lt;/span&gt;，函数绘图和计算机领域。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
@@ -221,7 +221,7 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;h3 id=&#34;第三节-函数的极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第三节-函数的极限&#34;&gt;#&lt;/a&gt; 第三节 函数的极限&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlODclQkQlRTYlOTUlQjAlRTYlOUUlODElRTklOTklOTAvNzI3MDgz&#34;&gt;函数极限&lt;/span&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/00_1.png&#34; alt=&#34;00_1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlODclQkQlRTYlOTUlQjAlRTYlOUUlODElRTklOTklOTAvNzI3MDgz&#34;&gt;函数极限&lt;/span&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/00_1.png&#34; alt=&#34;00_1&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;函数某点极限存在的充要条件是左右极限都存在且相等。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -262,9 +262,9 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
         <updated>2023-03-19T11:29:17.406Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/</id>
         <title>数学笔记二</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/Mathematics/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0%E4%BA%8C/"/>
         <content type="html">&lt;h1 id=&#34;数学笔记二&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学笔记二&#34;&gt;#&lt;/a&gt; 数学笔记・二&lt;/h1&gt;
 &lt;h3 id=&#34;第四节-函数的连续性承第一章函数与极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四节-函数的连续性承第一章函数与极限&#34;&gt;#&lt;/a&gt; 第四节 函数的连续性（承第一章函数与极限）&lt;/h3&gt;
 &lt;ul&gt;
@@ -310,7 +310,7 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;两个重要极限&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/image-20220921223539147.png&#34; alt=&#34;image-20220921223539147&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20220921223539147.png&#34; alt=&#34;image-20220921223539147&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;第二个很重要，第一个可以直接看成等价无穷小。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -393,25 +393,25 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E5%BE%AE%E5%88%86%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97.jpg&#34; alt=&#34;微分&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E5%BE%AE%E5%88%86%E8%BF%91%E4%BC%BC%E8%AE%A1%E7%AE%97.jpg&#34; alt=&#34;微分&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;第三章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第三章&#34;&gt;#&lt;/a&gt; 第三章&lt;/h2&gt;
 &lt;h3 id=&#34;微分中值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微分中值定理&#34;&gt;#&lt;/a&gt; 微分中值定理&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;费马引理&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.jpg&#34; alt=&#34;费马引理&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.jpg&#34; alt=&#34;费马引理&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;罗尔中值定理&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E7%BD%97%E5%B0%94%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;罗尔中值定理&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E7%BD%97%E5%B0%94%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;罗尔中值定理&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;拉格朗日中值定理&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;拉格朗日中值定理&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;拉格朗日中值定理&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;柯西中值定理&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E6%9F%AF%E8%A5%BF%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;柯西中值定理&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E6%9F%AF%E8%A5%BF%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;柯西中值定理&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;洛必达法则&lt;/p&gt;
@@ -436,22 +436,22 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;p&gt;凑微分，低次换元，三角换元，二次换元，重复型&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h5 id=&#34;积分表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#积分表&#34;&gt;#&lt;/a&gt; 积分表&lt;/h5&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E7%A7%AF%E5%88%86%E8%A1%A8.jpg&#34; alt=&#34;积分表&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E7%A7%AF%E5%88%86%E8%A1%A8.jpg&#34; alt=&#34;积分表&#34; /&gt;&lt;/p&gt;
 &lt;h5 id=&#34;有理函数的不定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#有理函数的不定积分&#34;&gt;#&lt;/a&gt; 有理函数的不定积分&lt;/h5&gt;
 &lt;p&gt;待定系数法&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;万能公式&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E4%B8%87%E8%83%BD%E5%85%AC%E5%BC%8F.jpg&#34; alt=&#34;万能公式&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E4%B8%87%E8%83%BD%E5%85%AC%E5%BC%8F.jpg&#34; alt=&#34;万能公式&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;定积分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分&#34;&gt;#&lt;/a&gt; 定积分&lt;/h4&gt;
 &lt;h5 id=&#34;定积分概念求无穷项和的极限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定积分概念求无穷项和的极限&#34;&gt;#&lt;/a&gt; 定积分概念求无穷项和的极限&lt;/h5&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E5%AE%9A%E7%A7%AF%E5%88%86%E6%A6%82%E5%BF%B5.jpg&#34; alt=&#34;定积分概念&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E5%AE%9A%E7%A7%AF%E5%88%86%E6%A6%82%E5%BF%B5.jpg&#34; alt=&#34;定积分概念&#34; /&gt;&lt;/p&gt;
 &lt;h5 id=&#34;估值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#估值定理&#34;&gt;#&lt;/a&gt; 估值定理&lt;/h5&gt;
 &lt;p&gt;区间内的 Max 与 Min 乘以区间长度得到限定区间。&lt;/p&gt;
 &lt;h5 id=&#34;积分中值定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#积分中值定理&#34;&gt;#&lt;/a&gt; 积分中值定理&lt;/h5&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/%E7%A7%AF%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;积分中值定理&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/%E7%A7%AF%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg&#34; alt=&#34;积分中值定理&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;求积分函数极限时用到，由介值定理推得&lt;/p&gt;
 &lt;h5 id=&#34;几何意义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#几何意义&#34;&gt;#&lt;/a&gt; 几何意义&lt;/h5&gt;
 &lt;h5 id=&#34;牛顿莱布尼茨公式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#牛顿莱布尼茨公式&#34;&gt;#&lt;/a&gt; 牛顿莱布尼茨公式&lt;/h5&gt;
@@ -459,9 +459,9 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;p&gt;连续函数必存在原函数&lt;/p&gt;
 &lt;h5 id=&#34;平面曲线的弧长与曲率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平面曲线的弧长与曲率&#34;&gt;#&lt;/a&gt; 平面曲线的弧长与曲率&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/1%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;1弧长公式&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/2%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;2&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img data-src=&#34;https://evefortosaber.github.io/Open-pictures/3%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;3&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/1%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;1弧长公式&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/2%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;2&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/3%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F.png&#34; alt=&#34;3&#34; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&#34;极坐标系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#极坐标系&#34;&gt;#&lt;/a&gt; 极坐标系&lt;/h5&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;x=pcosa,y=psina;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
@@ -487,9 +487,108 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
         <updated>2023-03-19T11:29:17.406Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/</id>
+        <title>素数环问题</title>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/"/>
+        <content type="html">&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/picgo/1267999.jpg&#34; alt=&#34;1267999&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;素数环问题&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Problem Description&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A ring is compose of n circles as shown in diagram. Put natural number 1, 2, ..., n into each circle separately, and the sum of numbers in two adjacent circles should be a prime.&lt;/p&gt;
+&lt;p&gt;Note: the number of first circle should always be 1.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Input&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;n (0 &amp;lt; n &amp;lt; 20).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The output format is shown as sample below. Each row represents a series of circle numbers in the ring beginning from 1 clockwisely and anticlockwisely. The order of numbers must satisfy the above requirements. Print solutions in lexicographical order.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;You are to write a program that completes above process.&lt;/p&gt;
+&lt;p&gt;&amp;lt;u&amp;gt;&lt;strong&gt;Print a blank line after each case.&lt;/strong&gt;&amp;lt;/u&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;解题思路：&lt;/p&gt;
+&lt;p&gt;代码如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;stack&amp;gt;
+#include&amp;lt;math.h&amp;gt; 
+#include&amp;lt;string.h&amp;gt;
+using namespace std;
+/*
+从2开始到sqrt(num)，逐一判断
+*/
+int n;
+int arry[27]&amp;#123;1&amp;#125;,flag[27]&amp;#123;0&amp;#125;;
+stack&amp;lt;int&amp;gt; s1, s2;
+
+bool isPrime_2(int num)
+&amp;#123;
+    if (num == 1 || num == 4)
+        return 0;
+    if (num == 2 || num == 3)
+        return 1;
+    int temp = sqrt(num);
+    for (int i = 2; i &amp;lt;= temp; i++)
+    &amp;#123;
+        if (num % i == 0)
+            return 0;
+    &amp;#125;
+    return 1;
+&amp;#125;
+
+
+void dfs(int k)
+&amp;#123;
+    if(k==n&amp;amp;&amp;amp;isPrime_2(arry[0]+arry[n-1])) //如果递归到下标n并且满足条件就找到一组正确的数据了
+    &amp;#123;
+        for(int i=0;i&amp;lt;n-1;i++)
+        cout&amp;lt;&amp;lt;arry[i]&amp;lt;&amp;lt;&amp;quot; &amp;quot;;
+        cout&amp;lt;&amp;lt;arry[n-1]&amp;lt;&amp;lt;endl;
+    &amp;#125;
+    else
+    &amp;#123;
+        for(int i=2;i&amp;lt;=n;i++)
+        if(flag[i]==0&amp;amp;&amp;amp;isPrime_2(arry[k-1]+i)) //如果i没有使用过，并且a[k-1]和i相加为素数
+        &amp;#123;
+            arry[k]=i;     //记录下标的值
+            flag[i]=1; //标记为使用过的
+            dfs(k+1);  //开始下一个下标的计算
+            flag[i]=0;//清除标记
+        &amp;#125;
+    &amp;#125;
+&amp;#125;
+
+int main()
+&amp;#123;
+    int i=0;
+    while (cin &amp;gt;&amp;gt; n)
+    &amp;#123;
+        i++;
+        memset(flag,0,sizeof(flag));
+        for (int k = 0; k &amp;lt; n; k++)
+            arry[k] = 1;
+        cout&amp;lt;&amp;lt;&amp;quot;Case &amp;quot;&amp;lt;&amp;lt;i&amp;lt;&amp;lt;&#39;:&#39;&amp;lt;&amp;lt;endl;
+        flag[0]=1;
+        dfs(1);
+        cout&amp;lt;&amp;lt;endl;
+        
+
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;结语：&lt;/p&gt;
+&lt;p&gt;参考资料：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[源码借鉴 From 简书]( &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC85MThiZWM3MzJiN2Q=&#34;&gt;DFS (素数环) - 简书 (jianshu.com)&lt;/span&gt;)，&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="Notes" />
+        <category term="C++" />
+        <updated>2023-03-19T11:29:17.362Z</updated>
+    </entry>
+    <entry>
+        <id>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/</id>
         <title>多多果子问题二叉堆与优先序列</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%A4%9A%E5%A4%9A%E6%9E%9C%E5%AD%90%E9%97%AE%E9%A2%98/"/>
         <content type="html">&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/03/16/No51BErYemDLZpQ.jpg&#34; alt=&#34;37&#34; /&gt;&lt;/p&gt;
 &lt;h4 id=&#34;问题描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问题描述&#34;&gt;#&lt;/a&gt; 问题描述：&lt;/h4&gt;
 &lt;blockquote&gt;
@@ -643,107 +742,9 @@ int main()
         <updated>2023-03-19T11:29:17.362Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/</id>
-        <title>素数环问题</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E7%B4%A0%E6%95%B0%E7%8E%AF%E9%97%AE%E9%A2%98/"/>
-        <content type="html">&lt;p&gt;素数环问题&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Problem Description&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;A ring is compose of n circles as shown in diagram. Put natural number 1, 2, ..., n into each circle separately, and the sum of numbers in two adjacent circles should be a prime.&lt;/p&gt;
-&lt;p&gt;Note: the number of first circle should always be 1.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;Input&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;n (0 &amp;lt; n &amp;lt; 20).&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The output format is shown as sample below. Each row represents a series of circle numbers in the ring beginning from 1 clockwisely and anticlockwisely. The order of numbers must satisfy the above requirements. Print solutions in lexicographical order.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;You are to write a program that completes above process.&lt;/p&gt;
-&lt;p&gt;&amp;lt;u&amp;gt;&lt;strong&gt;Print a blank line after each case.&lt;/strong&gt;&amp;lt;/u&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;解题思路：&lt;/p&gt;
-&lt;p&gt;代码如下：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
-#include &amp;lt;stack&amp;gt;
-#include&amp;lt;math.h&amp;gt; 
-#include&amp;lt;string.h&amp;gt;
-using namespace std;
-/*
-从2开始到sqrt(num)，逐一判断
-*/
-int n;
-int arry[27]&amp;#123;1&amp;#125;,flag[27]&amp;#123;0&amp;#125;;
-stack&amp;lt;int&amp;gt; s1, s2;
-
-bool isPrime_2(int num)
-&amp;#123;
-    if (num == 1 || num == 4)
-        return 0;
-    if (num == 2 || num == 3)
-        return 1;
-    int temp = sqrt(num);
-    for (int i = 2; i &amp;lt;= temp; i++)
-    &amp;#123;
-        if (num % i == 0)
-            return 0;
-    &amp;#125;
-    return 1;
-&amp;#125;
-
-
-void dfs(int k)
-&amp;#123;
-    if(k==n&amp;amp;&amp;amp;isPrime_2(arry[0]+arry[n-1])) //如果递归到下标n并且满足条件就找到一组正确的数据了
-    &amp;#123;
-        for(int i=0;i&amp;lt;n-1;i++)
-        cout&amp;lt;&amp;lt;arry[i]&amp;lt;&amp;lt;&amp;quot; &amp;quot;;
-        cout&amp;lt;&amp;lt;arry[n-1]&amp;lt;&amp;lt;endl;
-    &amp;#125;
-    else
-    &amp;#123;
-        for(int i=2;i&amp;lt;=n;i++)
-        if(flag[i]==0&amp;amp;&amp;amp;isPrime_2(arry[k-1]+i)) //如果i没有使用过，并且a[k-1]和i相加为素数
-        &amp;#123;
-            arry[k]=i;     //记录下标的值
-            flag[i]=1; //标记为使用过的
-            dfs(k+1);  //开始下一个下标的计算
-            flag[i]=0;//清除标记
-        &amp;#125;
-    &amp;#125;
-&amp;#125;
-
-int main()
-&amp;#123;
-    int i=0;
-    while (cin &amp;gt;&amp;gt; n)
-    &amp;#123;
-        i++;
-        memset(flag,0,sizeof(flag));
-        for (int k = 0; k &amp;lt; n; k++)
-            arry[k] = 1;
-        cout&amp;lt;&amp;lt;&amp;quot;Case &amp;quot;&amp;lt;&amp;lt;i&amp;lt;&amp;lt;&#39;:&#39;&amp;lt;&amp;lt;endl;
-        flag[0]=1;
-        dfs(1);
-        cout&amp;lt;&amp;lt;endl;
-        
-
-    &amp;#125;
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;结语：&lt;/p&gt;
-&lt;p&gt;参考资料：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[源码借鉴 From 简书]( &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC85MThiZWM3MzJiN2Q=&#34;&gt;DFS (素数环) - 简书 (jianshu.com)&lt;/span&gt;)，&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-        <category term="Notes" />
-        <category term="C++" />
-        <updated>2023-03-19T11:29:17.362Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%B0%8F%E6%9C%A8%E6%A3%8D%E7%BB%84%E6%AD%A3%E6%96%B9%E5%BD%A2/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%B0%8F%E6%9C%A8%E6%A3%8D%E7%BB%84%E6%AD%A3%E6%96%B9%E5%BD%A2/</id>
         <title>小木棍组正方形</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%B0%8F%E6%9C%A8%E6%A3%8D%E7%BB%84%E6%AD%A3%E6%96%B9%E5%BD%A2/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/%E5%B0%8F%E6%9C%A8%E6%A3%8D%E7%BB%84%E6%AD%A3%E6%96%B9%E5%BD%A2/"/>
         <content type="html">&lt;p&gt;小木棍组正方形：&lt;/p&gt;
 &lt;p&gt;解题思路：&lt;/p&gt;
 &lt;p&gt;使用 DFS 算法，并减去一些枝干&lt;/p&gt;
@@ -848,9 +849,9 @@ void dfs(int step)
         <updated>2023-03-19T11:29:17.362Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</id>
         <title>棋盘问题</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/"/>
         <content type="html">&lt;h4 id=&#34;问题描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问题描述&#34;&gt;#&lt;/a&gt; 问题描述&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;在一个给定形状的棋盘（形状可能是不规则的）上面摆放棋子，棋子没有区别。要求摆放时任意的两个棋子不能放在棋盘中的同一行或者同一列，请编程求解对于给定形状和大小的棋盘，摆放 k 个棋子的所有可行的摆放方案 C。&lt;/p&gt;
@@ -954,9 +955,9 @@ int main()
         <updated>2023-03-19T11:29:17.362Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</id>
         <title>迷宫问题</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/"/>
         <content type="html">&lt;p&gt;问题描述&lt;/p&gt;
 &lt;p&gt;解决思路&lt;/p&gt;
 &lt;p&gt;代码如下&lt;/p&gt;
@@ -971,9 +972,9 @@ int main()
         <updated>2023-03-19T11:29:17.362Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2022/09/07/zhaji/Note%20of%20markdown/</id>
+        <id>https://evefortosaber.github.io/2022/09/07/zhaji/Note%20of%20markdown/</id>
         <title>Notes Of Markdown</title>
-        <link rel="alternate" href="http://example.com/2022/09/07/zhaji/Note%20of%20markdown/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2022/09/07/zhaji/Note%20of%20markdown/"/>
         <content type="html">&lt;p&gt;为了搭建自己的 blog，clone 了个模板。现在也是时候该来学写 blog 了。 &lt;s&gt;（什么写 blog 还要学不是有手就行？？）&lt;/s&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h1 id=&#34;note-of-markdown&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#note-of-markdown&#34;&gt;#&lt;/a&gt; Note Of Markdown&lt;/h1&gt;

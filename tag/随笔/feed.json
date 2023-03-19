@@ -1,12 +1,12 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Shoka • All posts by \"随笔\" tag",
+    "title": "流云阁 • All posts by \"随笔\" tag",
     "description": "",
-    "home_page_url": "http://example.com",
+    "home_page_url": "https://evefortosaber.github.io",
     "items": [
         {
-            "id": "http://example.com/2022/09/08/zhaji/EnglishClass/",
-            "url": "http://example.com/2022/09/08/zhaji/EnglishClass/",
+            "id": "https://evefortosaber.github.io/2022/09/08/zhaji/EnglishClass/",
+            "url": "https://evefortosaber.github.io/2022/09/08/zhaji/EnglishClass/",
             "title": "My fist English Class",
             "date_published": "2022-09-08T06:40:00.000Z",
             "content_html": "<h1 id=\"short-talk\"><a class=\"anchor\" href=\"#short-talk\">#</a> Short Talk</h1>\n<p>(In fact, i want to improve my English through writing some articles in English.)</p>\n<hr />\n<h3 id=\"my-teachers\"><a class=\"anchor\" href=\"#my-teachers\">#</a> My teachers</h3>\n<p>One of my teacher is a <em>Chinese</em>,while the other one is an <em>English</em>(maybe,i'm not certain,forgive me)<br />\nWhen i typing the article you see, i'm taking my foreign teacher's spoken English class.</p>\n<hr />\n<h3 id=\"my-class\"><a class=\"anchor\" href=\"#my-class\">#</a> My class</h3>\n<p>The spoken English class focuses on discussion.<br />\nYet my classmates are pretty shy so that few discusions happened when we were dvided into the same discuss room.</p>\n",

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>Shoka • Posts by &#34;dfs&#34; tag</title>
-        <link>http://example.com</link>
+        <title>流云阁 • Posts by &#34;dfs&#34; tag</title>
+        <link>https://evefortosaber.github.io</link>
         <description></description>
-        <language>en</language>
+        <language>zh-CN</language>
         <pubDate>Sun, 19 Mar 2023 19:29:17 +0800</pubDate>
         <lastBuildDate>Sun, 19 Mar 2023 19:29:17 +0800</lastBuildDate>
         <category>Notes</category>
@@ -13,9 +13,9 @@
         <category>CTF</category>
         <category>DFS</category>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</guid>
             <title>棋盘问题</title>
-            <link>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</link>
+            <link>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</link>
             <category>Notes</category>
             <category>C++</category>
             <category>DFS</category>
@@ -119,9 +119,9 @@ int main()
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</guid>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</guid>
             <title>迷宫问题</title>
-            <link>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</link>
+            <link>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</link>
             <category>Notes</category>
             <category>C++</category>
             <category>DFS</category>

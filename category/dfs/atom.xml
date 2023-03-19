@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
-    <title>Shoka • Posts by &#34;dfs&#34; category</title>
-    <link href="http://example.com" />
+    <id>https://evefortosaber.github.io</id>
+    <title>流云阁 • Posts by &#34;dfs&#34; category</title>
+    <link href="https://evefortosaber.github.io" />
     <updated>2023-03-19T11:29:17.362Z</updated>
     <category term="Notes" />
     <category term="随笔" />
@@ -10,9 +10,9 @@
     <category term="CTF" />
     <category term="DFS" />
     <entry>
-        <id>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/</id>
         <title>棋盘问题</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98/"/>
         <content type="html">&lt;h4 id=&#34;问题描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问题描述&#34;&gt;#&lt;/a&gt; 问题描述&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;在一个给定形状的棋盘（形状可能是不规则的）上面摆放棋子，棋子没有区别。要求摆放时任意的两个棋子不能放在棋盘中的同一行或者同一列，请编程求解对于给定形状和大小的棋盘，摆放 k 个棋子的所有可行的摆放方案 C。&lt;/p&gt;
@@ -116,9 +116,9 @@ int main()
         <updated>2023-03-19T11:29:17.362Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</id>
+        <id>https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/</id>
         <title>迷宫问题</title>
-        <link rel="alternate" href="http://example.com/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/"/>
+        <link rel="alternate" href="https://evefortosaber.github.io/2023/03/19/ComputerScience/ProgramDesignNotes/DFS/%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98/"/>
         <content type="html">&lt;p&gt;问题描述&lt;/p&gt;
 &lt;p&gt;解决思路&lt;/p&gt;
 &lt;p&gt;代码如下&lt;/p&gt;
