@@ -6,8 +6,8 @@
     <updated>2023-03-19T11:29:17.421Z</updated>
     <category term="Notes" />
     <category term="随笔" />
-    <category term="CTF" />
     <category term="C++" />
+    <category term="CTF" />
     <category term="DFS" />
     <entry>
         <id>https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/</id>
@@ -72,7 +72,7 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;取整函数&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20220914131129520.png&#34; alt=&#34;image-20220914131129520&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/EveFortosaber/Open-pictures/main/image-20220914131129520.png&#34; alt=&#34;image-20220914131129520&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;函数 y=[x] 称为取整函数，也称&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTklQUIlOTglRTYlOTYlQUYlRTUlODclQkQlRTYlOTUlQjAvMjY3MDk1MT9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;高斯函数&lt;/span&gt;。其中不超过实数 x 的最大整数称为 x 的整数部分，记作 [x]。该函数被广泛应用于&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOTUlQjAlRTglQUUlQkEvMzcwMD9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;数论&lt;/span&gt;，函数绘图和计算机领域。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
