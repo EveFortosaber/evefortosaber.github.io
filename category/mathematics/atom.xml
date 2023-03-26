@@ -6,8 +6,8 @@
     <updated>2023-03-19T11:29:17.421Z</updated>
     <category term="Notes" />
     <category term="随笔" />
-    <category term="C++" />
     <category term="CTF" />
+    <category term="C++" />
     <category term="DFS" />
     <entry>
         <id>https://evefortosaber.github.io/2023/03/19/Mathematics/%E9%94%99%E9%A2%98%E6%9C%AC/</id>
@@ -269,7 +269,7 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;无穷小量&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;确切地说，当自变量 x 无限接近 x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;（或 x 的绝对值无限增大）时，函数值 f (x) 与 0 无限接近，即 f (x)→0 (或 f (x)=0)，则称 f (x) 为当 x→x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;(或 x→∞) 时的无穷小量。&lt;/p&gt;
+&lt;p&gt;确切地说，当自变量 x 无限接近 x&lt;sub&gt;0&lt;/sub&gt;（或 x 的绝对值无限增大）时，函数值 f (x) 与 0 无限接近，即 f (x)→0 (或 f (x)=0)，则称 f (x) 为当 x→x&lt;sub&gt;0&lt;/sub&gt;(或 x→∞) 时的无穷小量。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -444,7 +444,7 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;h4 id=&#34;数域的一些相关&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数域的一些相关&#34;&gt;#&lt;/a&gt; 数域的一些相关&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;设 P 是由一些数组成的集合，&lt;strong&gt;&amp;lt;u&amp;gt; 其中包括 0 与 1&amp;lt;/u&amp;gt;&lt;/strong&gt;，如果 P 中任意两个数的&lt;em&gt;&lt;strong&gt;和、差、积、商&lt;/strong&gt;&lt;/em&gt;（除数不为 0）仍是 P 中的数，则称 P 为一个数域。&lt;/p&gt;
+&lt;p&gt;设 P 是由一些数组成的集合，&lt;strong&gt;&lt;u&gt;其中包括 0 与 1&lt;/u&gt;&lt;/strong&gt;，如果 P 中任意两个数的&lt;em&gt;&lt;strong&gt;和、差、积、商&lt;/strong&gt;&lt;/em&gt;（除数不为 0）仍是 P 中的数，则称 P 为一个数域。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;常见数域&lt;/strong&gt;： 复数域&lt;strong&gt; C&lt;/strong&gt;；实数域&lt;strong&gt; R&lt;/strong&gt;；有理数域&lt;strong&gt; Q&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;（注意：自然数集 N 及整数集 Z 都不是数域。）&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;说明：&lt;/strong&gt;&lt;/p&gt;
@@ -477,7 +477,7 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&amp;lt;u&amp;gt;&lt;strong&gt; 由数域的定义知数域中一定含有加法逆元乘法逆元，加法单位元乘法单位元。&lt;/strong&gt;&amp;lt;/u&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;由数域的定义知数域中一定含有加法逆元乘法逆元，加法单位元乘法单位元。&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;集合与向量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#集合与向量&#34;&gt;#&lt;/a&gt; 集合与向量&lt;/h4&gt;
@@ -659,7 +659,7 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;li&gt;对称式，由方向向量和直线上一点确定&lt;/li&gt;
 &lt;li&gt;参数式 // 可由对称式导出&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&amp;lt;u&amp;gt; 详情戳&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc1MDk3Mi9hcnRpY2xlL2RldGFpbHMvMTIxMTcyNzkz&#34;&gt;链接&lt;/span&gt; &amp;lt;/u&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;详情戳&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc1MDk3Mi9hcnRpY2xlL2RldGFpbHMvMTIxMTcyNzkz&#34;&gt;链接&lt;/span&gt;&lt;/u&gt;&lt;/p&gt;
 &lt;h4 id=&#34;空间曲线&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#空间曲线&#34;&gt;#&lt;/a&gt; 空间曲线&lt;/h4&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://article.biliimg.com/bfs/article/0855cbc45dba5608e872dbee0b0064636027e540.png&#34; alt=&#34;ququ&#34; /&gt;&lt;/p&gt;
 &lt;h5 id=&#34;曲线弧长&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#曲线弧长&#34;&gt;#&lt;/a&gt; 曲线弧长&lt;/h5&gt;

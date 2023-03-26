@@ -1,4 +1,4 @@
-const CONFIG = {"version":"0.2.0","hostname":"https://evefortosaber.github.io","root":"/","statics":"/","favicon":{"normal":"assets/favicon.ico","hidden":"assets/failure.ico"},"darkmode":false,"auto_dark":{"enable":true,"start":20,"end":7},"auto_scroll":true,"js":{"chart":"npm/frappe-charts@1.5.0/dist/frappe-charts.min.iife.min.js","copy_tex":"npm/katex@0.12.0/dist/contrib/copy-tex.min.js","fancybox":"combine/npm/jquery@3.5.1/dist/jquery.min.js,npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js,npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"},"css":{"valine":"css/comment.css","katex":"npm/katex@0.12.0/dist/katex.min.css","mermaid":"css/mermaid.css","fancybox":"combine/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"},"loader":{"start":true,"switch":false},"search":{"appID":"67UQ6PAM7R","apiKey":"40b581e2b7b889e440ff0e5807234555","indexName":"index","hits":{"per_page":10}},"outime":{"enable":false,"days":90},"quicklink":{"timeout":3000,"priority":true},"playerAPI":"https://api.injahow.cn","disableVL":false,"audio":[{"title":"列表1","list":["https://music.163.com/#/playlist?id=2943811283","https://music.163.com/#/playlist?id=2297706586"]}],"fireworks":["rgba(255,182,185,.9)","rgba(250,227,217,.9)","rgba(187,222,214,.9)","rgba(138,198,209,.9)"]};const getDocHeight = () => $dom('main > .inner').offsetHeight;
+const CONFIG = {"version":"0.2.1","hostname":"https://evefortosaber.github.io","root":"/","statics":"/","favicon":{"normal":"assets/favicon.ico","hidden":"assets/failure.ico"},"darkmode":false,"auto_dark":{"enable":true,"start":20,"end":7},"auto_scroll":true,"js":{"chart":"npm/frappe-charts@1.5.0/dist/frappe-charts.min.iife.min.js","copy_tex":"npm/katex@0.12.0/dist/contrib/copy-tex.min.js","fancybox":"combine/npm/jquery@3.5.1/dist/jquery.min.js,npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js,npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"},"css":{"valine":"css/comment.css","katex":"npm/katex@0.12.0/dist/katex.min.css","mermaid":"css/mermaid.css","fancybox":"combine/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"},"loader":{"start":true,"switch":false},"search":{"appID":"67UQ6PAM7R","apiKey":"40b581e2b7b889e440ff0e5807234555","indexName":"index","hits":{"per_page":10}},"outime":{"enable":false,"days":90},"quicklink":{"timeout":3000,"priority":true},"playerAPI":"https://api.injahow.cn/meting","disableVL":false,"audio":[{"title":"列表1","list":["https://music.163.com/#/playlist?id=2943811283","https://music.163.com/#/playlist?id=2297706586"]}],"fireworks":["rgba(255,182,185,.9)","rgba(250,227,217,.9)","rgba(187,222,214,.9)","rgba(138,198,209,.9)"]};const getDocHeight = () => $dom('main > .inner').offsetHeight;
 const $dom = (selector, element = document) => {
     if (selector[0] === '#') {
         return element.getElementById(selector.substring(1));
@@ -262,30 +262,30 @@ const transition = (target, type, complete) => {
     });
 };
 const pjaxScript = function (element) {
-    const code = element.text || element.textContent || element.innerHTML || '';
-    const parent = element.parentNode;
-    parent.removeChild(element);
+    const { text, parentNode, id, className, type, src, dataset } = element;
+    const code = text || element.textContent || element.innerHTML || '';
+    parentNode.removeChild(element);
     const script = document.createElement('script');
-    if (element.id) {
-        script.id = element.id;
+    if (id) {
+        script.id = id;
     }
-    if (element.className) {
-        script.className = element.className;
+    if (className) {
+        script.className = className;
     }
-    if (element.type) {
-        script.type = element.type;
+    if (type) {
+        script.type = type;
     }
-    if (element.src) {
-        script.src = element.src;
+    if (src) {
+        script.src = src;
         script.async = false;
     }
-    if (element.dataset.pjax !== undefined) {
+    if (dataset.pjax !== undefined) {
         script.dataset.pjax = '';
     }
     if (code !== '') {
         script.appendChild(document.createTextNode(code));
     }
-    parent.appendChild(script);
+    parentNode.appendChild(script);
 };
 const pageScroll = function (target, offset, complete) {
     const opt = {
@@ -453,7 +453,6 @@ const resizeHandle = function (event) {
     }
     oWinHeight = window.innerHeight;
     oWinWidth = window.innerWidth;
-    // sideBar.child('.panels').changeOrGetHeight(oWinHeight + 'px');
 };
 const scrollHandle = function (event) {
     const winHeight = window.innerHeight;
@@ -2352,6 +2351,9 @@ const render = anime({
     }
 });
 document.addEventListener(tap, function (e) {
+    if (e.target.nodeName === 'A') {
+        return;
+    }
     render.play();
     updateCoords(e);
     animateParticules(pointerX, pointerY);

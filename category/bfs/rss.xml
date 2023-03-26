@@ -9,8 +9,8 @@
         <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0800</lastBuildDate>
         <category>Notes</category>
         <category>随笔</category>
-        <category>C++</category>
         <category>CTF</category>
+        <category>C++</category>
         <category>DFS</category>
         <item>
             <guid isPermalink="true">https://evefortosaber.github.io/2023/03/21/ComputerScience/ProgramDesignNotes/BFS/01%E8%BF%B7%E5%AE%AB/</guid>
@@ -77,7 +77,8 @@
             <category>Notes</category>
             <category>C++</category>
             <pubDate>Tue, 21 Mar 2023 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;https://article.biliimg.com/bfs/article/e4b6256a1096b024071062edc5e109d47012b12b.jpg&#34; alt=&#34;绫华&#34; /&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;meta name=&#34;referrer&#34; content=&#34;no-referrer&#34; /&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i0.hdslb.com/bfs/new_dyn/727c40543a7d769b4b16cd57608099c2490570799.jpg@1036w_!web-dynamic.webp&#34; alt=&#34;绫华&#34; /&gt;&lt;/p&gt;
 &lt;h4 id=&#34;题目描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#题目描述&#34;&gt;#&lt;/a&gt; 题目描述&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;有一个 n*m 的棋盘 (1&amp;lt;n,m&amp;lt;=400)，在某个点上有一个马，要求你计算出马到达棋盘上任意一个点最少要走几步&lt;/p&gt;

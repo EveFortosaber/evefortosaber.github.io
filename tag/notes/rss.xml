@@ -5,13 +5,358 @@
         <link>https://evefortosaber.github.io</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Tue, 21 Mar 2023 00:00:00 +0800</pubDate>
-        <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0800</lastBuildDate>
+        <pubDate>Sun, 26 Mar 2023 00:00:00 +0800</pubDate>
+        <lastBuildDate>Sun, 26 Mar 2023 00:00:00 +0800</lastBuildDate>
         <category>Notes</category>
         <category>随笔</category>
-        <category>C++</category>
         <category>CTF</category>
+        <category>C++</category>
         <category>DFS</category>
+        <item>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/26/ComputerScience/ProgramDesignNotes/Graph/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%97%85%E8%A1%8C/</guid>
+            <title>一个人的旅行</title>
+            <link>https://evefortosaber.github.io/2023/03/26/ComputerScience/ProgramDesignNotes/Graph/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%97%85%E8%A1%8C/</link>
+            <category>Notes</category>
+            <category>C++</category>
+            <pubDate>Sun, 26 Mar 2023 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;https://article.biliimg.com/bfs/article/9aaf1ccbe83ae490d55fa08473b48422b0546e18.png&#34; alt=&#34;monv&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;题目描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#题目描述&#34;&gt;#&lt;/a&gt; 题目描述&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;虽然草儿是个路痴（就是在杭电待了一年多，居然还会在校园里迷路的人，汗～), 但是草儿仍然很喜欢旅行，因为在旅途中 会遇见很多人（白马王子，&lt;sup&gt;0&lt;/sup&gt;），很多事，还能丰富自己的阅历，还可以看美丽的风景…… 草儿想去很多地方，她想要去东京铁塔看夜景，去威尼斯看电影，去阳明山上看海芋，去纽约纯粹看雪景，去巴黎喝咖啡写信，去北京探望孟姜女…… 眼看寒假就快到了，这么一大段时间，可不能浪费啊，一定要给自己好好的放个假，可是也不能荒废了训练啊，所以草儿决定在要在最短的时间去一个自己想去的地方！因为草儿的家在一个小镇上，没有火车经过，所以她只能去邻近的城市坐火车（好可怜啊～）。&lt;/p&gt;
+&lt;h6 id=&#34;输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输入&#34;&gt;#&lt;/a&gt; 输入&lt;/h6&gt;
+&lt;p&gt;输入数据有多组，每组的第一行是三个整数 T，S 和 D，表示有 T 条路，和草儿家相邻的城市的有 S 个，草儿想去的地方有 D 个；&lt;br /&gt;
+接着有 T 行，每行有三个整数 a，b，time, 表示 a,b 城市之间的车程是 time 小时；(1=&amp;lt;(a,b)&amp;lt;=1000;a,b 之间可能有多条路)&lt;br /&gt;
+ 接着的第 T+1 行有 S 个数，表示和草儿家相连的城市；&lt;br /&gt;
+接着的第 T+2 行有 D 个数，表示草儿想去地方。&lt;/p&gt;
+&lt;h6 id=&#34;输出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输出&#34;&gt;#&lt;/a&gt; 输出&lt;/h6&gt;
+&lt;p&gt;输出草儿能去某个喜欢的城市的最短时间&lt;/p&gt;
+&lt;h6 id=&#34;样例输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#样例输入&#34;&gt;#&lt;/a&gt; 样例输入&lt;/h6&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;figcaption data-lang=&#34;plain&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;6 2 3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;1 3 5&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;1 4 7&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;2 8 12&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;3 8 4&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;4 9 12&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;9 10 2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;1 2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;8 9 10&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h6 id=&#34;样例输出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#样例输出&#34;&gt;#&lt;/a&gt; 样例输出&lt;/h6&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;figcaption data-lang=&#34;plain&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;9&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;题目思路&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#题目思路&#34;&gt;#&lt;/a&gt; 题目思路&lt;/h4&gt;
+&lt;p&gt;从 main 函数开始，先读取 T,S,D 的值，T 表示图中的边数，S 表示起点的个数，D 表示终点的个数。然后调用 GraphInit 函数读取图中边的信息，TimeSumInit 函数传入最大顶点数和起点数，初始化总时长数组 s。LeastTime 函数通过 BFS 遍历，求出到达每个节点的最小时长，并将最小时长写入 totaltime 中。最后循环获取终点，并从总时长数组中找出最小值，即为所求。&lt;/p&gt;
+&lt;h5 id=&#34;代码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h5&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;figcaption data-lang=&#34;c&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&amp;lt;iostream&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&amp;lt;queue&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&amp;lt;vector&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&amp;lt;stdio.h&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&amp;lt;string.h&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;using namespace std&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;edge&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 定义边&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;/* data */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; point&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;   &lt;span class=&#34;token comment&#34;&gt;// 表示节点&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; time&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;    &lt;span class=&#34;token comment&#34;&gt;// 表示从当前节点到下一节点的时间&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// int vis[10000] = &amp;#123;0&amp;#125;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;vector&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;edge&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; ve&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10000&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 定义图，用邻接表存储，ve [i] 表示从节点 i 出发的边&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; T&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; S&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; D&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;            &lt;span class=&#34;token comment&#34;&gt;//param，T 表示边数，S 表示出发城市的个数，D 表示目的地的个数&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;queue&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; q&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;           &lt;span class=&#34;token comment&#34;&gt;// 用于搜索&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;GraphInit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; num&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 初始化图&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; w&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;&amp;lt;=&lt;/span&gt; num&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        cin &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; x &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; y &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; w&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        edge temp1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; temp2&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        temp1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;point &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        temp1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;time &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; w&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        temp2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;point &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; y&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        temp2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;time &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; w&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ve&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;push_back&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;temp2&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ve&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;y&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;push_back&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;temp1&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;35&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;36&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;TimeSumInit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;vector&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; t&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; maxnum&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; ss&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 初始化到达每个节点的最短时间&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;37&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;38&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; k &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; k &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; ss&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; k&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;39&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;40&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; j &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; j &lt;span class=&#34;token operator&#34;&gt;&amp;lt;=&lt;/span&gt; maxnum&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; j&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;41&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;42&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            t&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;k&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;push_back&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;//-1 表示还未到达&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;43&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;44&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;45&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;46&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;47&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;LeastTime&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; node&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; vector&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;totaltime&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 搜索每个出发城市到所有节点的最短时间&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;48&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;49&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; vis&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10000&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;50&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    q&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;push&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;node&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;51&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    totaltime&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;node&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;52&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;q&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;empty&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;53&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;54&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; nnode &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; q&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;front&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;55&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; size &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; ve&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;nnode&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;size&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;56&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;57&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; size&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;58&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;59&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; time &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; totaltime&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;nnode&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 到达上一节点的时长&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;60&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; next &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; ve&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;nnode&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;point&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;61&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            time &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; ve&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;nnode&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;time&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 到达下一个节点的总时长&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;62&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;vis&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;next&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;63&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;64&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                q&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;push&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;next&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;65&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;66&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;totaltime&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;next&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; time &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; totaltime&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;next&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;67&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;68&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                totaltime&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;next&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; time&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 1. 初始化最近地点抵达时间&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;69&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;70&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;71&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        vis&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;nnode&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 当一个节点的全部 next 被遍历后才记为走过&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;72&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        q&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;pop&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;73&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;74&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;75&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;76&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;77&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;cin &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; T &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; S &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; D&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;78&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;79&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        vector&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; s&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10000&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;//s [i] 表示从第 i 个出发城市出发的最短时间到达每个节点的时间&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;80&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;81&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token function&#34;&gt;GraphInit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;T&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;82&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;83&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token function&#34;&gt;TimeSumInit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;s&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; T&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; S&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;84&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;85&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; S&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;86&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;87&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; theCity&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;88&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            cin &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; theCity&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;89&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token function&#34;&gt;LeastTime&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;theCity&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; s&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;90&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;91&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; minimum &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;92&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; k &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; k &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; D&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; k&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;93&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;94&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; likeCity&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;95&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            cin &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; likeCity&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;96&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; j &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; j &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; S&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; j&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;97&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;98&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;minimum &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; minimum &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; s&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;likeCity&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;99&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;100&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    minimum &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; s&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;likeCity&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 找出所有出发城市到达目的地的最短时间&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;101&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;102&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;103&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;104&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; minimum &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;105&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;106&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;结语&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结语&#34;&gt;#&lt;/a&gt; 结语&lt;/h4&gt;
+&lt;p&gt;最短路径问题，与最小生成树有些类似。都运用了贪心思想。&lt;/p&gt;
+&lt;h4 id=&#34;参考资料&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考资料&#34;&gt;#&lt;/a&gt; 参考资料&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;bfs,&lt;/p&gt;
+&lt;p&gt;图的邻接表&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/26/ComputerScience/ProgramDesignNotes/Graph/%E5%9B%BE%E7%9A%84%E9%81%8D%E5%8E%86/</guid>
+            <title>图的遍历</title>
+            <link>https://evefortosaber.github.io/2023/03/26/ComputerScience/ProgramDesignNotes/Graph/%E5%9B%BE%E7%9A%84%E9%81%8D%E5%8E%86/</link>
+            <category>Notes</category>
+            <category>C++</category>
+            <pubDate>Sun, 26 Mar 2023 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;https://article.biliimg.com/bfs/article/c94fbfd47c574955a1cc846bd24121733fd5fe98.png&#34; alt=&#34;tu&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;图的遍历&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图的遍历&#34;&gt;#&lt;/a&gt; 图的遍历&lt;/h3&gt;
+&lt;h4 id=&#34;bfs&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#bfs&#34;&gt;#&lt;/a&gt; BFS&lt;/h4&gt;
+&lt;h5 id=&#34;代码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;queue&amp;gt;
+#include &amp;lt;vector&amp;gt;
+using namespace std;
+int n,e;//number of elements,number of edges
+queue&amp;lt;int&amp;gt; q;//queue of nodes
+vector&amp;lt;int&amp;gt; edge[1000];//edge[i][j] is the jth edge from i to j
+int vis[1000]=&amp;#123;0&amp;#125;;//if visited[i] is 1, then i is visited
+void bfs(int node)//bfs
+&amp;#123;
+    q.push(node);//create
+    vis[node]=1;//node is visited
+    cout&amp;lt;&amp;lt;node&amp;lt;&amp;lt;&#39; &#39;;//print
+    while(!q.empty())//begin
+    &amp;#123;
+        int nod=q.front();//now node
+        int size =edge[nod].size();
+        for(int i=0;i&amp;lt;size;i++)
+        &amp;#123;
+            if(!vis[edge[nod][i]])
+            &amp;#123;
+                //push the nearest node into the queue
+                vis[edge[nod][i]]=1;
+                q.push(edge[nod][i]);
+                cout&amp;lt;&amp;lt;edge[nod][i]&amp;lt;&amp;lt;&amp;quot; &amp;quot;;
+            &amp;#125;
+        &amp;#125;
+        //delete the node from the queue
+        q.pop();
+    &amp;#125;
+&amp;#125;
+
+int main()
+&amp;#123;
+    cin&amp;gt;&amp;gt;n&amp;gt;&amp;gt;e;
+    for(int i=0;i&amp;lt;e;i++)
+    &amp;#123;
+        int x,y;
+        cin&amp;gt;&amp;gt;x&amp;gt;&amp;gt;y;
+        //create the edge
+        edge[x].push_back(y);
+        edge[y].push_back(x);
+    &amp;#125;
+    bfs(1);
+&amp;#125;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;dfs&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dfs&#34;&gt;#&lt;/a&gt; DFS&lt;/h4&gt;
+&lt;h5 id=&#34;代码-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码-2&#34;&gt;#&lt;/a&gt; 代码&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;vector&amp;gt;
+using namespace std;
+ 
+// 存储图的邻接表结构
+const int MAX = 1000;
+vector&amp;lt;int&amp;gt; G[MAX];
+bool vis[MAX];
+ 
+void DFS(int node) &amp;#123;
+    //访问当前节点
+    cout &amp;lt;&amp;lt; node &amp;lt;&amp;lt; &amp;quot; &amp;quot;;
+    vis[node] = true;
+    int size = G[node].size();
+    for(int i=0; i&amp;lt;size; i++) &amp;#123;
+        int next = G[node][i];
+        if(!vis[next]) &amp;#123;
+            DFS(next);
+        &amp;#125;
+    &amp;#125;
+&amp;#125;
+ 
+int main() &amp;#123;
+    int n, e;
+    cin &amp;gt;&amp;gt; n &amp;gt;&amp;gt; e;
+ 
+    //邻接表存储图
+    int a, b;
+    for(int i=0; i&amp;lt;e; i++) &amp;#123;
+        cin &amp;gt;&amp;gt; a &amp;gt;&amp;gt; b;
+        G[a].push_back(b);
+        G[b].push_back(a);
+    &amp;#125;
+ 
+    for(int j=1; j&amp;lt;=n; j++) &amp;#123;
+        vis[j] = false;
+    &amp;#125;
+ 
+    //以节点1为起点遍历Draw the Graph
+    DFS(1);
+    cout &amp;lt;&amp;lt; endl;
+    return 0;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/26/ComputerScience/ProgramDesignNotes/Graph/%E6%9D%91%E6%9D%91%E9%80%9A/</guid>
+            <title>村村通</title>
+            <link>https://evefortosaber.github.io/2023/03/26/ComputerScience/ProgramDesignNotes/Graph/%E6%9D%91%E6%9D%91%E9%80%9A/</link>
+            <category>Notes</category>
+            <category>C++</category>
+            <pubDate>Sun, 26 Mar 2023 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h4 id=&#34;题目描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#题目描述&#34;&gt;#&lt;/a&gt; 题目描述&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;某市调查城镇交通状况，得到现有城镇道路统计表。表中列出了每条道路直接连通的城镇。市政府 &amp;quot;村村通工程&amp;quot; 的目标是使全市任何两个城镇间都可以实现交通（但不一定有直接的道路相连，只要相互之间可达即可）。请你计算出最少还需要建设多少条道路？&lt;/p&gt;
+&lt;h6 id=&#34;输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输入&#34;&gt;#&lt;/a&gt; 输入&lt;/h6&gt;
+&lt;p&gt;输入包含若干组测试测试数据，每组测试数据的第一行给出两个用空格隔开的正整数，分别是城镇数目 n 和道路数目 m ；随后的 m 行对应 m 条道路，每行给出一对用空格隔开的正整数，分别是该条道路直接相连的两个城镇的编号。简单起见，城镇从 1 到 n 编号。&lt;br /&gt;
+注意：两个城市间可以有多条道路相通。&lt;/p&gt;
+&lt;h6 id=&#34;输出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输出&#34;&gt;#&lt;/a&gt; 输出&lt;/h6&gt;
+&lt;p&gt;对于每组数据，对应一行一个整数。表示最少还需要建设的道路数目。&lt;/p&gt;
+&lt;h6 id=&#34;样例输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#样例输入&#34;&gt;#&lt;/a&gt; 样例输入&lt;/h6&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;figcaption data-lang=&#34;plain&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;4 2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;1 3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;4 3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;3 3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;1 2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;1 3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;2 3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;5 2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;1 2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;3 5&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;999 0&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;0&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h6 id=&#34;样例输出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#样例输出&#34;&gt;#&lt;/a&gt; 样例输出&lt;/h6&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;figcaption data-lang=&#34;plain&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;0&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;998&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;解题思路&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解题思路&#34;&gt;#&lt;/a&gt; 解题思路&lt;/h4&gt;
+&lt;h5 id=&#34;代码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;vector&amp;gt;
+#include &amp;lt;queue&amp;gt;
+//用BFS找出连通块，计算连通块数量，连通块数量减一即为需要建设的道路数目
+//Including required libraries 
+
+using namespace std;
+int visited[100000]=&amp;#123;0&amp;#125;; //Visited array to keep track of visited node 
+vector&amp;lt;int&amp;gt; ve[800000];   //Vector of pairs representing the edges in the graph 
+queue&amp;lt;int&amp;gt; q;            //Queue for Breadth First Search 
+int n,m;                 //Variables for input number of nodes and edges respectively 
+
+//Function to implement BFS starting from a given node 
+void roadsneeded(int node)
+&amp;#123;
+    visited[node]=1;       //Marking current node as visited 
+    q.push(node);          //Pushing current node to the queue 
+    while(!q.empty())
+    &amp;#123;                      
+        int nnode=q.front();//Storing front element of the queue in nnode
+        int size=ve[nnode].size();    //Finding the size of the corresponding vector 
+        for(int i=0;i&amp;lt;size;i++)      //Looping through the vector elements 
+        &amp;#123;
+            if(visited[ve[nnode][i]]==0)  //Checking for unvisited node 
+            &amp;#123;
+                visited[ve[nnode][i]]=1;  // Marking it as visited 
+                q.push(ve[nnode][i]);    // Pushing it to the queue 
+            &amp;#125;
+        &amp;#125;
+        q.pop();                    // after search all nodes nearby of the nodes which we are now on
+        // we leave it//Popping out the front element from the queue 
+    &amp;#125;
+    
+&amp;#125;
+int main()
+&amp;#123;
+    cin&amp;gt;&amp;gt;n;                      // Inputting number of nodes 
+    while(n!=0)                  // Loop until 0 is entered 
+    &amp;#123;
+        cin&amp;gt;&amp;gt;m;                  // Inputting edges 
+        for(int i=1;i&amp;lt;=n;i++)    // Reset visited array and vectors 
+        &amp;#123;
+            visited[i]=0;
+            ve[i].clear();
+        &amp;#125;
+        
+        for(int i=0;i&amp;lt;m;i++)     // Loop to input edges 
+        &amp;#123;
+            int u,v;
+            cin&amp;gt;&amp;gt;u&amp;gt;&amp;gt;v;
+            ve[u].push_back(v);   //Add edge to vector 
+            ve[v].push_back(u);   //Add ore reverse edge for undirected graph 
+        &amp;#125;
+        int sum=0;               //Counting the connected components at each iteration 
+        for(int i=1;i&amp;lt;=n;i++)
+        &amp;#123;
+            if(visited[i]==0)           //If node is not visited then 
+            &amp;#123;
+                roadsneeded(i);         //Call function roadsneeded with the current node as argument 
+                sum++;                  //Increment count of connected components 
+            &amp;#125;
+        &amp;#125;
+        cout&amp;lt;&amp;lt;(sum-1)&amp;lt;&amp;lt;endl;           //Print the number of roads needed minus 1 
+        cin&amp;gt;&amp;gt;n;                        // Read next number of nodes 
+    &amp;#125;
+    
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;结语&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结语&#34;&gt;#&lt;/a&gt; 结语&lt;/h4&gt;
+&lt;p&gt;连通块问题&lt;/p&gt;
+&lt;h4 id=&#34;参考资料&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考资料&#34;&gt;#&lt;/a&gt; 参考资料&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3QuY3Nkbi5jbi9PRG9HSw==&#34;&gt;图的遍历&lt;/span&gt;，&lt;/p&gt;
+&lt;p&gt;图的建立&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://evefortosaber.github.io/2023/03/26/ComputerScience/ProgramDesignNotes/Graph/%E8%9C%9C%E7%BD%90/</guid>
+            <title>蜜罐</title>
+            <link>https://evefortosaber.github.io/2023/03/26/ComputerScience/ProgramDesignNotes/Graph/%E8%9C%9C%E7%BD%90/</link>
+            <category>Notes</category>
+            <category>C++</category>
+            <pubDate>Sun, 26 Mar 2023 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;https://article.biliimg.com/bfs/article/3bdfe3f6f4224ac35a44ec4069ab6b8cf2872a83.jpg&#34; alt=&#34;绫华&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;题目描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#题目描述&#34;&gt;#&lt;/a&gt; 题目描述&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;蜜蜂乔治在采蜂蜜的时候，会把蜜放进 N 个蜜罐中，现在需要把这 N 个不相邻的蜜罐构建一些双向边把它们连接起来。即有 N 个分立的点，同时给出 M 个不同的边，需要你求出这张图的最小生成树。或许你会觉得这种描述有些奇怪，不过使用如此描述完全由于出题人喜欢吃蜂蜜。&lt;/p&gt;
+&lt;h6 id=&#34;输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输入&#34;&gt;#&lt;/a&gt; 输入&lt;/h6&gt;
+&lt;p&gt;第一行输入一个 T，表示样例个数。&lt;br /&gt;
+对于每一个样例，第二行输入 N, M，表示蜜罐数与边的数量。&lt;br /&gt;
+第三行输入三个数字 s, t, w 表示双向边的两个端点和权重。&lt;/p&gt;
+&lt;h6 id=&#34;输出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输出&#34;&gt;#&lt;/a&gt; 输出&lt;/h6&gt;
+&lt;p&gt;对于每个样例，输出一个数字 res 表示生成树的权重。如果无法构成生成树，则输出 - 1.&lt;/p&gt;
+&lt;h6 id=&#34;样例输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#样例输入&#34;&gt;#&lt;/a&gt; 样例输入&lt;/h6&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;figcaption data-lang=&#34;plain&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;3  3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;1 2 3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;2 3 3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;1 3 3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h6 id=&#34;样例输出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#样例输出&#34;&gt;#&lt;/a&gt; 样例输出&lt;/h6&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;figcaption data-lang=&#34;plain&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;6&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h6 id=&#34;提示&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#提示&#34;&gt;#&lt;/a&gt; 提示&lt;/h6&gt;
+&lt;p&gt;1 &amp;lt; N, M &amp;lt; 2000&lt;br /&gt;
+w &amp;lt; 10000&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;解题思路&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解题思路&#34;&gt;#&lt;/a&gt; 解题思路&lt;/h4&gt;
+&lt;h5 id=&#34;代码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;vector&amp;gt;
+#include &amp;lt;math.h&amp;gt;
+using namespace std;
+struct vertex//边节点，由一个节点指向节点number，权重为weight
+&amp;#123;
+    int number;
+    int weight;
+&amp;#125;;
+int N,M;//n is the number of vertex points, m is the number of edges
+vector&amp;lt;vertex&amp;gt; graph[10000];//graph,以边为主
+int visited[10000]=&amp;#123;0&amp;#125;;//if is visited
+int idstances[10000]=&amp;#123;0&amp;#125;;//the distance between the visited points and the unvisited points
+void prime(int node,int num,int &amp;amp;sum)//对于node节点有边graph[node][i]和对应的权值
+&amp;#123;
+    if(num==N)// when the node is the last node
+    &amp;#123;
+        return;
+    &amp;#125;
+    int size = graph[node].size();// all the edges of the node
+    for(int i=0;i&amp;lt;size;i++)// 逐个对distance更新
+    &amp;#123;
+        if(!visited[graph[node][i].number])//graph[node][i].number是node链接的节点标号
+        &amp;#123;
+            if(idstances[graph[node][i].number]&amp;gt;graph[node][i].weight||idstances[graph[node][i].number]==0)&amp;#123;
+                idstances[graph[node][i].number] = graph[node][i].weight;//reload idstances that is effected by the edge
+            &amp;#125;
+        &amp;#125;
+    &amp;#125;
+    int mini=10000;//to find the minimum distance to the unvisited points
+    int nnode;
+    for(int i=1;i&amp;lt;=N;i++)
+    &amp;#123;
+        if(!visited[i])
+        &amp;#123;
+            mini = min(mini,idstances[i]);
+            nnode=i;// go to the new node
+        &amp;#125;
+    &amp;#125;
+    visited[nnode]=1;
+    sum+=mini;
+    prime(nnode,num+1,sum);// begin with the new node
+&amp;#125;
+
+
+int main()
+&amp;#123;
+    int T;
+    cin&amp;gt;&amp;gt;T;
+    while(T--)
+    &amp;#123;
+        cin&amp;gt;&amp;gt;N&amp;gt;&amp;gt;M;
+        for(int i=1;i&amp;lt;=N;i++)
+        &amp;#123;
+            visited[i]=0;// reset visited
+            graph[i].clear();// reset graph
+        &amp;#125;
+        for(int i=1;i&amp;lt;=M;i++)// load the graph
+        &amp;#123;
+            int u,v,w;
+            cin&amp;gt;&amp;gt;u&amp;gt;&amp;gt;v&amp;gt;&amp;gt;w;
+            vertex temp1,temp2;
+            temp1.number=u;
+            temp1.weight=w;
+            temp2.number=v;
+            temp2.weight=w;
+            graph[u].push_back(temp2);
+            graph[v].push_back(temp1);
+        &amp;#125;
+        int sum=0;
+        visited[1]=1;// to start with the first node
+        prime(1,1,sum);
+        cout&amp;lt;&amp;lt;sum&amp;lt;&amp;lt;endl;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;结语&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结语&#34;&gt;#&lt;/a&gt; 结语&lt;/h4&gt;
+&lt;p&gt;学习了 Prim 算法，应用贪心思想。&lt;/p&gt;
+&lt;h4 id=&#34;参考资料&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考资料&#34;&gt;#&lt;/a&gt; 参考资料&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3QuY3Nkbi5jbi9GQVJZNQ==&#34;&gt;Prim 算法&lt;/span&gt;，&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://evefortosaber.github.io/2023/03/21/ComputerScience/ProgramDesignNotes/BFS/01%E8%BF%B7%E5%AE%AB/</guid>
             <title>01迷宫</title>
@@ -77,7 +422,8 @@
             <category>Notes</category>
             <category>C++</category>
             <pubDate>Tue, 21 Mar 2023 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;https://article.biliimg.com/bfs/article/e4b6256a1096b024071062edc5e109d47012b12b.jpg&#34; alt=&#34;绫华&#34; /&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;meta name=&#34;referrer&#34; content=&#34;no-referrer&#34; /&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i0.hdslb.com/bfs/new_dyn/727c40543a7d769b4b16cd57608099c2490570799.jpg@1036w_!web-dynamic.webp&#34; alt=&#34;绫华&#34; /&gt;&lt;/p&gt;
 &lt;h4 id=&#34;题目描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#题目描述&#34;&gt;#&lt;/a&gt; 题目描述&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;有一个 n*m 的棋盘 (1&amp;lt;n,m&amp;lt;=400)，在某个点上有一个马，要求你计算出马到达棋盘上任意一个点最少要走几步&lt;/p&gt;
@@ -418,7 +764,7 @@ x 称为 y 在 f 下的原象。&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;无穷小量&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;确切地说，当自变量 x 无限接近 x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;（或 x 的绝对值无限增大）时，函数值 f (x) 与 0 无限接近，即 f (x)→0 (或 f (x)=0)，则称 f (x) 为当 x→x&amp;lt;sub&amp;gt;0&amp;lt;/sub&amp;gt;(或 x→∞) 时的无穷小量。&lt;/p&gt;
+&lt;p&gt;确切地说，当自变量 x 无限接近 x&lt;sub&gt;0&lt;/sub&gt;（或 x 的绝对值无限增大）时，函数值 f (x) 与 0 无限接近，即 f (x)→0 (或 f (x)=0)，则称 f (x) 为当 x→x&lt;sub&gt;0&lt;/sub&gt;(或 x→∞) 时的无穷小量。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -1009,7 +1355,7 @@ int main()
 &lt;p&gt;The output format is shown as sample below. Each row represents a series of circle numbers in the ring beginning from 1 clockwisely and anticlockwisely. The order of numbers must satisfy the above requirements. Print solutions in lexicographical order.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;You are to write a program that completes above process.&lt;/p&gt;
-&lt;p&gt;&amp;lt;u&amp;gt;&lt;strong&gt;Print a blank line after each case.&lt;/strong&gt;&amp;lt;/u&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Print a blank line after each case.&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;解题思路&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解题思路&#34;&gt;#&lt;/a&gt; 解题思路：&lt;/h4&gt;
 &lt;h5 id=&#34;代码如下&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码如下&#34;&gt;#&lt;/a&gt; 代码如下：&lt;/h5&gt;
@@ -1108,7 +1454,7 @@ int main()
 &lt;li&gt;对称式，由方向向量和直线上一点确定&lt;/li&gt;
 &lt;li&gt;参数式 // 可由对称式导出&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&amp;lt;u&amp;gt; 详情戳&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc1MDk3Mi9hcnRpY2xlL2RldGFpbHMvMTIxMTcyNzkz&#34;&gt;链接&lt;/span&gt; &amp;lt;/u&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;详情戳&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc1MDk3Mi9hcnRpY2xlL2RldGFpbHMvMTIxMTcyNzkz&#34;&gt;链接&lt;/span&gt;&lt;/u&gt;&lt;/p&gt;
 &lt;h4 id=&#34;空间曲线&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#空间曲线&#34;&gt;#&lt;/a&gt; 空间曲线&lt;/h4&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://article.biliimg.com/bfs/article/0855cbc45dba5608e872dbee0b0064636027e540.png&#34; alt=&#34;ququ&#34; /&gt;&lt;/p&gt;
 &lt;h5 id=&#34;曲线弧长&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#曲线弧长&#34;&gt;#&lt;/a&gt; 曲线弧长&lt;/h5&gt;
